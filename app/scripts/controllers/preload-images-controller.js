@@ -23,7 +23,7 @@
                 // NOTE: "cache" attribute is to prevent images from caching in the
                 // browser (for the sake of the demo).
                 $scope.imageLocations = [
-                    ( "../../images/projects/1/thumb.jpg" )
+                    ( "../../images/logo_bakery.svg" )
                 ];
                 // Preload the images; then, update display when returned.
                 preloader.preloadImages( $scope.imageLocations ).then(
