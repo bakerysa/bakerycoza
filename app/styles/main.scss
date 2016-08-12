@@ -1,6 +1,5 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
-
 *:focus {
     outline: 0;
 }
@@ -8,112 +7,120 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 *,
 *:after,
 *::before {
-    -webkit-box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  color: #000;
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
 }
 
 h3 {
-  font-weight: 700;
-  margin: 1.3em 0;
+    font-weight: 700;
+    margin: 1.3em 0;
 }
 
 h4 {
-  font-weight: 700;
+    font-weight: 700;
 }
 
 h5 {
-  font-size: 1.1em;
-  line-height: 1.5em;
+    font-size: 1.1em;
+    line-height: 1.5em;
 }
 
 p {
-  font-size: 12px;
+    font-size: 12px;
 }
 
 .primarycontent {
-  padding: 30px;
+    padding: 30px;
+}
+
+.landing {
+    padding: 20px;
+    width:100%;
 }
 
 .logo {
-  img {
-    height: 90px;
-  }
+    img {
+        height: 90px;
+    }
 }
 
 .h-bg-darker {
-  background: rgba(0,0,0,0.05);
+    background: rgba(0, 0, 0, 0.05);
 }
 
 .h-margin-v-sm {
-  margin-top: 1.2em;
-  margin-bottom: 1.2em;
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
 }
 
 .h-padding-v-lg {
-  padding-top: 14em;
-  padding-bottom: 14em;
+    padding-top: 14em;
+    padding-bottom: 14em;
 }
 
 .h-padding-h-sm {
-  padding-left: 2em;
-  padding-right: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 .h-padding-h-md {
-  padding-left: 4em;
-  padding-right: 4em;
+    padding-left: 4em;
+    padding-right: 4em;
 }
 
 .h-lowercase {
-  text-transform: lowercase!important;
+    text-transform: lowercase!important;
 }
 
 .header {
-  position: fixed;
-  z-index: 1000;
-  left: 30px;
-  right: 30px;
+    position: fixed;
+    z-index: 1000;
+    left: 30px;
+    right: 30px;
 }
 
 .footer {
-  position: fixed;
-  z-index: 1000;
-  left: 30px;
-  right: 30px;
-  bottom: 0;
-  .nav {
-    ul {
-      &.text-left {
-        text-align: left!important;
-      }
-      &.text-right {
-       text-align: right!important;
-      }
-      padding: 0;
-      li {
-        padding: 1em 1em;
-      }
+    position: fixed;
+    z-index: 1000;
+    left: 30px;
+    right: 30px;
+    bottom: 0;
+    .nav {
+        ul {
+            &.text-left {
+                text-align: left!important;
+            }
+            &.text-right {
+                text-align: right!important;
+            }
+            padding: 0;
+            li {
+                padding: 1em 1em;
+            }
+        }
     }
-  }
 }
 
 .square {
     width: 100%!important;
-    &:hover{
-      background: white;
-    };
+    &:hover {
+        background: white;
+    }
+    ;
 }
+
 .square:before {
     content: "";
     float: left;
     padding-bottom: 100%;
 }
+
 .square:after {
     content: "";
     display: table;
@@ -121,55 +128,54 @@ p {
 }
 
 .bk-block {
-  position: relative;
-  padding: 20px 20px 20px 50px;  
-  h4 {
-    text-transform: uppercase;
-    position: absolute;
-    top: 13px;
-    right: calc(100% - 16px);
-    white-space: nowrap;
-    -webkit-transform: rotate(270deg);
-    -webkit-transform-origin: right top;
-    -moz-transform: rotate(270deg);
-    -moz-transform-origin: right top;
-    -ms-transform: rotate(270deg);
-    -ms-transform-origin: right top;
-    -o-transform: rotate(270deg);
-    -o-transform-origin: right top;
-    transform: rotate(270deg);
-    transform-origin: right top;
-  }
+    position: relative;
+    padding: 20px 20px 20px 50px;
+    h4 {
+        text-transform: uppercase;
+        position: absolute;
+        top: 13px;
+        right: calc(100% - 16px);
+        white-space: nowrap;
+        -webkit-transform: rotate(270deg);
+        -webkit-transform-origin: right top;
+        -moz-transform: rotate(270deg);
+        -moz-transform-origin: right top;
+        -ms-transform: rotate(270deg);
+        -ms-transform-origin: right top;
+        -o-transform: rotate(270deg);
+        -o-transform-origin: right top;
+        transform: rotate(270deg);
+        transform-origin: right top;
+    }
 }
 
 .content-wrapper {
-  margin-top: 130px;
-  min-height: 600px;
+    margin-top: 130px;
+    min-height: 600px;
 }
 
 .nav {
-  ul {
-    text-align: center;
-    li {
-      list-style: none;
-      padding: 2.5em 1em;
-      list-style-type:none;
-      display:inline-block;
-      text-transform: uppercase;
-      font-weight: 700;
-      a {
-        text-decoration: none;
-        letter-spacing: 3px;
-        color: inherit;
-        &:hover{
-          text-decoration: underline;
+    ul {
+        text-align: center;
+        li {
+            list-style: none;
+            padding: 2.5em 1em;
+            list-style-type: none;
+            display: inline-block;
+            text-transform: uppercase;
+            font-weight: 700;
+            a {
+                text-decoration: none;
+                letter-spacing: 3px;
+                color: inherit;
+                &:hover {
+                    text-decoration: underline;
+                }
+                /*text-shadow: -1px -1px 0 #ffd5c0, 1px -1px 0 #ffd5c0, -1px 1px 0 #ffd5c0, 1px 1px 0 #ffd5c0;*/
+            }
         }
-        /*text-shadow: -1px -1px 0 #ffd5c0, 1px -1px 0 #ffd5c0, -1px 1px 0 #ffd5c0, 1px 1px 0 #ffd5c0;*/
-      }
     }
-  }
 }
-
 
 .col-xs-15,
 .col-sm-15,
@@ -180,38 +186,43 @@ p {
     padding-right: 10px;
     padding-left: 10px;
 }
+
 .col-xs-15 {
     width: 20%;
     float: left;
 }
+
 .col-xs-25 {
     width: 40%;
     float: left;
 }
 
+
 /* start 'enter' transition on main view */
+
 .ng-enter {
     /* transition on enter for .5s */
     transition: .7s;
-
     /* start with opacity 0 (invisible) */
     opacity: 0;
 }
+
 .ng-enter-active {
     /* end with opacity 1 (fade in) */
     opacity: 1;
 }
 
 @media (min-width: 768px) {
-.col-sm-15 {
+    .col-sm-15 {
         width: 20%;
         float: left;
     }
-.col-sm-25 {
+    .col-sm-25 {
         width: 40%;
         float: left;
     }
 }
+
 @media (min-width: 992px) {
     .col-md-15 {
         width: 20%;
@@ -222,6 +233,7 @@ p {
         float: left;
     }
 }
+
 @media (min-width: 1200px) {
     .col-lg-15 {
         width: 20%;
@@ -231,4 +243,20 @@ p {
         width: 40%;
         float: left;
     }
+}
+
+.firsthalf {
+    background: red;
+    padding: 20px;
+    position: absolute;
+    width: 50%;
+    left: 0;
+}
+
+.secondhalf {
+    background: blue;
+    padding: 20px;
+    position: absolute;
+    width: 50%;
+    right: 0;
 }

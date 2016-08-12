@@ -20,8 +20,6 @@
 					$scope.theme2 = function (){
 						$rootScope.primaryColor = '#fff';
 					};
-
-	    
 	  }]);
 
   })(); 

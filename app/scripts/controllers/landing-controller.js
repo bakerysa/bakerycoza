@@ -4,15 +4,15 @@
 
 	/**
 	 * @ngdoc function
-	 * @name bakeryApp.controller:PrimaryContentCtrl
+	 * @name bakeryApp.controller:LandingCtrl
 	 * @description
 	 * # PrimaryContentCtrl
 	 * Controller of the bakeryApp
 	 */
 	angular.module('bakeryApp')
-		.controller('PrimaryContentCtrl', ['$scope', function($scope){
+		.controller('LandingCtrl', ['$scope', function($scope){
 
-
+	    		    	
 	  }]);
 
   })(); 
