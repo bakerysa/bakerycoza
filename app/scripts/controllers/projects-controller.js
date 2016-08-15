@@ -14,6 +14,32 @@
 
         	$scope.projects = ProjectService.list(); 
 
+            var tl = new TimelineMax({
+              paused: true
+            }),
+
+    
+            projectTransition = function () {
+          
+                  tl.to('.js-body', 0.7, {
+                    scrollTo:{
+                        y: 0
+                    }, 
+                    ease:Power3.easeInOut
+                 });
+
+                tl.play();
+                  // $(".content-area").addClass( "transitionClass" );
+                  $timeout(function() {
+                      $(".js-body").removeClass( "transitionClass" );
+                  }, 0.7);
+
+            };
+
+
+             $scope = angular.extend($scope, {
+              projectTransition : projectTransition
+             });
 
         	// projectTransition = function () {
       

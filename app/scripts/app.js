@@ -98,7 +98,7 @@
             })
 
             .state('app.projects', {
-                    url: 'our-work',
+                    url: '/our-work',
                     views: {
                         'projects@app': {
                             templateUrl: 'views/projects.html',
