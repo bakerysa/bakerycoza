@@ -1,35 +1,6 @@
-<div class="projects-nav row">
-	<div class="col-md-5 col-md-offset-1">
-		<h3 ><a ng-click="projectTransition()" href ui-sref="app.projects" > Our Work</a></h3>
-	</div>
-	<div class="col-md-6 text-right">
-		<h3 class="no-upper">{{selectedProject.name}}</h3>
-	</div>
-	
-</div>
-
-
 <div class="project-inner">
 
-	<!-- PREVIOUS VIDEO -->
-	<div class="arrow arrow-left" ng-if="selectedProject.videos && selectedProject.videos.length > 1">
-		<span class="glyphicon glyphicon-menu-left arrow-left-mini" aria-hidden="true"></span>
-	</div>
-	<!-- NEXT VIDEO -->
-	<div class="arrow arrow-right" owl-carousel-next ng-if="selectedProject.videos && selectedProject.videos.length > 1">
-		<span class="glyphicon glyphicon-menu-right arrow-right-mini" aria-hidden="true"></span>
-	</div>
-<!-- 
-
-Project Details Page
-	<h3>{{selectedProject.name}}</h3>
-	<h3>{{selectedProject.id}}</h3>
-	<p>
-	  {{selectedProject.description}}
-	</p>
- -->
-
- 	<div class="container project-copy">
+ 	<div class="project-copy">
 		<div class="row" ng-if="selectedProject.description">
 			<div class="col-md-2 col-md-offset-1 s1">
 				<h2>Project <br/>Details</h2>
@@ -50,14 +21,13 @@ Project Details Page
 		</div>
 	</div>
 
-	<div class="mobile-project-images">
-				<li ng-repeat="image in selectedProject.images" class="">
-				    <img data-ng-src="{{ image }}" class=""/>
-				</li>
-		
-	</div>
+	<!-- <div class="mobile-project-images">
+		<li ng-repeat="image in selectedProject.images" class="">
+		    <img data-ng-src="{{ image }}" class="img-responsive"/>
+		</li>
+	</div> -->
 
-	<ul class="dynamic-grid project-images" angular-grid="pics" grid-width="400" gutter-size="5" angular-grid-id="gallery" refresh-on-img-load="true" >
+	<ul class="dynamic-grid project-images" angular-grid="pics" grid-width="500" gutter-size="5" angular-grid-id="gallery" refresh-on-img-load="true" >
 	     <li ng-repeat="image in selectedProject.images" class="grid">
 	     	<a href="{{ image }}" data-lightbox="image-1">
 	     		

@@ -18,39 +18,21 @@
               paused: true
             }),
 
-            tl_vertLoader = new TimelineMax({
-                paused: true
-            }),
-
-
-
+    
             projectTransition = function () {
           
-                  tl.to('.js-body', 1.2, {
+                  tl.to('.js-body', 0.7, {
                     scrollTo:{
                         y: 0
                     }, 
                     ease:Power3.easeInOut
                  });
 
-                  tl_vertLoader.to('.menu-aux-area', 0.2, {
-                    css: {
-                      autoAlpha: 1,
-                      visibility: 'visible'
-                    },
-                    ease:Power3.easeInOut
-                  },'-=1.2')
-                  .to('.menu-aux-area', 0, {
-                      autoAlpha: 0,
-                      visibility: 'hidden'
-                   });
-
                 tl.play();
-                  tl_vertLoader.restart();
                   // $(".content-area").addClass( "transitionClass" );
                   $timeout(function() {
                       $(".js-body").removeClass( "transitionClass" );
-                  }, 1200);
+                  }, 0.7);
 
             };
 

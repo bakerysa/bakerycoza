@@ -1,8 +1,4 @@
-<!-- <div class="vert-loader">
-</div> -->
-<div style="background:{{primaryColor}}">
-	<div ui-view="header"></div>
-	<div class="content-area">
+<div class="content-area" style="background:{{primaryColor}}">
 		<div ui-view="detail" class="project-details-container" id="project"></div>
 		<div class="header">
 			<h1><span>Our Work</span></h1>
@@ -14,34 +10,6 @@
 					<h3 ui-sref=".detail({ id: project.id })">{{project.name}}</h3>
 			</div>
 		</div>
-
-		<!-- <ul class="dynamic-grid" angular-grid="pics" grid-width="250" gutter-size="0" angular-grid-id="gallery" refresh-on-img-load="true" >
-		     <li ng-repeat="project in projects | orderBy:'order' " class="grid">
-		     	<a ui-sref=".detail({ id: project.id })" ui-sref-active="active">
-		     	<div class="img_overlay" ng-click="projectTransition()" >
-		     		<h3>{{project.name}}</h3>
-		     	</div>
-		         <img data-ng-src="{{ project.thumb }}" class="grid-img" data-actual-width = "{{pic.actualWidth}}"  data-actual-height="{{pic.actualHeight}}" ng-click="projectTransition()" />
-		        </a>
-		     </li>
-		 </ul> -->
-
-		 <div class="container footer">
-			<p>© Copyright 2016 | <a href="http://thekinetic.co.za">The Kinetic</a> | All Rights Reserved | Developed by <a href="http://ixd.co.za">IXD</a></p>
-		</div>
-
-		<!-- <div class="row project-grid">
-			<div class="" ng-repeat="project in projects">
-
-				<a ui-sref=".detail({ id: project.id })" ui-sref-active="active">
-					<div class="col-md-3 single-thumb" back-img="{{project.thumb}}" ng-click="projectTransition()">
-					
-					</div>
-				</a>
-			</div>
-		</div>  -->
-	
-</div>
 
 </div>
 

@@ -154,6 +154,10 @@ p {
     min-height: 600px;
 }
 
+.content-area {
+    margin-top: 113px;
+}
+
 .nav {
     ul {
         text-align: center;
@@ -175,6 +179,142 @@ p {
             }
         }
     }
+}
+
+mic-grid {
+  position: relative;
+}
+.dynamic-grid.angular-grid {
+  display: block;
+  a {
+    &.active {
+      .img_overlay {
+        height: 100%;
+        // h3 {
+        //   transform: scale(1.1);   
+        // }
+      }
+    }
+    &:hover {
+      .img_overlay {
+        height: 100%;
+        // h3 {
+        //   transform: scale(1.1);   
+        // }
+      }
+      img {
+      }
+    }
+    .img_overlay {
+      position: absolute;
+      background: rgba(0,0,0,0.8);
+      height: 0%;
+      overflow: hidden;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      color: white;
+      padding: 0 15px;
+      text-align: center;
+      transition: all .3s ease-in-out;
+      -webkit-transition: all .3s ease-in-out;
+      -moz-transition: all .3s ease-in-out;
+      h3 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+      }
+    }
+    img {
+    }
+  }
+}
+.grid {
+  position: absolute;
+  list-style: none;
+  background: #ffffff;;
+  box-sizing: border-box;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+  overflow: hidden;
+}
+.grid.ng-leave {
+  -webkit-transition: all ease 400ms;
+  transition: all ease 400ms;
+}
+/*.grid.ng-leave.ng-leave-active {*/
+/*  -webkit-transform: scale(0.5);*/
+/*  transform: scale(0.5);*/
+/*  opacity: 0;*/
+/*}*/
+/*.grid.ng-enter {*/
+/*  -webkit-transition: all ease 400ms;*/
+/*  transition: all ease 400ms;*/
+/*  -webkit-transition-delay: 500ms;*/
+/*  transition-delay: 500ms;*/
+/*  -webkit-transform: scale(0.5);*/
+/*   transform: scale(0.5);*/
+/*  opacity: 0;*/
+/*}*/
+/*.grid.ng-enter.ng-enter-active {*/
+/*  -webkit-transform: scale(1);*/
+/*  transform: scale(1);*/
+/*  opacity: 1;*/
+/*}*/
+
+@keyframes animatedBackground {
+  0% { background-position: 0 0; }
+  100% { background-position: -300px 0; }
+}
+@-moz-keyframes animatedBackground {
+  0% { background-position: 0 0; }
+  100% { background-position: -300px 0; }
+}
+@-webkit-keyframes animatedBackground {
+  0% { background-position: 0 0; }
+  100% { background-position: -300px 0; }
+}
+@-ms-keyframes animatedBackground {
+  0% { background-position: 0 0; }
+  100% { background-position: -300px 0; }
+}
+@-o-keyframes animatedBackground {
+  0% { background-position: 0 0; }
+  100% { background-position: -300px 0; }
+}
+
+.img-loading { 
+  width: 100%; 
+  height: 190px; 
+  background-image: url(http://davidwalsh.name/demo/bg-clouds.png);
+  background-position: 0px 0px;
+
+  animation: animatedBackground 10s linear infinite;
+  -moz-animation: animatedBackground 10s linear infinite;
+  -webkit-animation: animatedBackground 10s linear infinite;
+  -ms-animation: animatedBackground 10s linear infinite;
+  -o-animation: animatedBackground 10s linear infinite;
+}
+
+
+/*.img-loading {
+ background: url('../images/ring-alt.gif') no-repeat center center!important; 
+ min-height: 300px;
+}
+*/
+.grid-img {
+  width: 100%;
+  vertical-align: middle;
+  background-color: #fff;
+  opacity: 0;
+  visibility: hidden;
+}
+.grid-img.img-loaded {
+  visibility: visible;
+  opacity: 1;
 }
 
 .col-xs-15,
