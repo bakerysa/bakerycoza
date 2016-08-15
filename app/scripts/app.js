@@ -1,4 +1,4 @@
-(function () {
+(function() {
 
     'use strict';
 
@@ -12,47 +12,48 @@
      */
     angular
         .module('bakeryApp', [
-    'ngAnimate',
-    'ngResource',
-    'ui.router',
-    'angularGrid'
-  ])
-        .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
+            'ngAnimate',
+            'ngResource',
+            'ui.router',
+            'angularGrid'
+        ])
+        .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
             $urlRouterProvider.otherwise('/');
             $stateProvider
 
-                .state('landing', {
+            .state('app', {
                 url: '/',
                 views: {
-                    'landing': {
-                        templateUrl: 'views/landing.html'
-                    },
-                }
-            })
-
-            .state('app', {
-                url: '/app',
-                views: {
-                    'header@app': {
+                    'header': {
                         templateUrl: 'views/header.html',
                         controller: 'HeaderCtrl',
                         controllerAs: 'header'
                     },
-                    'landing': {
+                    'default': {
+                        templateUrl: 'views/landing.html'
+                    },
+                    'footer': {
+                        templateUrl: 'views/footer.html'
+                    }
+                }
+            })
+
+            .state('app.home', {
+                url: 'home',
+                views: {
+                   
+                    'default@': {
                         templateUrl: 'views/primarycontent.html',
                         controller: 'PrimaryContentCtrl',
                         controllerAs: 'primarycontent'
                     },
-                    'wwdside@app': {
+                    'wwdside@app.home': {
                         templateUrl: 'views/wwd-side-default.html'
                     },
-                    'footer@app': {
-                        templateUrl: 'views/footer.html'
-                    },
-                    'partners@app': {
+                    'partners@app.home': {
                         templateUrl: 'views/partners.html'
                     },
-                    'work@app': {
+                    'work@app.home': {
                         templateUrl: 'views/work.html',
                         controller: 'WorkCtrl',
                         controllerAs: 'work'
@@ -60,11 +61,10 @@
                 }
             })
 
-
-            .state('app.experiences', {
+            .state('app.home.experiences', {
                 url: '/experiences',
                 views: {
-                    'wwdside@app': {
+                    'wwdside@app.home': {
                         templateUrl: 'views/wwd-side-experiences.html'
                     }
                 },
@@ -97,10 +97,12 @@
                 },
             })
 
-            .state('projects', {
-                    url: '/our-work',
+
+            .state('app.projects', {
+                    url: 'our-work',
+
                     views: {
-                        'projects@app': {
+                        'default@': {
                             templateUrl: 'views/projects.html',
                             controller: 'ProjectsCtrl'
                         }
@@ -115,7 +117,7 @@
                         }
                     },
                     resolve: {
-                        delay: function ($q, $timeout) {
+                        delay: function($q, $timeout) {
                             var delay = $q.defer();
                             $timeout(delay.resolve, 1200);
                             return delay.promise;
@@ -123,11 +125,11 @@
                     }
                 });
 
-      }])
+        }])
 
 
-    .run(function ($rootScope, $location, AnalyticsService) {
-        $rootScope.$on('$stateChangeSuccess', function () {
+    .run(function($rootScope, $location, AnalyticsService) {
+        $rootScope.$on('$stateChangeSuccess', function() {
             AnalyticsService.recordPageview($location.url());
         });
     });
