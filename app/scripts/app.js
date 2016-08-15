@@ -70,35 +70,35 @@
                 },
             })
 
-            .state('app.spaces', {
+            .state('app.home.spaces', {
                 url: '/spaces',
                 views: {
-                    'wwdside@app': {
+                    'wwdside@app.home': {
                         templateUrl: 'views/wwd-side-spaces.html'
                     }
                 },
             })
 
-            .state('app.connections', {
+            .state('app.home.connections', {
                 url: '/connections',
                 views: {
-                    'wwdside@app': {
+                    'wwdside@app.home': {
                         templateUrl: 'views/wwd-side-connections.html'
                     }
                 },
             })
 
-            .state('app.design', {
+            .state('app.home.design', {
                 url: '/design',
                 views: {
-                    'wwdside@app': {
+                    'wwdside@app.home': {
                         templateUrl: 'views/wwd-side-design.html'
                     }
                 },
             })
 
 
-            .state('app.projects', {
+            .state('app.home.projects', {
                     url: 'our-work',
 
                     views: {
