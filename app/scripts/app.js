@@ -30,60 +30,68 @@
                 }
             })
 
-        .state('app', {
-          url:'/app',
-          views: {
-            'header@app': {
-              templateUrl:'views/header.html',
-              controller: 'HeaderCtrl',
-              controllerAs: 'header'
-            },
-            'landing': {
-              templateUrl: 'views/primarycontent.html',
-              controller: 'PrimaryContentCtrl',
-              controllerAs: 'primarycontent'
-            },
-            'wwdside@app': {
-              templateUrl:'views/wwd-side-default.html'
-            },
-            'footer@app': {
-              templateUrl:'views/footer.html'
-            },
-          }
-        })
+            .state('app', {
+                url: '/app',
+                views: {
+                    'header@app': {
+                        templateUrl: 'views/header.html',
+                        controller: 'HeaderCtrl',
+                        controllerAs: 'header'
+                    },
+                    'landing': {
+                        templateUrl: 'views/primarycontent.html',
+                        controller: 'PrimaryContentCtrl',
+                        controllerAs: 'primarycontent'
+                    },
+                    'wwdside@app': {
+                        templateUrl: 'views/wwd-side-default.html'
+                    },
+                    'footer@app': {
+                        templateUrl: 'views/footer.html'
+                    },
+                    'partners@app': {
+                        templateUrl: 'views/partners.html'
+                    },
+                    'work@app': {
+                        templateUrl: 'views/work.html',
+                        controller: 'WorkCtrl',
+                        controllerAs: 'work'
+                    },
+                }
+            })
 
 
             .state('app.experiences', {
-                url: 'experiences',
+                url: '/experiences',
                 views: {
-                    'whatWeDoRight@app': {
+                    'wwdside@app': {
                         templateUrl: 'views/wwd-side-experiences.html'
                     }
                 },
             })
 
             .state('app.spaces', {
-                url: 'spaces',
+                url: '/spaces',
                 views: {
-                    'whatWeDoRight@app': {
+                    'wwdside@app': {
                         templateUrl: 'views/wwd-side-spaces.html'
                     }
                 },
             })
 
             .state('app.connections', {
-                url: 'connections',
+                url: '/connections',
                 views: {
-                    'whatWeDoRight@app': {
+                    'wwdside@app': {
                         templateUrl: 'views/wwd-side-connections.html'
                     }
                 },
             })
 
             .state('app.design', {
-                url: 'design',
+                url: '/design',
                 views: {
-                    'whatWeDoRight@app': {
+                    'wwdside@app': {
                         templateUrl: 'views/wwd-side-design.html'
                     }
                 },
