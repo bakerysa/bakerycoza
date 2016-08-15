@@ -1,24 +1,3 @@
-<div class="vid-stage">
-	<div class="video-container">
-		<div ng-repeat="video in selectedProject.videos">
-		<div class="close-btn" ng-if="video.showfull" ng-click="expand(video);reverseExpand();">
-			<div class="glyphicon glyphicon-menu-left"></div>
-			<div class="glyphicon glyphicon-menu-right"></div>
-		
-		</div>	
-				
-				<div class="video-width" ng-if="video.showfull">
-					<div class="aspect-ratio" ng-if="video.showfull">
-						<embed-video ng-if="video.showfull" href="{{video.source}}" autoplay="true" webkitallowfullscreen mozallowfullscreen allowfullscreen></embed-video>
-					</div>
-				</div>
-				</div>
-			
-		</div>
-	</div>
-</div>
-
-
 <div class="projects-nav row">
 	<div class="col-md-5 col-md-offset-1">
 		<h3 ><a ng-click="projectTransition()" href ui-sref="app.projects" > Our Work</a></h3>
@@ -31,46 +10,6 @@
 
 
 <div class="project-inner">
-	<data-owl-carousel class="owl-carousel video-header" data-options="" ng-if="selectedProject.videos">
-      	<div owl-carousel-item="" ng-repeat="video in selectedProject.videos" class="item" back-img="{{video.cover}}">
-        	<div class="item-assets">
-	        	<h1>{{video.title}}</h1>
-	        	<p>{{video.type}}</p>
-	        	<div class="play-btn">
-	        		        			
-	        			<div ng-if="video.id === 1" ng-click="expand(video)">
-	        				<svg class="triangle triangle1" ng-click="expandCircle1()"></svg>
-	        				<svg id="circle1" class="animation-circle" ng-click="expandCircle1()"></svg>
-	        			</div>
-	        			<div ng-if="video.id === 2" ng-click="expand(video)">
-	        				<svg class="triangle triangle2" ng-click="expandCircle2()"></svg>
-	        				<svg id="circle2" class="animation-circle" ng-click="expandCircle2()"></svg>
-	        			</div>
-	        			<div ng-if="video.id === 3" ng-click="expand(video)">
-	        				<svg class="triangle triangle3" ng-click="expandCircle3()"></svg>
-	        				<svg id="circle3" class="animation-circle" ng-click="expandCircle3()"></svg>
-	        			</div>
-
-	        			<div ng-if="video.id === 4" ng-click="expand(video)">
-	        				<svg class="triangle triangle4" ng-click="expandCircle4()"></svg>
-	        				<svg id="circle4" class="animation-circle" ng-click="expandCircle4()"></svg>
-	        			</div>
-
-	        	</div>
-        	</div>
-      	</div>
-	</data-owl-carousel>
-
-		<data-owl-carousel class="owl-carousel video-header" data-options="" ng-if="selectedProject.covers">
-	      	<div owl-carousel-item="" ng-repeat="cover in selectedProject.covers" class="item" back-img="{{cover.image}}">
-	      			<div class="item-assets">
-			        	<h1>{{cover.title}}</h1>
-			        	<p>{{cover.type}}</p>
-
-	        	</div>
-        	</div>
-	      	</div>
-		</data-owl-carousel>
 
 	<!-- PREVIOUS VIDEO -->
 	<div class="arrow arrow-left" ng-if="selectedProject.videos && selectedProject.videos.length > 1">

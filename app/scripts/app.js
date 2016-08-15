@@ -54,9 +54,9 @@
 
 
             .state('app.experiences', {
-                url: 'experiences',
+                url: '/experiences',
                 views: {
-                    'whatWeDoRight@app': {
+                    'wwdside@app': {
                         templateUrl: 'views/wwd-side-experiences.html'
                     }
                 },
@@ -90,7 +90,7 @@
             })
 
             .state('app.projects', {
-                    url: 'our-work',
+                    url: '/our-work',
                     views: {
                         'projects@app': {
                             templateUrl: 'views/projects.html',
