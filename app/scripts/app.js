@@ -97,7 +97,7 @@
                 },
             })
 
-            .state('app.projects', {
+            .state('projects', {
                     url: '/our-work',
                     views: {
                         'projects@app': {
