@@ -1,4 +1,4 @@
-<div class="project-inner">
+<div class="project-inner container">
 
  	<div class="project-copy">
 		<div class="row" ng-if="selectedProject.description">
@@ -27,7 +27,7 @@
 		</li>
 	</div> -->
 
-	<ul class="dynamic-grid project-images" angular-grid="pics" grid-width="500" gutter-size="5" angular-grid-id="gallery" refresh-on-img-load="true" >
+	<ul class="dynamic-grid project-images" angular-grid="pics" grid-width="400" gutter-size="5" angular-grid-id="gallery" refresh-on-img-load="true" >
 	     <li ng-repeat="image in selectedProject.images" class="grid">
 	     	<a href="{{ image }}" data-lightbox="image-1">
 	     		

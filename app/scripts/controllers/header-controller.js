@@ -10,7 +10,7 @@
 	 * Controller of the bakeryApp
 	 */
 	angular.module('bakeryApp')
-		.controller('HeaderCtrl', ['$scope', '$rootScope', function($scope, $rootScope){
+		.controller('HeaderCtrl', ['$scope', '$rootScope', '$state', function($scope, $rootScope, $state){
 			
 					$rootScope.primaryColor = '#ffd5c0';
 					$scope.theme1 = function (){
@@ -20,6 +20,7 @@
 					$scope.theme2 = function (){
 						$rootScope.primaryColor = '#fff';
 					};
+
 	  }]);
 
   })(); 

@@ -294,9 +294,10 @@ mic-grid {
 
 .img-loading { 
   width: 100%; 
-  height: 190px; 
-  background-image: url(http://davidwalsh.name/demo/bg-clouds.png);
+  min-height: 200px; 
+  background-image: url(../images/wave.png);
   background-position: 0px 0px;
+  background-repeat: repeat;
 
   animation: animatedBackground 10s linear infinite;
   -moz-animation: animatedBackground 10s linear infinite;
@@ -314,7 +315,7 @@ mic-grid {
 .grid-img {
   width: 100%;
   vertical-align: middle;
-  background-color: #fff;
+  // background-color: #fff;
   opacity: 0;
   visibility: hidden;
 }

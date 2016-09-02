@@ -54,9 +54,16 @@
                         templateUrl: 'views/partners.html'
                     },
                     'work@app.home': {
+                        url: '/work',
                         templateUrl: 'views/work.html',
                         controller: 'WorkCtrl',
-                        controllerAs: 'work'
+                        controllerAs: 'work',
+                        onEnter: function () {            
+                                alert('Go to work')
+                                   // $('html, body').animate({
+                                   //     scrollTop: $("#work").offset().top
+                                   // }, 2000);
+                               }
                     },
                 }
             })
@@ -119,7 +126,7 @@
                     resolve: {
                         delay: function($q, $timeout) {
                             var delay = $q.defer();
-                            $timeout(delay.resolve, 1200);
+                            $timeout(delay.resolve, 700);
                             return delay.promise;
                         }
                     }
