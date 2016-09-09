@@ -1,33 +1,109 @@
-<div style="background:{{primaryColor}}" class="primarycontent">
-	
-	<div ui-view="projects"></div>
-	<div class="row content-wrapper">
-		<div class="container">
-		    <div class="col-md-25 col-sm-12">
-		    	<div class="h-bg-darker h-padding-v-lg h-padding-h-md text-center">
-		    		<h3>What We Do</h3>		
-		    		<h5>As a brand consultancy we help brands communicate, connect, and differentiate. We create new brands and products, as well as spaces, events, campaigns, and with the help of Bakery, websites, apps, and user experiences</h5>
-		    	</div>
-		    </div>
-		    <div ui-view="wwdside"></div>
-		</div>
-	</div>
-            <div class="container">
+<div style="background:{{primaryColor}}" class="primarycontent" id="what-we-do">
+    <div class="row content-wrapper">
+        <div class="container">
+            <div class="col-md-25 col-sm-12">
+                <div class="h-bg-darker h-padding-v-lg h-padding-h-md text-center">
+                    <h3>What We Do</h3>
+                    <h5>As a brand consultancy we help brands communicate, connect, and differentiate. We create new brands and products, as well as spaces, events, campaigns, and with the help of Bakery, websites, apps, and user experiences</h5>
+                </div>
+            </div>
+
+            <div ui-view="wwdside">
+            </div>
+               <!--  <div class="col-md-15 col-sm-12">
+                    <div class="h-bg-darker">
+                        <img src="../images/pic1.jpg" class="img-responsive">
+                        <div class="square" ui-sref="app.home.experiences">
+                                <div class="bk-block">
+                                    <h4>Experiences</h4>    
+                                    <p>Using our extended network of partners, we build experiences in the form of events. From international muscians playing to 10 000, to exclusive pop-ups for 50.</p>
+                                </div>
+                        </div>
+                        <img src="../images/pic4.jpg" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-15 col-sm-12">
+                    <div class="h-bg-darker">
+                        <div class="square" ui-sref="app.home.spaces">
+                            <div class="bk-block">
+                                    <h4>Spaces</h4> 
+                                    <p>We work with a network of designers and architects to conceptualise, develop, and ultimately build spaces for retail, experiences, or commerce.</p>
+                            </div>
+                        </div>
+                        <img src="../images/pic2.jpg" class="img-responsive">       
+                        <div class="square" ui-sref="app.home.connections">
+                            <div class="bk-block">
+                                    <h4>Connections</h4>    
+                                    <p>Through our connections to the youth market as well as our partners, we’re able to bring multiple networks together for seedings campaigns etsadjs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-15 col-sm-12">
+                    <div class="h-bg-darker">
+                        <img src="../images/pic4.jpg" class="img-responsive">
+                        <div class="square" ui-sref="app.home.design">
+                            <div class="bk-block">
+                                    <h4>Design</h4> 
+                                    <p>We work with our clients to develop new brands and products, as well as helping existing brands fine-tune their visual commuincations.</p>
+                            </div>
+                        </div>
+                        <img src="../images/pic3.jpg" class="img-responsive">       
+                    </div>
+                </div> -->
+        </div>
+    </div>
+    <div class="container" id="how-we-do-it">
         <div class="col-md-12">
             <div class="h-padding-h-md text-center h-max-width">
-            <h3>How We Do It</h3>		
-		  <h5>We specialise in building the perfect team around each project that comes our way. Our core team heads up each department and works with a multitde of freelance creative partners to find solutions to each challenge.</h5>
+                <h3>How We Do It</h3>
+                <h5>We specialise in building the perfect team around each project that comes our way. Our core team heads up each department and works with a multitde of freelance creative partners to find solutions to each challenge.</h5>
             </div>
-            </div>
-                <div class="col-md-12 text-center h-bg-darker">
-                <h3>Our Creative Partners:</h3>
-                    </div>
-                <div ui-view="partners"></div>
         </div>
-        <div class="container" id='work'>
-            <div class="col-md-12 text-center h-bg-darker">
-                <h3>Our Work</h3>
+        <div class="col-md-12 text-center h-bg-darker">
+            <h3>Our Creative Partners:</h3>
+            <div class="col-md-2">
+                <div class="h-bg-darker">
+                    <img src="../images/pic5.png" class="img-responsive square">
+                    <img src="../images/pic5.png" class="img-responsive square">
+                    <img src="../images/pic6.png" class="img-responsive square">
+                </div>
             </div>
-                <div ui-view="work"></div>
-	
-</div>
+
+            <div class="col-md-5">
+                <div class="h-bg-darker">
+                    <img src="../images/pic7.png" class="img-responsive square">
+                    <div class="square">
+                            <div class="bk-block">
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5">
+                <div class="col-sm-6">
+                    <img src="../images/pic6.png" class="img-responsive square">
+                    <img src="../images/pic8.png" class="img-responsive square">
+                    </div>
+                <div class="col-sm-6 ">
+                    <img src="../images/pic6.png" class="img-responsive square">
+                    <img src="../images/pic8.png" class="img-responsive square">
+                </div>
+                <img src="../images/pic7.png" class="img-responsive square">
+            </div>
+        </div>
+    </div>
+    <div class="container" id="work">
+        <div class="col-md-12 text-center h-bg-darker">
+            <h3>Our Work</h3>
+        </div>
+        &nbsp;
+        <data-owl-carousel class="owl-carousel" data-options="">
+            <div owl-carousel-item="" ng-repeat="project in projects | filter:project.featured" class="item">
+                <div class="item-assets">
+                    <h1>{{project.name}}</h1>
+                    <img data-ng-src="{{ project.thumb }}" class="grid-img" data-actual-width = "{{pic.actualWidth}}"  data-actual-height="{{pic.actualHeight}}" />
+                </div>
+            </div>
+        </data-owl-carousel>
+    </div>

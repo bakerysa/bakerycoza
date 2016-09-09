@@ -11,10 +11,10 @@
     <!-- bower:css -->
     <link rel='stylesheet' href='bower_components/owl.carousel/dist/assets/owl.carousel.css' />
     <link rel='stylesheet' href='bower_components/lightbox2/dist/css/lightbox.css' />
-    <link rel='stylesheet' href='bower_components/fullpage.js/dist/jquery.fullpage.css' />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/libs/jquery.fullpage.css">
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -53,7 +53,7 @@
                       <div ng-switch-when="true">
                         
                         <div ui-view="header"></div>
-                        <div ui-view="default"></div>
+                        <div ui-view="primarycontent"></div>
                         <div ui-view="footer"></div>
 
                       </div>
@@ -101,9 +101,7 @@
     <script src="bower_components/vega/vega.js"></script>
     <script src="bower_components/vega-lite/vega-lite.js"></script>
     <script src="bower_components/viscompass/compass.js"></script>
-    <script src="bower_components/fullpage.js/dist/jquery.fullpage.js"></script>
-    <script src="bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
-    <script src="bower_components/fullpage.js/vendors/scrolloverflow.min.js"></script>
+    <script src="bower_components/angular-scroll/angular-scroll.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/ScrollToPlugin.min.js"></script>
@@ -111,9 +109,11 @@
 
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/libs/angular-fullpage.js"></script>
         <script src="scripts/script.js"></script>
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/landing-controller.js"></script>
+        <script src="scripts/controllers/home-controller.js"></script>
         <script src="scripts/controllers/work-controller.js"></script>
         <script src="scripts/controllers/header-controller.js"></script>
         <script src="scripts/controllers/primary-content-controller.js"></script>

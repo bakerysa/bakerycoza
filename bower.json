@@ -13,7 +13,7 @@
     "angulargrid": "*",
     "lightbox2": "*",
     "viscompass": "compass#^0.7.1",
-    "fullpage.js": "*"
+    "angular-scroll": "*"
   },
   "devDependencies": {
     "angular-mocks": "^1.3.0"

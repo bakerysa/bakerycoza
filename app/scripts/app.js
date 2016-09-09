@@ -15,10 +15,13 @@
             'ngAnimate',
             'ngResource',
             'ui.router',
-            'angularGrid'
+            'angularGrid',
+            'duScroll'
         ])
         .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
             $urlRouterProvider.otherwise('/');
+
+
             $stateProvider
 
             .state('app', {
@@ -29,8 +32,13 @@
                         controller: 'HeaderCtrl',
                         controllerAs: 'header'
                     },
-                    'default': {
-                        templateUrl: 'views/landing.html'
+                    'primarycontent': {
+                        templateUrl: 'views/primarycontent.html',
+                        controller: 'PrimaryContentCtrl',
+                        controllerAs: 'primarycontent'
+                    },
+                    'wwdside@app': {
+                        templateUrl: 'views/wwd-side-default.html'
                     },
                     'footer': {
                         templateUrl: 'views/footer.html'
@@ -38,79 +46,63 @@
                 }
             })
 
-            .state('app.home', {
-                url: 'home',
+            .state('app.experiences', {
+                url: 'experiences',
                 views: {
-                   
-                    'default@': {
-                        templateUrl: 'views/primarycontent.html',
-                        controller: 'PrimaryContentCtrl',
-                        controllerAs: 'primarycontent'
-                    },
-                    'wwdside@app.home': {
-                        templateUrl: 'views/wwd-side-default.html'
-                    },
-                    'partners@app.home': {
-                        templateUrl: 'views/partners.html'
-                    },
-                    'work@app.home': {
-                        url: '/work',
-                        templateUrl: 'views/work.html',
-                        controller: 'WorkCtrl',
-                        controllerAs: 'work',
-                        onEnter: function () {            
-                                alert('Go to work')
-                                   // $('html, body').animate({
-                                   //     scrollTop: $("#work").offset().top
-                                   // }, 2000);
-                               }
-                    },
-                }
-            })
-
-            .state('app.home.experiences', {
-                url: '/experiences',
-                views: {
-                    'wwdside@app.home': {
+                    'wwdside@app': {
                         templateUrl: 'views/wwd-side-experiences.html'
                     }
                 },
             })
 
-            .state('app.home.spaces', {
-                url: '/spaces',
-                views: {
-                    'wwdside@app.home': {
-                        templateUrl: 'views/wwd-side-spaces.html'
-                    }
-                },
+            .state('app.whatWeDo', {
+                url: 'what-we-do',
+                onEnter: function () {
+                    var tid = setInterval( function () {
+                        if ( document.readyState !== 'complete' ) return;
+                        clearInterval( tid );       
+                        $('body').animate({
+                            scrollTop: $('#what-we-do').offset().top
+                        }, 800);
+                    }, 100 );
+                }
             })
 
-            .state('app.home.connections', {
-                url: '/connections',
-                views: {
-                    'wwdside@app.home': {
-                        templateUrl: 'views/wwd-side-connections.html'
-                    }
-                },
+            .state('app.howWeDoIt', {
+                url: 'how-we-do-it',
+                onEnter: function () {
+                    var tid = setInterval( function () {
+                        if ( document.readyState !== 'complete' ) return;
+                        clearInterval( tid );       
+                        $('body').animate({
+                            scrollTop: $('#how-we-do-it').offset().top
+                        }, 800);
+                    }, 100 );
+                }
             })
 
-            .state('app.home.design', {
-                url: '/design',
-                views: {
-                    'wwdside@app.home': {
-                        templateUrl: 'views/wwd-side-design.html'
-                    }
-                },
+            .state('app.work', {
+                url: 'work',
+                controller: 'WorkCtrl',
+                onEnter: function () {
+                    var tid = setInterval( function () {
+                        if ( document.readyState !== 'complete' ) return;
+                        clearInterval( tid );       
+                        $('body').animate({
+                            scrollTop: $('#work').offset().top
+                        }, 800);
+                    }, 100 );
+                }
             })
+
+           
 
 
             .state('app.home.projects', {
-                    url: 'our-work',
-
+                    url: '/our-work',
                     views: {
                         'default@': {
-                            templateUrl: 'views/projects.html',
+                            templateUrl: 'views/work.html',
                             controller: 'ProjectsCtrl'
                         }
                     },
@@ -133,6 +125,7 @@
                 });
 
         }])
+
 
 
     .run(function($rootScope, $location, AnalyticsService) {

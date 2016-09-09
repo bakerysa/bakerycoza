@@ -1,17 +1,17 @@
-<div class="header row">
-	<div class="col-xs-3 logo" ng-click="theme1()">
+<div class="header row" id="home">
+	<div class="col-xs-2 logo" ng-click="theme1()">
 		<img src="../images/logo_the_bread.svg">
 	</div>
-	<div class="col-xs-6 nav">
+	<div class="col-xs-8 nav">
 		<ul>
-			<li><a href>What we do</a></li>
-			<li><a href>How we do it</a></li>
-			<!-- <li><a href ui-sref="app.projects" >Our Work</a></li> -->
-			<li><a href ui-sref="work">Our Work</a></li>
-			<li><a href>Get in touch</a></li>
+			<li><a ui-sref="app" du-smooth-scroll du-scrollspy offset="30">Home</a></li>
+			<li><a ui-sref="app.whatWeDo" du-smooth-scroll du-scrollspy offset="30">What We Do</a></li>
+			<li><a ui-sref="app.howWeDoIt"  du-smooth-scroll du-scrollspy offset="30">How We Do It</a></li>
+			<li><a ui-sref="app.work" du-smooth-scroll du-scrollspy offset="30">Our Work</a></li>
+			<li><a ui-sref="app.contact"  du-smooth-scroll du-scrollspy offset="30">Get In Touch</a></li>
 		</ul>
 	</div>
-	<div class="col-xs-3 logo text-right">
+	<div class="col-xs-2 logo text-right">
 		<img src="../images/logo_bakery.svg" ng-click="theme2()">
 	</div>
 </div>

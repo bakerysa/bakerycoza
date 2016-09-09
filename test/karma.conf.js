@@ -37,9 +37,7 @@ module.exports = function(config) {
       'bower_components/vega/vega.js',
       'bower_components/vega-lite/vega-lite.js',
       'bower_components/viscompass/compass.js',
-      'bower_components/fullpage.js/dist/jquery.fullpage.js',
-      'bower_components/fullpage.js/vendors/jquery.easings.min.js',
-      'bower_components/fullpage.js/vendors/scrolloverflow.min.js',
+      'bower_components/angular-scroll/angular-scroll.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       "app/scripts/**/*.js",
