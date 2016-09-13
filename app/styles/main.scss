@@ -15,6 +15,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 body {
     font-family: 'Open Sans', sans-serif;
     color: #000;
+    overflow-x: hidden;
 }
 
 h3 {
@@ -59,6 +60,16 @@ p {
     padding-bottom: 14em;
 }
 
+.h-padding-v-10px {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.h-padding-v-15px {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 .h-padding-h-sm {
     padding-left: 2em;
     padding-right: 2em;
@@ -67,6 +78,11 @@ p {
 .h-padding-h-md {
     padding-left: 4em;
     padding-right: 4em;
+}
+
+.h-margin-v-10px {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .h-lowercase {
@@ -82,10 +98,36 @@ p {
 .header {
     position: fixed;
     z-index: 1000;
-    top: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #ffd5c0;
+
+}
+
+.header2 {
+    .logo {
+      img {
+        height: 70px;
+      }
+    }
+    position: fixed;
+    z-index: 1000;
+    top: 0;
     left: 20px;
     right: 20px;
-
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #f3cbb7;
+    .nav {
+      ul {
+        li {
+          padding: 1.8em 1em 1.1em 1em;
+        }
+      }
+    }
 }
 
 .footer {
@@ -192,6 +234,30 @@ p {
         }
     }
 }
+
+
+.info-grid {
+  .info-grid-item{
+    display: block;
+    .square {
+      display: none;
+    }
+    img {
+      display: block;
+    }
+    &:hover {
+      cursor: pointer;
+      .square {
+        display: block;
+      }
+      img {
+        display: none;
+      }
+    }
+  }
+}
+
+
 
 mic-grid {
   position: relative;
@@ -327,7 +393,8 @@ mic-grid {
 .col-xs-15,
 .col-sm-15,
 .col-md-15,
-.col-lg-15 {
+.col-lg-15,
+.col-md-25 {
     position: relative;
     min-height: 1px;
     padding-right: 10px;
