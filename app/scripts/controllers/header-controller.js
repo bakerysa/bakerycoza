@@ -34,7 +34,7 @@
 					    ease: Circ.easeInOut
 					})
 					.to(".header", 0.3, {
-					    backgroundColor : '#f3cbb7',
+					    // backgroundColor : '#f3cbb7',
 					    ease: Circ.easeInOut
 					}, "=-0.3")
 
@@ -58,6 +58,26 @@
 					  	tl.reverse();
 					  }
 					});
+
+
+					$scope.goHome = function() {
+					   $document.scrollTopAnimated(0, 500); // (top, milliseconds)
+					   console.log('goHome() called');
+					}
+
+					$scope.goWhatWeDo = function() {
+						var whatWeDo = angular.element(document.getElementById('what-we-do'));
+						$document.scrollToElement(whatWeDo, 120, 800);
+					   console.log('goWhatWeDo() called');
+					}
+
+					if ($state.is('app.whatWeDo')) {
+						var tid = setInterval( function () {
+						    if ( document.readyState !== 'complete' ) return;
+						    clearInterval( tid );       
+						    $scope.goWhatWeDo();
+						}, 100 );
+					}
 
 
 	  }]);

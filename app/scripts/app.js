@@ -56,21 +56,13 @@
             })
 
             .state('app.whatWeDo', {
-                url: 'what-we-do',
-                onEnter: function () {
-                    var tid = setInterval( function () {
-                        if ( document.readyState !== 'complete' ) return;
-                        clearInterval( tid );       
-                        $('body').animate({
-                            scrollTop: $('#what-we-do').offset().top
-                        }, 800);
-                    }, 100 );
-                }
+                url: 'what-we-do'
             })
 
             .state('app.howWeDoIt', {
                 url: 'how-we-do-it',
                 onEnter: function () {
+                    console.log('How We Do It entered');
                     var tid = setInterval( function () {
                         if ( document.readyState !== 'complete' ) return;
                         clearInterval( tid );       
@@ -85,6 +77,7 @@
                 url: 'work',
                 controller: 'WorkCtrl',
                 onEnter: function () {
+                    console.log('Work entered');
                     var tid = setInterval( function () {
                         if ( document.readyState !== 'complete' ) return;
                         clearInterval( tid );       
@@ -94,9 +87,6 @@
                     }, 100 );
                 }
             })
-
-           
-
 
             .state('app.home.projects', {
                     url: '/our-work',

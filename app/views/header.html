@@ -1,14 +1,14 @@
-<div class="header" id="home" >
+<div class="header" id="home" style="background:{{primaryColor}}">
 	<div class="col-xs-2 logo" ng-click="theme1()">
 		<img src="../images/logo_the_bread.svg" class="js-logo">
 	</div>
 	<div class="col-xs-8 nav">
 		<ul>
-			<li class="js-menu-item"><a ui-sref="app" du-smooth-scroll du-scrollspy offset="30">Home</a></li>
-			<li class="js-menu-item"><a ui-sref="app.whatWeDo" du-smooth-scroll du-scrollspy offset="30">What We Do</a></li>
-			<li class="js-menu-item"><a ui-sref="app.howWeDoIt"  du-smooth-scroll du-scrollspy offset="30">How We Do It</a></li>
-			<li class="js-menu-item"><a ui-sref="app.work" du-smooth-scroll du-scrollspy offset="30">Our Work</a></li>
-			<li class="js-menu-item"><a ui-sref="app.contact"  du-smooth-scroll du-scrollspy offset="30">Get In Touch</a></li>
+			<li class="js-menu-item"><a ui-sref="app" ng-click="goHome()">Home</a></li>
+			<li class="js-menu-item"><a ui-sref="app.whatWeDo" ng-click="goWhatWeDo()">What We Do</a></li>
+			<li class="js-menu-item"><a ui-sref="app.howWeDoIt">How We Do It</a></li>
+			<li class="js-menu-item"><a ui-sref="app.work">Our Work</a></li>
+			<li class="js-menu-item"><a ui-sref="app.contact">Get In Touch</a></li>
 		</ul>
 	</div>
 	<div class="col-xs-2 logo text-right">
