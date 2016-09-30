@@ -113,7 +113,7 @@
             })
 
             .state('app.jobs', {
-                url: 'jbos',
+                url: 'jobs',
                 views: {
                     'primarycontent@': {
                         templateUrl: 'views/jobs.html'
