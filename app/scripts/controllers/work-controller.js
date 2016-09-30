@@ -14,6 +14,8 @@
 
             $scope.projects = ProjectService.list();
 
+           
+
 	  }]);
 
   })(); 

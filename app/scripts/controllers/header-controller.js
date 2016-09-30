@@ -10,7 +10,7 @@
 	 * Controller of the bakeryApp
 	 */
 	angular.module('bakeryApp')
-		.controller('HeaderCtrl', ['$scope', '$rootScope', '$state', '$document', '$location', function($scope, $rootScope, $state, $document, $location){
+		.controller('HeaderCtrl', ['$scope', '$rootScope', '$state', '$document', '$location', '$timeout', function($scope, $rootScope, $state, $document, $location, $timeout){
 			
 					$rootScope.primaryColor = '#ffd5c0';
 					$rootScope.secondaryColor = '#e53320';
@@ -61,7 +61,7 @@
 					  }
 					});
 
-					$scope.goHome = function() {
+					$rootScope.goHome = function() {
 					   $document.scrollTopAnimated(0, 500); // (top, milliseconds)
 					   console.log('goHome() called');
 					};
@@ -70,9 +70,11 @@
 					// WHAT WE DO
 
 					$rootScope.goWhatWeDo = function() {
-						var whatWeDo = angular.element(document.getElementById('what-we-do'));
-						$document.scrollToElement(whatWeDo, 120, 500);
-					   console.log('goWhatWeDo() called');
+						$timeout(function() {
+							var whatWeDo = angular.element(document.getElementById('what-we-do'));
+							$document.scrollToElement(whatWeDo, 120, 500);
+					   		console.log('goWhatWeDo() called');
+					   	}, 50);
 					};
 
 					// if state is What We Do
@@ -88,9 +90,11 @@
 					// HOW WE DO IT
 
 					$rootScope.goHowWeDoIt = function() {
-						var whatWeDo = angular.element(document.getElementById('how-we-do-it'));
-						$document.scrollToElement(whatWeDo, 40, 500);
-					   console.log('goHowWeDoIt() called');
+						$timeout(function() {
+				       		var howWeDoIt = angular.element(document.getElementById('how-we-do-it'));
+				       		$document.scrollToElement(howWeDoIt, 40, 500);
+				       	   	console.log('goHowWeDoIt() called');
+					   	}, 50);
 					};
 
 					// if state is How We Do It
@@ -106,9 +110,11 @@
 					// OUR WORK
 
 					$rootScope.goWork = function() {
-						var whatWeDo = angular.element(document.getElementById('work'));
-						$document.scrollToElement(whatWeDo, 75, 500);
-					   console.log('goWork() called');
+						$timeout(function() {
+					       	var work = angular.element(document.getElementById('work'));
+					       	$document.scrollToElement(work, 75, 500);
+					          console.log('goWork() called');
+					   }, 50);
 					};
 
 					// if state is How We Do It
@@ -125,9 +131,11 @@
 					// CONTACT
 
 					$rootScope.goContact = function() {
-						var whatWeDo = angular.element(document.getElementById('contact'));
-						$document.scrollToElement(whatWeDo, 10, 500);
-					   console.log('goContact() called');
+						$timeout(function() {
+				       		var contact = angular.element(document.getElementById('contact'));
+							$document.scrollToElement(contact, 10, 500);
+					  		console.log('goContact() called');
+					   	}, 50);
 					};
 
 					// if state is How We Do It

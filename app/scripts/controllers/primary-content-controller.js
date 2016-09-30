@@ -14,6 +14,8 @@
 
 			$scope.projects = ProjectService.list();
 
+
+
 			var work = angular.element(document.getElementById('work'));
 			    $scope.toWork = function() {
 			    $document.scrollTo(work, 30, 1000);
@@ -48,6 +50,10 @@
 			}
 
 			// END GOOGLE MAPS
+
+
+
+		
 
 	  }]);
 

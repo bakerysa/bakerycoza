@@ -38,6 +38,9 @@
                         controller: 'PrimaryContentCtrl',
                         controllerAs: 'primarycontent'
                     },
+                    'work-view@app': {
+                        templateUrl: 'views/work.html'
+                    },
                     'wwdside@app': {
                         templateUrl: 'views/wwd-side-default.html'
                     },
@@ -67,40 +70,56 @@
             })
 
               .state('app.contact', {
-                url: 'contact'
+                url: 'contact',
             })
 
 
             .state('app.work', {
                 url: 'work',
-                controller: 'WorkCtrl'
+                views: {
+                    'work-view': {
+                        templateUrl: 'views/work.html',
+                        controller: 'WorkCtrl'
+                    }
+                }
             })
 
-            .state('app.home.projects', {
-                    url: '/our-work',
-                    views: {
-                        'default@': {
-                            templateUrl: 'views/work.html',
-                            controller: 'ProjectsCtrl'
-                        }
-                    },
-                })
-                .state('app.projects.detail', {
-                    url: '/:id',
-                    views: {
-                        'detail@app.projects': {
-                            templateUrl: 'views/project-details.html',
-                            controller: 'ProjectsDetailCtrl'
-                        }
-                    },
-                    resolve: {
-                        delay: function($q, $timeout) {
-                            var delay = $q.defer();
-                            $timeout(delay.resolve, 700);
-                            return delay.promise;
-                        }
+            .state('app.work.detail', {
+                url: '/:id',
+                views: {
+                    'primarycontent@': {
+                        templateUrl: 'views/project-details.html',
+                        controller: 'ProjectsDetailCtrl'
                     }
-                });
+                }
+            })
+
+            .state('app.team', {
+                url: 'team',
+                views: {
+                    'primarycontent@': {
+                        templateUrl: 'views/team.html'
+                    }
+                }
+            })
+
+            .state('app.network', {
+                url: 'network',
+                views: {
+                    'primarycontent@': {
+                        templateUrl: 'views/network.html'
+                    }
+                }
+            })
+
+            .state('app.jobs', {
+                url: 'jbos',
+                views: {
+                    'primarycontent@': {
+                        templateUrl: 'views/jobs.html'
+                    }
+                }
+            });
 
         }])
 
