@@ -9,11 +9,12 @@
     "ui-router": "*",
     "underscore": "*",
     "greensock": "*",
-    "owl.carousel": "*",
+    "angular-slick": "*",
     "angulargrid": "*",
     "lightbox2": "*",
     "viscompass": "compass#^0.7.1",
-    "angular-scroll": "*"
+    "angular-scroll": "*",
+    "featherlight": "*"
   },
   "devDependencies": {
     "angular-mocks": "^1.3.0"

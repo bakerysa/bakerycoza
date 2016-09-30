@@ -1,21 +1,18 @@
 <div style="background:{{primaryColor}}" class="primarycontent" id="home">
     <div class="row content-wrapper">
         <div class="container">
-
             <div class="col-md-12 text-center h-padding-v-md">
                 <h1 class="tagline">The Bread is a creative brand <br/> consultancy. We advise, assist, <br/>and build brands.</h1>
             </div>
-
             <div class="col-md-25 col-sm-12">
                 <div class="h-bg-darker h-padding-v-lg h-padding-h-md text-center" id="what-we-do">
                     <h3>What We Do</h3>
                     <h5>As a brand consultancy we help brands communicate, connect, and differentiate. We create new brands and products, as well as spaces, events, campaigns, and with the help of Bakery, websites, apps, and user experiences</h5>
                 </div>
             </div>
-
             <div ui-view="wwdside">
             </div>
-               <!--  <div class="col-md-15 col-sm-12">
+            <!--  <div class="col-md-15 col-sm-12">
                     <div class="h-bg-darker">
                         <img src="../images/pic1.jpg" class="img-responsive">
                         <div class="square" ui-sref="app.home.experiences">
@@ -58,17 +55,24 @@
                 </div> -->
         </div>
     </div>
-
-    <div class="featured-project" id="how-we-do-it">
-        <div class="col-md-12">
-            <div class="h-padding-h-md h-padding-v-md text-center h-max-width aux">
-                <h2>How We Do It</h2>
-                <h4>We specialise in building the perfect team around each project that comes our way. Our core team heads up each department and works with a multitde of freelance creative partners to find solutions to each challenge.</h4>
-                <button class="btn" style="background:{{primaryColor}}">View House of Vans</button>
+    <div id="how-we-do-it">
+        <slick dots=true infinite=true arrows=false speed=300 slides-to-show=1 touch-move=true slides-to-scroll=1>
+            <div class="featured-project">
+                <div class="h-padding-h-md h-padding-v-md text-center h-max-width aux">
+                    <h2>How We Do It</h2>
+                    <h4>We specialise in building the perfect team around each project that comes our way. Our core team heads up each department and works with a multitde of freelance creative partners to find solutions to each challenge.</h4>
+                    <button class="btn" style="background:{{primaryColor}}">View House of Vans</button>
+                </div>
             </div>
-        </div>
+            <div class="featured-project">
+                <div class="h-padding-h-md h-padding-v-md text-center h-max-width aux">
+                    <h2>How We Do It</h2>
+                    <h4>We specialise in building the perfect team around each project that comes our way. Our core team heads up each department and works with a multitde of freelance creative partners to find solutions to each challenge.</h4>
+                    <button class="btn" style="background:{{primaryColor}}">View House of Vans</button>
+                </div>
+            </div>
+        </slick>
     </div>
-
     <div class="container info-grid" id="creative-partners">
         <div class="col-md-12 h-bg-darker">
             <div class="h-padding-h-md text-center h-max-width">
@@ -76,198 +80,280 @@
             </div>
         </div>
         <!-- <div class="col-md-12 text-center h-bg-darker"> -->
-
-
-                <div class="col-md-15 col-sm-12">
-                    <div class="info-grid-item h-padding-v-10px">
-                        <img src="../images/creative-partners.png" class="img-responsive">
-                        <div class="square">
-                            <div class="bk-block">
-                                <h4>Stanley Yelnats</h4> 
-                                <p>We work with a network of designers and architects to conceptualise, develop, and ultimately build spaces for retail, experiences, or commerce.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info-grid-item h-padding-v-10px">
-                        <img src="../images/creative-partners.png" class="img-responsive">
-                        <div class="square">
-                            <div class="bk-block">
-                                <h4>Stanley Yelnats</h4> 
-                                <p>We work with a network of designers and architects to conceptualise, develop, and ultimately build spaces for retail, experiences, or commerce.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-25 col-sm-12">
-                    <div class="info-grid-item h-padding-v-10px">
-                        <img src="../images/creative-partners.png" class="img-responsive">
-                        <div class="square">
-                            <div class="bk-block">
-                                <h4>Stanley Yelnats</h4> 
-                                <p>We work with a network of designers and architects to conceptualise, develop, and ultimately build spaces for retail, experiences, or commerce.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-15 col-sm-12">
-                    <div class="info-grid-item h-padding-v-10px">
-                        <img src="../images/creative-partners.png" class="img-responsive">
-                        <div class="square">
-                            <div class="bk-block">
-                                <h4>Stanley Yelnats</h4> 
-                                <p>We work with a network of designers and architects to conceptualise, develop, and ultimately build spaces for retail, experiences, or commerce.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info-grid-item h-padding-v-10px">
-                        <img src="../images/creative-partners.png" class="img-responsive">
-                        <div class="square">
-                            <div class="bk-block">
-                                <h4>Stanley Yelnats</h4> 
-                                <p>We work with a network of designers and architects to conceptualise, develop, and ultimately build spaces for retail, experiences, or commerce.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-15 col-sm-12">
-                    <div class="info-grid-item h-padding-v-10px">
-                        <img src="../images/creative-partners.png" class="img-responsive">
-                        <div class="square">
-                            <div class="bk-block">
-                                <h4>Stanley Yelnats</h4> 
-                                <p>We work with a network of designers and architects to conceptualise, develop, and ultimately build spaces for retail, experiences, or commerce.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info-grid-item h-padding-v-10px">
-                        <img src="../images/creative-partners.png" class="img-responsive">
-                        <div class="square">
-                            <div class="bk-block">
-                                <h4>Stanley Yelnats</h4> 
-                                <p>We work with a network of designers and architects to conceptualise, develop, and ultimately build spaces for retail, experiences, or commerce.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-15 col-sm-12">
-                    <div class="info-grid-item h-padding-v-10px">
-                        <img src="../images/creative-partners.png" class="img-responsive">
-                        <div class="square">
-                            <div class="bk-block">
-                                <h4>Stanley Yelnats</h4> 
-                                <p>We work with a network of designers and architects to conceptualise, develop, and ultimately build spaces for retail, experiences, or commerce.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info-grid-item h-padding-v-10px">
-                        <img src="../images/creative-partners.png" class="img-responsive">
-                        <div class="square">
-                            <div class="bk-block">
-                                <h4>Stanley Yelnats</h4> 
-                                <p>We work with a network of designers and architects to conceptualise, develop, and ultimately build spaces for retail, experiences, or commerce.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-15 col-sm-12">
-                    <div class="info-grid-item h-padding-v-10px">
-                        <img src="../images/creative-partners.png" class="img-responsive">
-                        <div class="square">
-                            <div class="bk-block">
-                                <h4>Stanley Yelnats</h4> 
-                                <p>We work with a network of designers and architects to conceptualise, develop, and ultimately build spaces for retail, experiences, or commerce.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info-grid-item h-padding-v-10px">
-                        <img src="../images/creative-partners.png" class="img-responsive">
-                        <div class="square">
-                            <div class="bk-block">
-                                <h4>Stanley Yelnats</h4> 
-                                <p>We work with a network of designers and architects to conceptualise, develop, and ultimately build spaces for retail, experiences, or commerce.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-15 col-sm-12">
-                    <div class="info-grid-item h-padding-v-10px">
-                        <img src="../images/creative-partners.png" class="img-responsive">
-                        <div class="square">
-                            <div class="bk-block">
-                                <h4>Stanley Yelnats</h4> 
-                                <p>We work with a network of designers and architects to conceptualise, develop, and ultimately build spaces for retail, experiences, or commerce.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info-grid-item h-padding-v-10px">
-                        <img src="../images/creative-partners.png" class="img-responsive">
-                        <div class="square">
-                            <div class="bk-block">
-                                <h4>Stanley Yelnats</h4> 
-                                <p>We work with a network of designers and architects to conceptualise, develop, and ultimately build spaces for retail, experiences, or commerce.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-25 col-sm-12">
-                    <div class="info-grid-item h-padding-v-10px">
-                        <img src="../images/creative-partners.png" class="img-responsive">
-                        <div class="square">
-                            <div class="bk-block">
-                                <h4>Stanley Yelnats</h4> 
-                                <p>We work with a network of designers and architects to conceptualise, develop, and ultimately build spaces for retail, experiences, or commerce.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
-            <!-- <div class="col-md-2">
-                <div class="h-bg-darker">
-                    <img src="../images/creative-partners.png" class="img-responsive square">
-                    <img src="../images/creative-partners.png" class="img-responsive square">
-                    <img src="../images/creative-partners.png" class="img-responsive square">
-                </div>
-            </div>
-            <div class="col-md-5">
-                <div class="h-bg-darker">
-                    <img src="../images/creative-partners.png" class="img-responsive square">
-                    <div class="square">
-                            <div class="bk-block">
-                            </div>
+        <div class="col-md-15 col-sm-12">
+            <div class="info-grid-item h-padding-v-10px">
+                <img src="../images/creative-partners.png" class="img-responsive">
+                <div class="square h-no-bg">
+                    <div class="bk-block">
+                        <h4>Stanley Yelnats</h4>
+                        <p>We work with a network of designers and architects to conceptualise, develop, and ultimately build spaces for retail, experiences, or commerce.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-5">
-                <div class="col-sm-6">
-                    <img src="../images/creative-partners.png" class="img-responsive square">
-                    <img src="../images/creative-partners.png" class="img-responsive square">
+            <div class="info-grid-item h-padding-v-10px">
+                <img src="../images/creative-partners.png" class="img-responsive">
+                <div class="square h-no-bg">
+                    <div class="bk-block">
+                        <h4>Stanley Yelnats</h4>
+                        <p>We work with a network of designers and architects to conceptualise, develop, and ultimately build spaces for retail, experiences, or commerce.</p>
                     </div>
-                <div class="col-sm-6 ">
-                    <img src="../images/creative-partners.png" class="img-responsive square">
-                    <img src="../images/creative-partners.png" class="img-responsive square">
                 </div>
-                <img src="../images/creative-partners.png" class="img-responsive square">
-            </div> -->
-
-
-
-        <!-- </div> -->
+            </div>
+        </div>
+        <div class="col-md-25 col-sm-12">
+            <div class="info-grid-item h-padding-v-10px">
+                <img src="../images/creative-partners.png" class="img-responsive">
+                <div class="square h-no-bg">
+                    <div class="bk-block">
+                        <h4>Stanley Yelnats</h4>
+                        <p>We work with a network of designers and architects to conceptualise, develop, and ultimately build spaces for retail, experiences, or commerce.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-15 col-sm-12">
+            <div class="info-grid-item h-padding-v-10px">
+                <img src="../images/creative-partners.png" class="img-responsive">
+                <div class="square h-no-bg">
+                    <div class="bk-block">
+                        <h4>Stanley Yelnats</h4>
+                        <p>We work with a network of designers and architects to conceptualise, develop, and ultimately build spaces for retail, experiences, or commerce.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="info-grid-item h-padding-v-10px">
+                <img src="../images/creative-partners.png" class="img-responsive">
+                <div class="square h-no-bg">
+                    <div class="bk-block">
+                        <h4>Stanley Yelnats</h4>
+                        <p>We work with a network of designers and architects to conceptualise, develop, and ultimately build spaces for retail, experiences, or commerce.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-15 col-sm-12">
+            <div class="info-grid-item h-padding-v-10px">
+                <img src="../images/creative-partners.png" class="img-responsive">
+                <div class="square h-no-bg">
+                    <div class="bk-block">
+                        <h4>Stanley Yelnats</h4>
+                        <p>We work with a network of designers and architects to conceptualise, develop, and ultimately build spaces for retail, experiences, or commerce.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="info-grid-item h-padding-v-10px">
+                <img src="../images/creative-partners.png" class="img-responsive">
+                <div class="square h-no-bg">
+                    <div class="bk-block">
+                        <h4>Stanley Yelnats</h4>
+                        <p>We work with a network of designers and architects to conceptualise, develop, and ultimately build spaces for retail, experiences, or commerce.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-15 col-sm-12">
+            <div class="info-grid-item h-padding-v-10px">
+                <img src="../images/creative-partners.png" class="img-responsive">
+                <div class="square h-no-bg">
+                    <div class="bk-block">
+                        <h4>Stanley Yelnats</h4>
+                        <p>We work with a network of designers and architects to conceptualise, develop, and ultimately build spaces for retail, experiences, or commerce.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="info-grid-item h-padding-v-10px">
+                <img src="../images/creative-partners.png" class="img-responsive">
+                <div class="square h-no-bg">
+                    <div class="bk-block">
+                        <h4>Stanley Yelnats</h4>
+                        <p>We work with a network of designers and architects to conceptualise, develop, and ultimately build spaces for retail, experiences, or commerce.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-15 col-sm-12">
+            <div class="info-grid-item h-padding-v-10px">
+                <img src="../images/creative-partners.png" class="img-responsive">
+                <div class="square h-no-bg">
+                    <div class="bk-block">
+                        <h4>Stanley Yelnats</h4>
+                        <p>We work with a network of designers and architects to conceptualise, develop, and ultimately build spaces for retail, experiences, or commerce.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="info-grid-item h-padding-v-10px">
+                <img src="../images/creative-partners.png" class="img-responsive">
+                <div class="square h-no-bg">
+                    <div class="bk-block">
+                        <h4>Stanley Yelnats</h4>
+                        <p>We work with a network of designers and architects to conceptualise, develop, and ultimately build spaces for retail, experiences, or commerce.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-15 col-sm-12">
+            <div class="info-grid-item h-padding-v-10px">
+                <img src="../images/creative-partners.png" class="img-responsive">
+                <div class="square h-no-bg">
+                    <div class="bk-block">
+                        <h4>Stanley Yelnats</h4>
+                        <p>We work with a network of designers and architects to conceptualise, develop, and ultimately build spaces for retail, experiences, or commerce.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="info-grid-item h-padding-v-10px">
+                <img src="../images/creative-partners.png" class="img-responsive">
+                <div class="square h-no-bg">
+                    <div class="bk-block">
+                        <h4>Stanley Yelnats</h4>
+                        <p>We work with a network of designers and architects to conceptualise, develop, and ultimately build spaces for retail, experiences, or commerce.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-25 col-sm-12">
+            <div class="info-grid-item h-padding-v-10px">
+                <img src="../images/creative-partners.png" class="img-responsive">
+                <div class="square h-no-bg">
+                    <div class="bk-block">
+                        <h4>Stanley Yelnats</h4>
+                        <p>We work with a network of designers and architects to conceptualise, develop, and ultimately build spaces for retail, experiences, or commerce.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="container" id="work">
-        <div class="col-md-12 text-center h-bg-darker">
+    <div class="container info-grid " id="work">
+        <div class="col-md-12 text-center h-bg-darker h-margin-v-sm h-margin-h-neg10">
             <h3>Our Work</h3>
         </div>
         &nbsp;
-        <data-owl-carousel class="owl-carousel" data-options="">
-            <div owl-carousel-item="" ng-repeat="project in projects | filter:project.featured" class="item">
-                <div class="item-assets">
-                    <h1>{{project.name}}</h1>
-                    <img data-ng-src="{{ project.thumb }}" class="grid-img" data-actual-width = "{{pic.actualWidth}}"  data-actual-height="{{pic.actualHeight}}" />
+        <div class="row" style="margin-right: 0; margin-left: 0;">
+            <div class="col-md-4 col-sm-12">
+                <div class="h-padding-v-10px">
+                    <img src="../images/landscape.jpg" class="img-responsive">
+                </div>
+                <div class="h-padding-v-10px">
+                    <img src="../images/landscape.jpg" class="img-responsive">
                 </div>
             </div>
-        </data-owl-carousel>
+            <div class="col-md-4 col-sm-12">
+                <div class="h-padding-v-10px">
+                    <img src="../images/landscape.jpg" class="img-responsive">
+                </div>
+                <div class="h-padding-v-10px">
+                    <img src="../images/landscape.jpg" class="img-responsive">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="h-padding-v-10px">
+                    <img src="../images/potrait.jpg" class="img-responsive">
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-right: 0; margin-left: 0;">
+            <div class="col-md-4 col-sm-12">
+                <div class="h-padding-v-10px">
+                    <img src="../images/landscape.jpg" class="img-responsive">
+                </div>
+                <div class="h-padding-v-10px">
+                    <img src="../images/potrait.jpg" class="img-responsive">
+                </div>
+            </div>
+            <div class="col-md-8 col-sm-12">
+                <div class="h-padding-v-10px">
+                    <img src="../images/landscape.jpg" class="img-responsive">
+                </div>
+                <div class="col-md-6 col-sm-12" style="padding-left:0">
+                    <div class="h-padding-v-10px">
+                        <img src="../images/landscape.jpg" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12" style="padding-right:0">
+                    <div class="h-padding-v-10px">
+                        <img src="../images/landscape.jpg" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="contact">
+        <div class="col-md-12 text-center h-bg-darker h-margin-v-md">
+            <h3>Get In Touch</h3>
+        </div>
+
+            <div class="col-md-15 col-sm-12">
+                 <h5><strong><a href="mailto:hello@thebread.co.za">hello@thebread.co.za</a></strong></h5>
+                 <h5><strong><a href="tel:+2782123456">082 123 4567</a></strong></h5>
+                 <p>
+                     <a href="https://goo.gl/maps/Snb5CNvtAPG2" target="_blank">
+                        5th Floor<br/>
+                        73 Juta Street<br/>
+                        Braamfontein<br/>
+                        Johannesburg<br/>
+                        South Africa<br/>
+                    </a>
+                 </p>
+
+                 <div class="social">
+                    <div class="social-item">
+                        <a href="#">
+                            <icon class="fa fa-facebook"></icon>
+                            <p>Facebook</p>
+                        </a>
+                    </div>
+                    <div class="social-item">
+                        <a href="#">
+                            <icon class="fa fa-twitter"></icon>
+                            <p>Twitter</p>
+                        </a>
+                    </div>
+                    <div class="social-item">
+                        <a href="#">
+                            <icon class="fa fa-instagram"></icon>
+                            <p>Instagram</p>
+                        </a>
+                    </div>
+                 </div>
+
+                 <p>For accounts, contact <a href="mailto:accounts@thebread.co.za">accounts@thebread.co.za</a></p>
+
+            </div>
+            <div class="col-md-15 col-sm-12">
+                <h5><strong><a href="mailto:hello@thebread.co.za">hello@bakery.co.za</a></strong></h5>
+                <h5><strong><a href="tel:+2782123456">082 123 4567</a></strong></h5>
+                <p>
+                <a href="https://goo.gl/maps/Snb5CNvtAPG2" target="_blank">
+                5th Floor<br/>
+                73 Juta Street<br/>
+                Braamfontein<br/>
+                Johannesburg<br/>
+                South Africa<br/>
+                </a>
+                </p>
+
+                <div class="social">
+                   <div class="social-item">
+                       <a href="#">
+                           <icon class="fa fa-facebook"></icon>
+                           <p>Facebook</p>
+                       </a>
+                   </div>
+                   <div class="social-item">
+                       <a href="#">
+                           <icon class="fa fa-twitter"></icon>
+                           <p>Twitter</p>
+                       </a>
+                   </div>
+                   <div class="social-item">
+                       <a href="#">
+                           <icon class="fa fa-instagram"></icon>
+                           <p>Instagram</p>
+                       </a>
+                   </div>
+                </div>
+            </div>
+            <div class="col-md-35 col-sm-12">
+                    <div id="map" style="margin-bottom:100px;"></div>
+            </div>
     </div>

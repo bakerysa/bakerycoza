@@ -20,10 +20,10 @@
               scope.initCarousel = function(element) {
                 // provide any default options you want
                   var defaultOptions = {
-                    navigation: false, 
-                    pagination: false, 
-                    items: 1,
-                    loop: false
+                    navigation: true, 
+                    pagination: true, 
+                    dots: true,
+                    items: 1
                     // autoplay: true,
                     // autoplayTimeout: 2000,
                     // autoplayHoverPause: true,

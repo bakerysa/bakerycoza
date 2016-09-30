@@ -30,7 +30,8 @@ module.exports = function(config) {
       'bower_components/ui-router/release/angular-ui-router.js',
       'bower_components/underscore/underscore.js',
       'bower_components/greensock/src/uncompressed/TweenMax.js',
-      'bower_components/owl.carousel/dist/owl.carousel.js',
+      'bower_components/slick-carousel/slick/slick.min.js',
+      'bower_components/angular-slick/dist/slick.js',
       'bower_components/angulargrid/angulargrid.js',
       'bower_components/lightbox2/dist/js/lightbox.js',
       'bower_components/d3/d3.js',
@@ -38,6 +39,7 @@ module.exports = function(config) {
       'bower_components/vega-lite/vega-lite.js',
       'bower_components/viscompass/compass.js',
       'bower_components/angular-scroll/angular-scroll.js',
+      'bower_components/featherlight/release/featherlight.min.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       "app/scripts/**/*.js",

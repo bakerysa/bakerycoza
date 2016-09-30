@@ -16,7 +16,8 @@
             'ngResource',
             'ui.router',
             'angularGrid',
-            'duScroll'
+            'duScroll',
+            'slick'
         ])
         .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
             $urlRouterProvider.otherwise('/');
@@ -50,7 +51,9 @@
                 url: 'experiences',
                 views: {
                     'wwdside@app': {
-                        templateUrl: 'views/wwd-side-experiences.html'
+                        templateUrl: 'views/wwd-side-experiences.html',
+                        controller: 'ExperiencesCtrl',
+                        controllerAs: 'experiences'
                     }
                 },
             })
@@ -60,32 +63,17 @@
             })
 
             .state('app.howWeDoIt', {
-                url: 'how-we-do-it',
-                onEnter: function () {
-                    console.log('How We Do It entered');
-                    var tid = setInterval( function () {
-                        if ( document.readyState !== 'complete' ) return;
-                        clearInterval( tid );       
-                        $('body').animate({
-                            scrollTop: $('#how-we-do-it').offset().top
-                        }, 800);
-                    }, 100 );
-                }
+                url: 'how-we-do-it'
             })
+
+              .state('app.contact', {
+                url: 'contact'
+            })
+
 
             .state('app.work', {
                 url: 'work',
-                controller: 'WorkCtrl',
-                onEnter: function () {
-                    console.log('Work entered');
-                    var tid = setInterval( function () {
-                        if ( document.readyState !== 'complete' ) return;
-                        clearInterval( tid );       
-                        $('body').animate({
-                            scrollTop: $('#work').offset().top
-                        }, 800);
-                    }, 100 );
-                }
+                controller: 'WorkCtrl'
             })
 
             .state('app.home.projects', {
