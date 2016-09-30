@@ -254,21 +254,37 @@ a {
 }
 
 .featherlight-content {
-  padding: 0;
+  padding: 0!important;
   margin: 0;
   max-height: 100%;
-  border: 0;
+  border: 0!important;
   .col-md-12 {
     padding: 0;
   }
 }
 
+.featherlight-close-icon {
+  font-size: 2em;
+  line-height: 45px!important;
+  width: 45px!important;
+}
+
 #breadVSbakery {
+  .col-md-6 {
+    padding: 6em 7em;
+  }
   display:none;
-  min-width: 900px;
+  // min-width: 900px;
   text-align:center;
   svg {
-    height: 100px;
+    height: 180px;
+  }
+  h5 {
+    min-height: 100px;
+    max-width: 300px;
+    margin: 30px auto;
+    font-size: 1.1em;
+    line-height: 1.3em;
   }
 }
 
