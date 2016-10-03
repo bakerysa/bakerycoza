@@ -134,6 +134,10 @@ a {
     margin: 0 auto;
 }
 
+.h-margin-bottom-m {
+  margin-bottom:100px;
+}
+
 
 .header {
     position: fixed;
@@ -206,7 +210,7 @@ a {
     cursor:pointer;
     &:hover {
         &.h-no-bg {
-          background: none!important;  
+          background: none!important;
         }
         background: white;
     }
@@ -528,7 +532,7 @@ mic-grid {
       .img_overlay {
         height: 100%;
         // h3 {
-        //   transform: scale(1.1);   
+        //   transform: scale(1.1);
         // }
       }
     }
@@ -536,7 +540,7 @@ mic-grid {
       .img_overlay {
         height: 100%;
         // h3 {
-        //   transform: scale(1.1);   
+        //   transform: scale(1.1);
         // }
       }
       img {
@@ -625,9 +629,9 @@ mic-grid {
   100% { background-position: -300px 0; }
 }
 
-.img-loading { 
-  width: 100%; 
-  min-height: 200px; 
+.img-loading {
+  width: 100%;
+  min-height: 200px;
   background-image: url(../images/wave.png);
   background-position: 0px 0px;
   background-repeat: repeat;

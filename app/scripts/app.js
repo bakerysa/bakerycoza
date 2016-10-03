@@ -146,6 +146,7 @@
                 }
             })
 
+
             .state('app.careers', {
                 url: 'careers',
                 views: {
