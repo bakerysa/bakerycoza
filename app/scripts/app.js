@@ -38,11 +38,11 @@
                         controller: 'PrimaryContentCtrl',
                         controllerAs: 'primarycontent'
                     },
-                    'work-view@app': {
-                        templateUrl: 'views/work.html'
-                    },
                     'wwdside@app': {
                         templateUrl: 'views/wwd-side-default.html'
+                    },
+                    'work-view@app': {
+                        templateUrl: 'views/work.html'
                     },
                     'footer': {
                         templateUrl: 'views/footer.html'
@@ -50,16 +50,49 @@
                 }
             })
 
-            .state('app.experiences', {
-                url: 'experiences',
-                views: {
-                    'wwdside@app': {
-                        templateUrl: 'views/wwd-side-experiences.html',
-                        controller: 'ExperiencesCtrl',
-                        controllerAs: 'experiences'
-                    }
-                },
-            })
+                .state('app.experiences', {
+                    url: 'experiences',
+                    views: {
+                        'wwdside@app': {
+                            templateUrl: 'views/experiences.html',
+                            controller: 'ExperiencesCtrl',
+                            controllerAs: 'experiences'
+                        }
+                    },
+                })
+
+                 .state('app.spaces', {
+                    url: 'spaces',
+                    views: {
+                        'wwdside@app': {
+                            templateUrl: 'views/spaces.html',
+                            controller: 'SpacesCtrl',
+                            controllerAs: 'spaces'
+                        }
+                    },
+                })
+
+                .state('app.design', {
+                    url: 'design',
+                    views: {
+                        'wwdside@app': {
+                            templateUrl: 'views/design.html',
+                            controller: 'DesignCtrl',
+                            controllerAs: 'design'
+                        }
+                    },
+                })
+
+                 .state('app.connections', {
+                    url: 'connections',
+                    views: {
+                        'wwdside@app': {
+                            templateUrl: 'views/connections.html',
+                            controller: 'ConnectionsCtrl',
+                            controllerAs: 'connections'
+                        }
+                    },
+                })
 
             .state('app.whatWeDo', {
                 url: 'what-we-do'
@@ -67,10 +100,6 @@
 
             .state('app.howWeDoIt', {
                 url: 'how-we-do-it'
-            })
-
-              .state('app.contact', {
-                url: 'contact',
             })
 
 
@@ -94,8 +123,13 @@
                 }
             })
 
+
+            .state('app.contact', {
+                url: 'contact'
+            })
+
             .state('app.team', {
-                url: 'team',
+                url: 'our-team',
                 views: {
                     'primarycontent@': {
                         templateUrl: 'views/team.html'
@@ -104,7 +138,7 @@
             })
 
             .state('app.network', {
-                url: 'network',
+                url: 'our-network',
                 views: {
                     'primarycontent@': {
                         templateUrl: 'views/network.html'
@@ -112,8 +146,8 @@
                 }
             })
 
-            .state('app.jobs', {
-                url: 'jbos',
+            .state('app.careers', {
+                url: 'careers',
                 views: {
                     'primarycontent@': {
                         templateUrl: 'views/jobs.html'

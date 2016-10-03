@@ -24,10 +24,8 @@
 
 
 			// GOOGLE MAPS
-
-			// When the window has finished loading create our google map below
-			google.maps.event.addDomListener(window, 'load', init);
-			function init() {
+			
+			function loadGoogleMap() {
 			    var mapOptions = {
 			        zoom: 16,
 			        scrollwheel: false,
@@ -45,15 +43,13 @@
 			        position: new google.maps.LatLng(-26.194211,28.0347852),
 			        map: map,
 			        title: 'The Bread'
-			    });
-			   
+			    });			   
+			    console.log('Google Map 1 loaded');
 			}
 
-			// END GOOGLE MAPS
+			loadGoogleMap();
 
-
-
-		
+			// END GOOGLE MAPS		
 
 	  }]);
 

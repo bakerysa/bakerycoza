@@ -20,7 +20,6 @@
               agency: "<a href='http://www.thebread.co.za/'>The Bread</a>",
               collaborators: "<a href='http://www.carl.co.za/'>Carl Ashcroft</a> (Spatial Designer)",
               images: [
-                'https://static.pexels.com/photos/4062/landscape-mountains-nature-lake.jpeg?'+(new Date).getTime(),
                 '../../images/project-img.jpg',
                 '../../images/2.jpeg',
                 '../../images/3.jpeg',

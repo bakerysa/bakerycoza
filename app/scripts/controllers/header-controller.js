@@ -92,7 +92,7 @@
 					$rootScope.goHowWeDoIt = function() {
 						$timeout(function() {
 				       		var howWeDoIt = angular.element(document.getElementById('how-we-do-it'));
-				       		$document.scrollToElement(howWeDoIt, 40, 500);
+				       		$document.scrollToElement(howWeDoIt, 90, 500);
 				       	   	console.log('goHowWeDoIt() called');
 					   	}, 50);
 					};
@@ -127,13 +127,12 @@
 					}
 
 
-
 					// CONTACT
 
 					$rootScope.goContact = function() {
 						$timeout(function() {
 				       		var contact = angular.element(document.getElementById('contact'));
-							$document.scrollToElement(contact, 10, 500);
+							$document.scrollToElement(contact, 35, 500);
 					  		console.log('goContact() called');
 					   	}, 50);
 					};
@@ -157,6 +156,44 @@
 					    }
 					});
 
+
+					$rootScope.goTop = function() {
+					   $document.scrollTopAnimated(0, 500); // (top, milliseconds)
+					   console.log('goTop() called');
+					};
+
+
+
+					// WAYPOINTS
+
+					$rootScope.waypoints = function() {
+						$timeout(function() {
+
+
+							$('#js-work-section').waypoint(function() {
+								$('.js-menu-work').addClass('active').siblings().removeClass('active');
+							});
+
+							$('#js-contact').waypoint(function() {
+								$('.js-menu-contact').addClass('active').siblings().removeClass('active');
+							});
+
+							$('#js-how-section').waypoint(function() {
+								$('.js-menu-how').addClass('active').siblings().removeClass('active');
+							});
+
+							$('#js-what-section').waypoint(function() {
+								$('.js-menu-what').addClass('active').siblings().removeClass('active');
+							});
+
+
+					   	}, 100);
+					};
+
+					$rootScope.waypoints();
+
+
+					
 
 	  }]);
 
