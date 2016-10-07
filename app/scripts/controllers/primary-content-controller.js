@@ -21,7 +21,22 @@
 			// };
 
 
+
+
 			// GOOGLE MAPS
+
+			var multiple = new Multiple({
+			  selector: '.shared-bg',
+			  background: 'linear-gradient(#fff9d9, #ffe9ec, #bbf6c1)'
+			});
+
+			$(document).ready(function(){
+
+			    $(window).scroll(function(e){
+			        var scr = $(window).scrollTop();
+			        $('.header').css('background-position', '0px -'+ scr+'px');
+			    });    
+			});
 			
 			function loadGoogleMap() {
 			    var mapOptions = {

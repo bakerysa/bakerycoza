@@ -182,15 +182,30 @@ a {
 
 .header {
     position: fixed;
+    background-repeat:no-repeat;
+    background-position:top;
     z-index: 1000;
     top: 0;
     left: 0;
     right: 0;
     padding-top: 15px;
     padding-bottom: 15px;
-    background-color: #ffd5c0;
-
 }
+
+.lb-outerContainer, .lightbox .lb-image {
+  border-radius: 0!important;
+}
+
+.lb-outerContainer {
+  background-color: black;
+}
+
+.lb-close {
+    position: fixed;
+    top: 12px;
+    right: 12px;
+}
+
 
 .footer {
     position: fixed;

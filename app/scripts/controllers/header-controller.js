@@ -14,6 +14,7 @@
 			
 					$rootScope.primaryColor = '#ffd5c0';
 					$rootScope.secondaryColor = '#e53320';
+
 					
 					$scope.theme1 = function (){
 						$rootScope.primaryColor = '#ffd5c0';
@@ -192,6 +193,28 @@
 
 					$rootScope.waypoints();
 
+
+
+					$(document).ready(function(){
+
+						var tid = setInterval( function () {
+						    if ( document.readyState !== 'complete' ) return;
+						    clearInterval( tid );
+
+						    $rootScope.docHeight = $( ".primarycontent" ).outerHeight();
+
+						    alert("auto " + $rootScope.docHeight);
+
+						    $('.header').css( "background-size",  $scope.backSize );
+
+						    console.log($rootScope.docHeight);
+
+
+						}, 0);
+
+
+
+					});
 
 					
 
