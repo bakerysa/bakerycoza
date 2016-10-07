@@ -1,4 +1,4 @@
-(function () { 
+(function () {
 
 	'use strict';
 
@@ -11,11 +11,11 @@
 	 */
 	angular.module('bakeryApp')
 		.controller('HeaderCtrl', ['$scope', '$rootScope', '$state', '$document', '$location', '$timeout', function($scope, $rootScope, $state, $document, $location, $timeout){
-			
+
 					$rootScope.primaryColor = '#ffd5c0';
 					$rootScope.secondaryColor = '#e53320';
 
-					
+
 					$scope.theme1 = function (){
 						$rootScope.primaryColor = '#ffd5c0';
 					};
@@ -31,7 +31,7 @@
 					tl.to(".header", 0.3, {
 					    top: 0,
 					    css: {
-					    	'padding-top': '10px', 
+					    	'padding-top': '10px',
 					    	'padding-bottom': '10px',
 					    },
 					    ease: Circ.easeInOut
@@ -82,7 +82,7 @@
 					if ($state.is('app.whatWeDo')) {
 						var tid = setInterval( function () {
 						    if ( document.readyState !== 'complete' ) return;
-						    clearInterval( tid );       
+						    clearInterval( tid );
 						    $rootScope.goWhatWeDo();
 						}, 100 );
 					}
@@ -102,7 +102,7 @@
 					if ($state.is('app.howWeDoIt')) {
 						var tid = setInterval( function () {
 						    if ( document.readyState !== 'complete' ) return;
-						    clearInterval( tid );       
+						    clearInterval( tid );
 						    $rootScope.goHowWeDoIt();
 						}, 100 );
 					}
@@ -122,7 +122,7 @@
 					if ($state.is('app.work')) {
 						var tid = setInterval( function () {
 						    if ( document.readyState !== 'complete' ) return;
-						    clearInterval( tid );       
+						    clearInterval( tid );
 						    $rootScope.goWork();
 						}, 100 );
 					}
@@ -142,7 +142,7 @@
 					if ($state.is('app.contact')) {
 						var tid = setInterval( function () {
 						    if ( document.readyState !== 'complete' ) return;
-						    clearInterval( tid );       
+						    clearInterval( tid );
 						    $rootScope.goContact();
 						}, 100 );
 					}
@@ -216,8 +216,8 @@
 
 					});
 
-					
+
 
 	  }]);
 
-  })(); 
+  })();
