@@ -12,27 +12,19 @@
 	angular.module('bakeryApp')
 	  	.controller('ProjectsDetailCtrl', ['$scope', '$sce', '$stateParams', '$timeout', 'ProjectService', function($scope, $sce, $stateParams, $timeout, ProjectService){
                
-               
+
 	  		   // Define selectedProject
           	$scope.selectedProject = ProjectService.find($stateParams.id);      
-          	var projects = ProjectService.list();
-
-            // Previous and Next Projects
-          	$scope.projectTotal = projects.length;
-          	if ($scope.selectedProject.id === 1) {
-          		$scope.prevProject = $scope.projectTotal;
-          		$scope.nextProject = $scope.selectedProject.id + 1;
-          	}
-          	else if ($scope.selectedProject.id === $scope.projectTotal) {
-          		$scope.nextProject = 1;
-          		$scope.prevProject = $scope.selectedProject.id - 1;
-          	} else {
-          		$scope.nextProject = $scope.selectedProject.id + 1;
-          		$scope.prevProject = $scope.selectedProject.id - 1;
-          	}
 
 
-          	$scope.descriptionHTML = $scope.selectedProject.description;
+               $scope.projects = ProjectService.list();
+
+
+
+          	$scope.nameHTML = $scope.selectedProject.name;
+               $scope.projectName = $sce.trustAsHtml($scope.nameHTML);
+
+               $scope.descriptionHTML = $scope.selectedProject.description;
           	$scope.projectDescription = $sce.trustAsHtml($scope.descriptionHTML);
 
           	$scope.agencyHTML = $scope.selectedProject.agency;

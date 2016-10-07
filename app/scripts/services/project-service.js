@@ -14,7 +14,7 @@
          /* jshint ignore:start */
           var projects = [{
               id: 1,
-              name: 'Blah Blah Blah',
+              name: 'The Scene <br/>Eastrand Mall',
               description: '<p>We were tasked with designing a new The Scene store in East Rand Mall, Johannesburg. We had to work with their graphic branding while developing a new style of interior. We focused heavily on reducing visual clutter, and bringing the colour palette of the store into a neutral range, allowing the massive variety of product to shine. </p><p>Because of the size and shape of the space we split the shop in two: The front space for clothing and accessories, and a "sneaker lounge" in the back. The spaces are divided by powder-coated mesh walls, and the dropped ceiling feature in the sneaker lounge draws intrigue from passersby. </p>',
               thumb: '../../images/project-thumb.jpg',
               agency: "<a href='http://www.thebread.co.za/'>The Bread</a>",

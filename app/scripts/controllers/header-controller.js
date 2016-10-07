@@ -42,13 +42,13 @@
 
 					.to(".js-menu-item", 0.3, {
 						css: {
-							'padding-top': '1.8em',
+							'padding-top': '1.45em',
 							'padding-bottom': '1.1em',
 						}
 					}, "=-0.3")
 
 					.to(".js-logo", 0.3, {
-					    height: 70,
+					    height: 60,
 					    ease: Circ.easeInOut
 					}, "=-0.3");
 

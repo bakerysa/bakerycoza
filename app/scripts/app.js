@@ -119,6 +119,9 @@
                     'primarycontent@': {
                         templateUrl: 'views/project-details.html',
                         controller: 'ProjectsDetailCtrl'
+                    },
+                    'work-grid@app.work.detail': {
+                        templateUrl: 'views/work.html'
                     }
                 }
             })
