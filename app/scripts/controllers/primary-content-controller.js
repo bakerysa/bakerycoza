@@ -15,29 +15,9 @@
 			$scope.projects = ProjectService.list();
 
 
-			// var work = angular.element(document.getElementById('work'));
-			//     $scope.toWork = function() {
-			//     $document.scrollTo(work, 30, 1000);
-			// };
+			console.log('primary content called ')
 
-
-
-
-			// GOOGLE MAPS
-
-			var multiple = new Multiple({
-			  selector: '.shared-bg',
-			  background: 'linear-gradient(#fff9d9, #ffe9ec, #bbf6c1)'
-			});
-
-			$(document).ready(function(){
-
-			    $(window).scroll(function(e){
-			        var scr = $(window).scrollTop();
-			        $('.header').css('background-position', '0px -'+ scr+'px');
-			    });    
-			});
-			
+			// GOOGLE MAPS			
 			function loadGoogleMap() {
 			    var mapOptions = {
 			        zoom: 16,

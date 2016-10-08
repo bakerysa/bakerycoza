@@ -12,6 +12,9 @@
 	angular.module('bakeryApp')
 		.controller('HeaderCtrl', ['$scope', '$rootScope', '$state', '$document', '$location', '$timeout', function($scope, $rootScope, $state, $document, $location, $timeout){
 
+
+					console.log('header called');
+
 					$rootScope.primaryColor = '#ffd5c0';
 					$rootScope.secondaryColor = '#e53320';
 
@@ -193,28 +196,6 @@
 
 					$rootScope.waypoints();
 
-
-
-					$(document).ready(function(){
-
-						var tid = setInterval( function () {
-						    if ( document.readyState !== 'complete' ) return;
-						    clearInterval( tid );
-
-						    $rootScope.docHeight = $( ".primarycontent" ).outerHeight();
-
-						    alert("auto " + $rootScope.docHeight);
-
-						    $('.header').css( "background-size",  $scope.backSize );
-
-						    console.log($rootScope.docHeight);
-
-
-						}, 0);
-
-
-
-					});
 
 
 

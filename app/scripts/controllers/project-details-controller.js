@@ -12,6 +12,7 @@
 	angular.module('bakeryApp')
 	  	.controller('ProjectsDetailCtrl', ['$scope', '$sce', '$stateParams', '$timeout', 'ProjectService', function($scope, $sce, $stateParams, $timeout, ProjectService){
                
+	  		console.log('project details called')
 
 	  		   // Define selectedProject
           	$scope.selectedProject = ProjectService.find($stateParams.id);      
