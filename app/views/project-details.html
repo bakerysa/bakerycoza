@@ -1,6 +1,6 @@
 <div class="project-wrapper shared-bg js-scrollable-area" gradient-aux>
     <div class="project-inner">
-        <div class="featured-image" style="background-image: url(../images/10.jpeg);">
+        <div class="featured-image" style="background-image: url(../images/feature.png);">
             <div class="featured-gradient">
             </div>
         </div>
@@ -18,10 +18,11 @@
         </div>
         <!-- END container -->
         <div class="container">
+
             <ul class="dynamic-grid project-images" angular-grid="pics" ag-grid-width="500" ag-gutter-size="10" ag-id="gallery" ag-refresh-on-img-load="true">
                 <li ng-repeat="image in selectedProject.images" class="grid">
-                    <a href="{{ image }}" data-lightbox="image-1">
-                        <img data-ng-src="{{ image }}" class="grid-img" data-actual-width="{{pic.actualWidth}}" data-actual-height="{{pic.actualHeight}}" />
+                    <a href="{{ image }}">
+                        <img data-ng-src="{{ image }}" class="grid-img gallery-item" data-actual-width="{{pic.actualWidth}}" data-actual-height="{{pic.actualHeight}}" />
                     </a>
                 </li>
             </ul>

@@ -53,20 +53,37 @@
   })
 
   // ALL THINGS GRADIENTS
-  .directive('gradientAux', function ($rootScope, $timeout) {   
+  .directive('gradientAux', function ($rootScope, $timeout, $state) {   
       return {
           restrict: "AE",
           link: function(scope, elem, attr, ctrl) {
             // check when elem is ready
             elem.ready(function(){
+
                       
               console.log('gradientAux called');
 
-              // Set Gradients on .shared-bg divs
-              var multiple = new Multiple({
-                selector: '.shared-bg',
-                background: 'linear-gradient(#fff9d9, #ffe9ec, #bbf6c1)'
-              });
+
+              if ($state.is('app.team')) {
+                var tid = setInterval( function () {
+                    if ( document.readyState !== 'complete' ) return;
+                    clearInterval( tid );
+                    
+                    // Set Gradients on .shared-bg divs
+                    var multiple = new Multiple({
+                      selector: '.shared-bg',
+                      background: 'linear-gradient(#fff9d9, #ffe9ec)'
+                    });
+
+
+                }, 100 );
+              } else {
+
+                var multiple = new Multiple({
+                  selector: '.shared-bg',
+                  background: 'linear-gradient(#fff9d9, #ffe9ec, #bbf6c1)'
+                });
+              }
 
               // similar to document ready 
               $timeout(function(){
@@ -116,7 +133,7 @@
                     elem.css({'background-size': calcHeight});
                 });
                      
-              });
+              }, 500);
 
              });  
  

@@ -16,6 +16,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #000;
     overflow-x: hidden;
+    background: #fff9d9;
 }
 
 [class^="col-"],
@@ -192,18 +193,75 @@ a {
     padding-bottom: 15px;
 }
 
+.lightboxOverlay {
+  opacity: 0.9;
+}
+
 .lb-outerContainer, .lightbox .lb-image {
   border-radius: 0!important;
 }
 
 .lb-outerContainer {
   background-color: black;
+  position: fixed;
+  top: 50%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transform: translateY(-50%);
 }
 
 .lb-close {
     position: fixed;
-    top: 12px;
-    right: 12px;
+    top: 22px;
+    right: 11px;
+    width: 40px;
+    height: 40px;
+    background: url(../images/close.png) top right no-repeat!important;
+    background-size: cover!important;
+}
+
+
+.lb-next {
+  background: url(../images/angle-right.png) right 48% no-repeat!important;
+  // width: 100px!important;
+  // transform: scale(0.5);
+  // -moz-transform: scale(0.5);
+  // -webkit-transform: scale(0.5);
+  // -ms-transform: scale(0.5);
+  // -o-transform: scale(0.5);
+  // position: fixed;
+  // top: 30px;
+  // bottom: 30px;
+  // right: -100px!important;
+  // width: 90px;
+  // opacity: 1!important;
+}
+
+.lb-prev {
+  background: url(../images/angle-left.png) left 48% no-repeat!important;
+  // width: 100px!important;
+  // transform: scale(0.5);
+  // -moz-transform: scale(0.5);
+  // -webkit-transform: scale(0.5);
+  // -ms-transform: scale(0.5);
+  // -o-transform: scale(0.5);
+  // position: fixed;
+  // left: -100px!important;
+  // top: 30px;
+  // bottom: 30px;
+  // width: 90px;
+  // opacity: 1!important;
+}
+
+
+.project-images {
+  a {
+    outline: none;
+    img {
+      cursor: zoom-in; 
+    }
+  }
 }
 
 
@@ -441,6 +499,8 @@ a {
 }
 
 
+
+
 .project-wrapper {
   .project-inner {
     .featured-image {
@@ -449,6 +509,7 @@ a {
       margin-top: 80px;
       background-size: cover;
       background-position: center bottom;
+      background-repeat: no-repeat;
       position: relative;
       .featured-gradient {
         position: absolute;
@@ -781,9 +842,6 @@ border-radius:30px
 .owl-theme .owl-dots .owl-dot.active span,.owl-theme .owl-dots .owl-dot:hover span{
 background:#869791
 }
-
-
-
 
 ::selection {
   background: rgba(0, 0, 0, 0.1);

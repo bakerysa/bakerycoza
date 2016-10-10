@@ -17,7 +17,8 @@
             'ui.router',
             'angularGrid',
             'duScroll',
-            'slick'
+            'slick',
+            'anim-in-out'
         ])
         .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
             $urlRouterProvider.otherwise('/');

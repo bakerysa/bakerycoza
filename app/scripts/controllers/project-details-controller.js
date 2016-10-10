@@ -16,16 +16,24 @@
 
 	  		   // Define selectedProject
           	$scope.selectedProject = ProjectService.find($stateParams.id);      
+            $scope.projects = ProjectService.list();
 
-
-               $scope.projects = ProjectService.list();
-
+            // This will create a single gallery from all elements that have class "gallery-item"
+            $('.project-images').each(function() { // the containers for all your galleries
+			    $(this).magnificPopup({
+			        delegate: 'a', // the selector for gallery item
+			        type: 'image',
+			        gallery: {
+			          enabled:true
+			        }
+			    });
+			});
 
 
           	$scope.nameHTML = $scope.selectedProject.name;
-               $scope.projectName = $sce.trustAsHtml($scope.nameHTML);
+			$scope.projectName = $sce.trustAsHtml($scope.nameHTML);
 
-               $scope.descriptionHTML = $scope.selectedProject.description;
+            $scope.descriptionHTML = $scope.selectedProject.description;
           	$scope.projectDescription = $sce.trustAsHtml($scope.descriptionHTML);
 
           	$scope.agencyHTML = $scope.selectedProject.agency;
