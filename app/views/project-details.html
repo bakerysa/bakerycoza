@@ -21,8 +21,8 @@
 
             <ul class="dynamic-grid project-images" angular-grid="pics" ag-grid-width="500" ag-gutter-size="10" ag-id="gallery" ag-refresh-on-img-load="true">
                 <li ng-repeat="image in selectedProject.images" class="grid">
-                    <a href="{{ image }}">
-                        <img data-ng-src="{{ image }}" class="grid-img gallery-item" data-actual-width="{{pic.actualWidth}}" data-actual-height="{{pic.actualHeight}}" />
+                    <a href="{{ image.url }}" class="{{ image.class }}">
+                        <img data-ng-src="{{ image.link }}" class="grid-img gallery-item" data-actual-width="{{pic.actualWidth}}" data-actual-height="{{pic.actualHeight}}" />
                     </a>
                 </li>
             </ul>

@@ -21,31 +21,107 @@
               agency: "<a href='http://www.thebread.co.za/'>The Bread</a>",
               collaborators:"<a href='http://danieltingchong.com/'>Daniel Ting Chong</a> (Graphic Designer) <br/><a href='http://www.carl.co.za/'>Carl Ascroft</a> (Spatial Designer) <br/><p>Dean Westmore (Fabrication & Build)</p> <br/><p>The Bread With Heron Preston (Launch Event)</p> <br/><p>The Bread (PR & Social)</p> <br/><a href='http://www.thingking.co.za/'>ThingKing</a> (Access System) <br/>",
               images: [
-								'../../images/projects/01/1.jpg',
-								'../../images/projects/01/2.jpg',
-								'../../images/projects/01/3.jpg',
-								'../../images/projects/01/4.jpg',
-								'../../images/projects/01/5.jpg',
-								'../../images/projects/01/6.jpg',
-								'../../images/projects/01/7.jpg',
-								'../../images/projects/01/8.jpg',
-								'../../images/projects/01/9.jpg',
-								'../../images/projects/01/10.jpg',
-								'../../images/projects/01/11.jpg',
-								'../../images/projects/01/12.jpg',
-								'../../images/projects/01/13.jpg',
-								'../../images/projects/01/14.jpg',
-								'../../images/projects/01/15.jpg',
-								'../../images/projects/01/16.jpg',
-								'../../images/projects/01/17.jpg',
-								'../../images/projects/01/18.jpg',
-								'../../images/projects/01/19.jpg',
-								'../../images/projects/01/20.jpg',
-								'../../images/projects/01/21.jpg',
-								'../../images/projects/01/22.jpg',
-								'../../images/projects/01/23.jpg',
-								'../../images/projects/01/24.jpg',
-								'../../images/projects/01/25.jpg',
+						{
+							url: 'https://vimeo.com/34019470',
+							link: '../../images/projects/01/1.jpg',
+							class: 'mfp-iframe'
+							},
+						{
+							url: '../../images/projects/01/2.jpg',
+							link: '../../images/projects/01/2.jpg'
+							},
+						{
+							url: '../../images/projects/01/3.jpg',
+							link: '../../images/projects/01/3.jpg'
+							},
+						{
+							url: '../../images/projects/01/4.jpg',
+							link: '../../images/projects/01/4.jpg'
+							},
+						{
+							url: '../../images/projects/01/5.jpg',
+							link: '../../images/projects/01/5.jpg'
+							},
+						{
+							url: '../../images/projects/01/6.jpg',
+							link: '../../images/projects/01/6.jpg'
+							},
+						{
+							url: '../../images/projects/01/7.jpg',
+							link: '../../images/projects/01/7.jpg'
+							},
+						{
+							url: '../../images/projects/01/8.jpg',
+							link: '../../images/projects/01/8.jpg'
+							},
+						{
+							url: '../../images/projects/01/9.jpg',
+							link: '../../images/projects/01/9.jpg'
+							},
+						{
+							url: '../../images/projects/01/10.jpg',
+							link: '../../images/projects/01/10.jpg'
+							},
+						{
+							url: '../../images/projects/01/11.jpg',
+							link: '../../images/projects/01/11.jpg'
+							},
+						{
+							url: '../../images/projects/01/12.jpg',
+							link: '../../images/projects/01/12.jpg'
+							},
+						{
+							url: '../../images/projects/01/13.jpg',
+							link: '../../images/projects/01/13.jpg'
+							},
+						{
+							url: '../../images/projects/01/14.jpg',
+							link: '../../images/projects/01/14.jpg'
+							},
+						{
+							url: '../../images/projects/01/15.jpg',
+							link: '../../images/projects/01/15.jpg'
+							},
+						{
+							url: '../../images/projects/01/16.jpg',
+							link: '../../images/projects/01/16.jpg'
+							},
+						{
+							url: '../../images/projects/01/17.jpg',
+							link: '../../images/projects/01/17.jpg'
+							},
+						{
+							url: '../../images/projects/01/18.jpg',
+							link: '../../images/projects/01/18.jpg'
+							},
+						{
+							url: '../../images/projects/01/19.jpg',
+							link: '../../images/projects/01/19.jpg'
+							},
+						{
+							url: '../../images/projects/01/20.jpg',
+							link: '../../images/projects/01/20.jpg'
+							},
+						{
+							url: '../../images/projects/01/21.jpg',
+							link: '../../images/projects/01/21.jpg'
+							},
+						{
+							url: '../../images/projects/01/22.jpg',
+							link: '../../images/projects/01/22.jpg'
+							},
+						{
+							url: '../../images/projects/01/23.jpg',
+							link: '../../images/projects/01/23.jpg'
+							},
+						{
+							url: '../../images/projects/01/24.jpg',
+							link: '../../images/projects/01/24.jpg'
+							},
+						{
+							url: '../../images/projects/01/25.jpg',
+							link: '../../images/projects/01/25.jpg'
+							}
               ]
           },
 					{
