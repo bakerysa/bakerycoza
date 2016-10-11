@@ -18,7 +18,8 @@
             'angularGrid',
             'duScroll',
             'slick',
-            'anim-in-out'
+            'anim-in-out',
+            'videosharing-embed'
         ])
         .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
             $urlRouterProvider.otherwise('/');

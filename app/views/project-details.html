@@ -1,8 +1,6 @@
 <div class="project-wrapper shared-bg js-scrollable-area" gradient-aux>
     <div class="project-inner">
-        <div class="featured-image" style="background-image: url(../images/feature.png);">
-            <div class="featured-gradient">
-            </div>
+        <div class="featured-image" style="background-image:url( {{selectedProject.cover}} )">
         </div>
         <div class="container project-copy">
             <div class="col-md-25 col-sm-12">
@@ -17,12 +15,19 @@
             <div class="clearfix"></div>
         </div>
         <!-- END container -->
+
         <div class="container">
+
+
+          <div style="margin-bottom: 10px;" ng-repeat="video in selectedProject.videos" class='embed-container'>
+          <embed-video href="{{video}}" autoplay="false" webkitallowfullscreen mozallowfullscreen allowfullscreen></embed-video>
+          </div>
+
 
             <ul class="dynamic-grid project-images" angular-grid="pics" ag-grid-width="500" ag-gutter-size="10" ag-id="gallery" ag-refresh-on-img-load="true">
                 <li ng-repeat="image in selectedProject.images" class="grid">
-                    <a href="{{ image.url }}" class="{{ image.class }}">
-                        <img data-ng-src="{{ image.link }}" class="grid-img gallery-item" data-actual-width="{{pic.actualWidth}}" data-actual-height="{{pic.actualHeight}}" />
+                    <a href="{{ image }}" class="{{ image.class }}">
+                        <img data-ng-src="{{ image }}" class="grid-img gallery-item" data-actual-width="{{pic.actualWidth}}" data-actual-height="{{pic.actualHeight}}" />
                     </a>
                 </li>
             </ul>
@@ -35,7 +40,7 @@
         </div>
 
 
-        
+
     </div>
 </div>
 </div>
