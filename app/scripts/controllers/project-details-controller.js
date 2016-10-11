@@ -1,4 +1,4 @@
-(function () { 
+(function () {
 
 	'use strict';
 
@@ -11,11 +11,11 @@
 	 */
 	angular.module('bakeryApp')
 	  	.controller('ProjectsDetailCtrl', ['$scope', '$sce', '$stateParams', '$timeout', 'ProjectService', function($scope, $sce, $stateParams, $timeout, ProjectService){
-               
+
 	  		console.log('project details called')
 
 	  		   // Define selectedProject
-          	$scope.selectedProject = ProjectService.find($stateParams.id);      
+          	$scope.selectedProject = ProjectService.find($stateParams.id);
             $scope.projects = ProjectService.list();
 
             // This will create a single gallery from all elements that have class "gallery-item"
@@ -31,7 +31,7 @@
 
 
           	$scope.nameHTML = $scope.selectedProject.name;
-			$scope.projectName = $sce.trustAsHtml($scope.nameHTML);
+						$scope.projectName = $sce.trustAsHtml($scope.nameHTML);
 
             $scope.descriptionHTML = $scope.selectedProject.description;
           	$scope.projectDescription = $sce.trustAsHtml($scope.descriptionHTML);
@@ -43,9 +43,6 @@
           	$scope.projectCollaborators = $sce.trustAsHtml($scope.collaboratorsHTML);
 
 
-
-
         }]);
 
-})(); 
-
+})();
