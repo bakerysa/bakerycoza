@@ -458,12 +458,12 @@ a {
   margin-bottom: 0;
 }
 
-.slick-list {
-  padding: 0 140px!important;
-}
+// .slick-list {
+//   padding: 0 140px!important;
+// }
 
 .slick-dots {
-  bottom: 75px!important;
+  bottom: 25px!important;
   li {
     margin: 0!important;
     button {
@@ -475,15 +475,73 @@ a {
   }
 }
 
+.wwd-left {
+  // padding-left: 0;
+  // padding-right: 0;
+  .wwd-left-design {
+    height: 490px;
+  }
+  .wwd-left-default {
+      height: 644px;
+  }
+}
+
+.mini-slider {
+  width: 100%;
+  div {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 490px;
+  }
+}
+
+[ui-view].ng-enter, [ui-view].ng-leave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  -webkit-transition:all .5s ease-in-out;
+    -moz-transition:all .5s ease-in-out;
+    -o-transition:all .5s ease-in-out;
+    transition:all .5s ease-in-out;
+}
+
+[ui-view].ng-enter {
+  opacity: 0;
+  -webkit-transform:scale3d(0.5, 0.5, 0.5);
+  -moz-transform:scale3d(0.5, 0.5, 0.5);
+  transform:scale3d(0.5, 0.5, 0.5);
+}
+
+[ui-view].ng-enter-active {
+  opacity: 1;
+  -webkit-transform:scale3d(1, 1, 1);
+  -moz-transform:scale3d(1, 1, 1);
+  transform:scale3d(1, 1, 1);
+}
+
+[ui-view].ng-leave {
+  opacity: 1; 
+  -webkit-transform:translate3d(0, 0, 0);
+  -moz-transform:translate3d(0, 0, 0);
+  transform:translate3d(0, 0, 0);
+}
+
+[ui-view].ng-leave-active {
+  opacity: 0;
+  -webkit-transform:translate3d(100px, 0, 0);
+  -moz-transform:translate3d(100px, 0, 0);
+  transform:translate3d(100px, 0, 0);
+}
+
 
 .featured-project {
   background-size: cover;
   background-image: url(../images/hov.png);
   background-position: center center;
-  min-height: 550px;
+  min-height: 700px;
   margin: 0 5px 0 5px;
   .aux {
-    margin-top: 230px;
+    padding-top: 230px;
   }
   h2 {
     font-size: 2.8em;
@@ -737,31 +795,11 @@ mic-grid {
 /*  opacity: 1;*/
 /*}*/
 
-@keyframes animatedBackground {
-  0% { background-position: 0 0; }
-  100% { background-position: -300px 0; }
-}
-@-moz-keyframes animatedBackground {
-  0% { background-position: 0 0; }
-  100% { background-position: -300px 0; }
-}
-@-webkit-keyframes animatedBackground {
-  0% { background-position: 0 0; }
-  100% { background-position: -300px 0; }
-}
-@-ms-keyframes animatedBackground {
-  0% { background-position: 0 0; }
-  100% { background-position: -300px 0; }
-}
-@-o-keyframes animatedBackground {
-  0% { background-position: 0 0; }
-  100% { background-position: -300px 0; }
-}
 
 .img-loading {
   width: 100%;
-  min-height: 200px;
-  background-image: url(../images/wave.png);
+  // min-height: 200px;
+  // background-image: url(../images/wave.png);
   background-position: 0px 0px;
   background-repeat: repeat;
 
@@ -782,6 +820,17 @@ mic-grid {
 .grid-img.img-loaded {
   visibility: visible;
   opacity: 1;
+}
+
+.wwd-back {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  cursor: pointer;
+  font-size: 12px;
+  icon {
+    font-size: 14px;
+  }
 }
 
 

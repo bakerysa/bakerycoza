@@ -21,6 +21,14 @@
               agency: "<a href='http://www.thebread.co.za/'>The Bread</a>",
               collaborators:"<a href='http://danieltingchong.com/'>Daniel Ting Chong</a> (Graphic Designer) <br/><a href='http://www.carl.co.za/'>Carl Ascroft</a> (Spatial Designer) <br/><p>Dean Westmore (Fabrication & Build)</p> <br/><p>The Bread With Heron Preston (Launch Event)</p> <br/><p>The Bread (PR & Social)</p> <br/><a href='http://www.thingking.co.za/'>ThingKing</a> (Access System) <br/>",
               images: [
+              			{
+              				url: '../../images/projects/01/5.jpg',
+              				link: '../../images/projects/01/5.jpg'
+              				},
+              			{
+              				url: '../../images/projects/01/6.jpg',
+              				link: '../../images/projects/01/6.jpg'
+              				},
 						{
 							url: 'https://vimeo.com/34019470',
 							link: '../../images/projects/01/1.jpg',
@@ -37,14 +45,6 @@
 						{
 							url: '../../images/projects/01/4.jpg',
 							link: '../../images/projects/01/4.jpg'
-							},
-						{
-							url: '../../images/projects/01/5.jpg',
-							link: '../../images/projects/01/5.jpg'
-							},
-						{
-							url: '../../images/projects/01/6.jpg',
-							link: '../../images/projects/01/6.jpg'
 							},
 						{
 							url: '../../images/projects/01/7.jpg',

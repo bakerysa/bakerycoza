@@ -18,7 +18,6 @@
         </div>
         <!-- END container -->
         <div class="container">
-
             <ul class="dynamic-grid project-images" angular-grid="pics" ag-grid-width="500" ag-gutter-size="10" ag-id="gallery" ag-refresh-on-img-load="true">
                 <li ng-repeat="image in selectedProject.images" class="grid">
                     <a href="{{ image.url }}" class="{{ image.class }}">

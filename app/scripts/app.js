@@ -39,8 +39,11 @@
                         controller: 'PrimaryContentCtrl',
                         controllerAs: 'primarycontent'
                     },
-                    'wwdside@app': {
-                        templateUrl: 'views/wwd-side-default.html'
+                    'wwd-left@app': {
+                        templateUrl: 'views/wwd-left-default.html'
+                    },
+                    'wwd-right@app': {
+                        templateUrl: 'views/wwd-right-default.html'
                     },
                     'work-view@app': {
                         templateUrl: 'views/work.html'
@@ -54,10 +57,13 @@
                 .state('app.experiences', {
                     url: 'experiences',
                     views: {
-                        'wwdside@app': {
-                            templateUrl: 'views/experiences.html',
+                        'wwd-right@app': {
+                            templateUrl: 'views/wwd-right-experiences.html',
                             controller: 'ExperiencesCtrl',
                             controllerAs: 'experiences'
+                        },
+                        'wwd-left@app': {
+                            templateUrl: 'views/wwd-left-experiences.html'
                         }
                     },
                 })
@@ -65,10 +71,13 @@
                  .state('app.spaces', {
                     url: 'spaces',
                     views: {
-                        'wwdside@app': {
-                            templateUrl: 'views/spaces.html',
+                        'wwd-right@app': {
+                            templateUrl: 'views/wwd-right-spaces.html',
                             controller: 'SpacesCtrl',
                             controllerAs: 'spaces'
+                        },
+                        'wwd-left@app': {
+                            templateUrl: 'views/wwd-left-spaces.html'
                         }
                     },
                 })
@@ -76,10 +85,13 @@
                 .state('app.design', {
                     url: 'design',
                     views: {
-                        'wwdside@app': {
-                            templateUrl: 'views/design.html',
+                        'wwd-right@app': {
+                            templateUrl: 'views/wwd-right-design.html',
                             controller: 'DesignCtrl',
                             controllerAs: 'design'
+                        },
+                        'wwd-left@app': {
+                            templateUrl: 'views/wwd-left-design.html'
                         }
                     },
                 })
@@ -87,10 +99,13 @@
                  .state('app.connections', {
                     url: 'connections',
                     views: {
-                        'wwdside@app': {
-                            templateUrl: 'views/connections.html',
+                        'wwd-right@app': {
+                            templateUrl: 'views/wwd-right-connections.html',
                             controller: 'ConnectionsCtrl',
                             controllerAs: 'connections'
+                        },
+                        'wwd-left@app': {
+                            templateUrl: 'views/wwd-left-connections.html'
                         }
                     },
                 })
@@ -169,7 +184,6 @@
             AnalyticsService.recordPageview($location.url());
         });
     });
-
 
 
 })();

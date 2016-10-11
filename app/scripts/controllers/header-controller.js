@@ -15,6 +15,7 @@
 
 					console.log('header called');
 
+
 					$rootScope.primaryColor = '#ffd5c0';
 					$rootScope.secondaryColor = '#e53320';
 
