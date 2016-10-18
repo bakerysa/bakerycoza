@@ -17,6 +17,8 @@
 			console.log('primary content called ');
 
 
+
+
 			// GOOGLE MAPS			
 			function loadGoogleMap() {
 			    var mapOptions = {
@@ -41,6 +43,9 @@
 
 			loadGoogleMap();
 
+
+
+			
 			// END GOOGLE MAPS		
 
 	  }]);

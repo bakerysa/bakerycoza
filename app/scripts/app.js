@@ -47,7 +47,9 @@
                         templateUrl: 'views/wwd-right-default.html'
                     },
                     'work-view@app': {
-                        templateUrl: 'views/work.html'
+                        templateUrl: 'views/work.html',
+                        controller: 'WorkCtrl',
+                        controllerAs: 'work'
                     },
                     'footer': {
                         templateUrl: 'views/footer.html'

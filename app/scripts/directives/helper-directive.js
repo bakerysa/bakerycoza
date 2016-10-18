@@ -63,7 +63,7 @@
           // Apply gradient to element 
           var multiple = new Multiple({
              selector: '.shared-bg',
-            background: 'linear-gradient(#fff9d9, #ffe9ec, #bbf6c1)'
+            background: 'linear-gradient(#fff9d9, #ffe9ec, #c5f4c7)'
            });
         });
 
@@ -181,6 +181,31 @@
                    
               });
  
+          }
+     };
+  })
+
+  .directive('duoTone', function ($timeout, $state) { 
+      return {
+          restrict: "AE",
+          link: function(scope, elem, attr, ctrl) {
+
+
+              $timeout(function(){
+
+                  if ($state.is('app.network')) {
+                          $('img').duotone({
+                             gradientMap: '#271f37 15%, #fff9d9'
+                          });
+                  } else if ($state.is('app.team')) {
+                          $('img').duotone({
+                             gradientMap: '#000000, #c6f4c8'
+                          });
+                  }
+
+                   
+              });
+  
           }
      };
   });
