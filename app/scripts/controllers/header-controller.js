@@ -143,7 +143,20 @@
 						}, 0.5);
 					};
 
+					$(document).ready(function(){
+						$('#nav-icon').click(function(){
+							$(this).toggleClass('open');
+						});
 
+						$scope.toggleMenu = function() {
+								var menuBox = document.getElementById('mobile-menu');
+								if (menuBox.style.display == "block") {
+										menuBox.style.display = "none";
+								} else {
+										menuBox.style.display = "block";
+								}
+						};
+					});
 
 	  }]);
 
