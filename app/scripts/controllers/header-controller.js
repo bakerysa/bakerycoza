@@ -15,7 +15,6 @@
 
 					console.log('header called');
 
-
 					$rootScope.primaryColor = '#ffd5c0';
 					$rootScope.secondaryColor = '#e53320';
 
@@ -90,6 +89,17 @@
 						    TweenMax.to(window, 0.7, {scrollTo:{y: $('#what-we-do').position().top-95},  autoKill : false, ease:Circ.easeInOut});
 						}, 100 );
 					};
+
+						// Design
+
+						$rootScope.alignWhatWeDo = function() {
+							var tid = setInterval( function () {
+							    if ( document.readyState !== 'complete' ) return;
+							    clearInterval( tid );
+							    TweenMax.to(window, 0.7, {scrollTo:{y: $('#what-we-do').position().top-95},  autoKill : false, ease:Circ.easeInOut});
+							}, 100 );
+						};
+
 
 
 					// HOW WE DO IT
