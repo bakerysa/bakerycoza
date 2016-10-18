@@ -55,135 +55,152 @@
                 }
             })
 
-                .state('app.experiences', {
-                    url: 'experiences',
-                    views: {
-                        'wwd-right@app': {
-                            templateUrl: 'views/wwd-right-experiences.html',
-                            controller: 'ExperiencesCtrl',
-                            controllerAs: 'experiences'
-                        },
-                        'wwd-left@app': {
-                            templateUrl: 'views/wwd-left-experiences.html'
-                        }
-                    },
-                })
-
-                 .state('app.spaces', {
-                    url: 'spaces',
-                    views: {
-                        'wwd-right@app': {
-                            templateUrl: 'views/wwd-right-spaces.html',
-                            controller: 'SpacesCtrl',
-                            controllerAs: 'spaces'
-                        },
-                        'wwd-left@app': {
-                            templateUrl: 'views/wwd-left-spaces.html'
-                        }
-                    },
-                })
-
-                .state('app.design', {
-                    url: 'design',
-                    views: {
-                        'wwd-right@app': {
-                            templateUrl: 'views/wwd-right-design.html',
-                            controller: 'DesignCtrl',
-                            controllerAs: 'design'
-                        },
-                        'wwd-left@app': {
-                            templateUrl: 'views/wwd-left-design.html'
-                        }
-                    },
-                })
-
-                 .state('app.connections', {
-                    url: 'connections',
-                    views: {
-                        'wwd-right@app': {
-                            templateUrl: 'views/wwd-right-connections.html',
-                            controller: 'ConnectionsCtrl',
-                            controllerAs: 'connections'
-                        },
-                        'wwd-left@app': {
-                            templateUrl: 'views/wwd-left-connections.html'
-                        }
-                    },
-                })
-
-            .state('app.whatWeDo', {
-                url: 'what-we-do'
-            })
-
-            .state('app.howWeDoIt', {
-                url: 'how-we-do-it'
-            })
-
-
-            .state('app.work', {
-                url: 'work',
+            .state('app.experiences', {
+                url: 'experiences',
                 views: {
-                    'work-view': {
-                        templateUrl: 'views/work.html',
-                        controller: 'WorkCtrl'
-                    }
-                }
-            })
-
-            .state('app.work.detail', {
-                url: '/:id',
-                views: {
-                    'primarycontent@': {
-                        templateUrl: 'views/project-details.html',
-                        controller: 'ProjectsDetailCtrl'
+                    'wwd-right@app': {
+                        templateUrl: 'views/wwd-right-experiences.html'
                     },
-                    'work-grid@app.work.detail': {
-                        templateUrl: 'views/work.html'
+                    'wwd-left@app': {
+                        templateUrl: 'views/wwd-left-experiences.html'
                     }
-                }
+                },
             })
 
-
-            .state('app.contact', {
-                url: 'contact'
-            })
-
-            .state('app.team', {
-                url: 'our-team',
+             .state('app.spaces', {
+                url: 'spaces',
                 views: {
-                    'primarycontent@': {
-                        templateUrl: 'views/team.html'
+                    'wwd-right@app': {
+                        templateUrl: 'views/wwd-right-spaces.html'
+                    },
+                    'wwd-left@app': {
+                        templateUrl: 'views/wwd-left-spaces.html'
                     }
-                }
+                },
             })
 
-            .state('app.network', {
-                url: 'our-network',
+            .state('app.design', {
+                url: 'design',
                 views: {
-                    'primarycontent@': {
-                        templateUrl: 'views/network.html'
+                    'wwd-right@app': {
+                        templateUrl: 'views/wwd-right-design.html'
+                    },
+                    'wwd-left@app': {
+                        templateUrl: 'views/wwd-left-design.html'
                     }
-                }
+                },
             })
 
-
-            .state('app.careers', {
-                url: 'careers',
+             .state('app.connections', {
+                url: 'connections',
                 views: {
-                    'primarycontent@': {
-                        templateUrl: 'views/jobs.html'
+                    'wwd-right@app': {
+                        templateUrl: 'views/wwd-right-connections.html'
+                    },
+                    'wwd-left@app': {
+                        templateUrl: 'views/wwd-left-connections.html'
                     }
+                },
+            })
+
+        .state('app.whatWeDo', {
+            url: 'what-we-do'
+        })
+
+        .state('app.howWeDoIt', {
+            url: 'how-we-do-it'
+        })
+
+
+        .state('app.work', {
+            url: 'work'
+        })
+
+        .state('app.work.detail', {
+            url: '/:id',
+            views: {
+                'primarycontent@': {
+                    templateUrl: 'views/project-details.html',
+                    controller: 'ProjectsDetailCtrl'
+                },
+                'work-grid@app.work.detail': {
+                    templateUrl: 'views/work.html'
                 }
-            });
+            }
+        })
 
-        }])
+        .state('app.contact', {
+            url: 'contact'
+        })
 
+        .state('app.team', {
+            url: 'our-team',
+            views: {
+                'header@': {
+                    templateUrl: 'views/header-team.html',
+                    controller: 'HeaderCtrl',
+                    controllerAs: 'header'
+                },
+                'primarycontent@': {
+                    templateUrl: 'views/team.html'
+                },
+                'footer@': {
+                    templateUrl: 'views/footer-team.html'
+                }
+            }
+        })
 
+        .state('app.network', {
+            url: 'our-network',
+            views: {
+                'header@': {
+                    templateUrl: 'views/header-network.html',
+                    controller: 'HeaderCtrl',
+                    controllerAs: 'header'
+                },
+                'primarycontent@': {
+                    templateUrl: 'views/network.html'
+                },
+                'footer@': {
+                    templateUrl: 'views/footer-network.html'
+                }
+            }
+        })
+
+        .state('app.careers', {
+            url: 'careers',
+            views: {
+                'header@': {
+                    templateUrl: 'views/header-jobs.html',
+                    controller: 'HeaderCtrl',
+                    controllerAs: 'header'
+                },
+                'primarycontent@': {
+                    templateUrl: 'views/jobs.html'
+                },
+                'footer@': {
+                    templateUrl: 'views/footer-jobs.html'
+                }
+            }
+        });
+
+    }])
 
     .run(function($rootScope, $location, AnalyticsService) {
         $rootScope.$on('$stateChangeSuccess', function() {
             AnalyticsService.recordPageview($location.url());
         });
+    })
+
+    .animation('.js-animate-fade', function(){
+      return {
+        enter: function(element, done) {
+          TweenMax.from(element, 0.5, {opacity:0, y:10, onComplete:done});
+        }
+        // leave: function(element, done) {
+        //   TweenMax.to(element, 0.3, {opacity:0, y:10, onComplete:done})
+        // }
+      };
     });
 
 

@@ -14,8 +14,8 @@
 
 			$scope.projects = ProjectService.list();
 
+			console.log('primary content called ');
 
-			console.log('primary content called ')
 
 			// GOOGLE MAPS			
 			function loadGoogleMap() {
@@ -37,7 +37,6 @@
 			        map: map,
 			        title: 'The Bread'
 			    });			   
-			    console.log('Google Map 1 loaded');
 			}
 
 			loadGoogleMap();
