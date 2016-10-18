@@ -625,11 +625,15 @@ a {
 
 
 .project-wrapper {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  right: 0;
   .project-inner {
     .featured-image {
       min-height: 500px;
       width: 100%;
-      margin-top: 80px;
+      margin-top: 0;
       background-size: cover;
       background-position: center bottom;
       background-repeat: no-repeat;
