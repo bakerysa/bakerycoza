@@ -139,7 +139,7 @@
 				       		var contact = angular.element(document.getElementById('contact'));
 							$document.scrollToElement(contact, 35, 500);
 					  		console.log('goContact() called');
-					   	}, 50);
+					   	}, 500);
 					};
 
 					// if state is How We Do It
@@ -197,7 +197,20 @@
 
 					$rootScope.waypoints();
 
+					$(document).ready(function(){
+						$('#nav-icon').click(function(){
+							$(this).toggleClass('open');
+						});
 
+						$scope.toggleMenu = function() {
+								var menuBox = document.getElementById('mobile-menu');
+								if (menuBox.style.display == "block") {
+										menuBox.style.display = "none";
+								} else {
+										menuBox.style.display = "block";
+								}
+						};
+					});
 
 
 	  }]);

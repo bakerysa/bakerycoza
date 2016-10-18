@@ -121,7 +121,6 @@
                         'https://www.youtube.com/watch?v=JS7ID3_Vjag',
                     ],
                     images: [
-                        '../../images/projects/04/1.jpg',
                         '../../images/projects/04/2.jpg',
                         '../../images/projects/04/3.jpg',
                         '../../images/projects/04/4.jpg',
@@ -215,7 +214,6 @@
                         'https://vimeo.com/152672284',
                     ],
                     images: [
-                        '../../images/projects/05/1.jpg',
                         '../../images/projects/05/2.jpg',
                         '../../images/projects/05/3.jpg',
                         '../../images/projects/05/4.jpg',
@@ -240,7 +238,6 @@
                         'https://vimeo.com/109457142',
                     ],
                     images: [
-                        '../../images/projects/06/1.jpg',
                         '../../images/projects/06/2.jpg',
                         '../../images/projects/06/3.jpg',
                         '../../images/projects/06/4.jpg',
@@ -273,7 +270,6 @@
                         'https://vimeo.com/142351521',
                     ],
                     images: [
-                        '../../images/projects/07/1.jpg',
                         '../../images/projects/07/2.jpg',
                         '../../images/projects/07/3.jpg',
                         '../../images/projects/07/4.jpg',
@@ -307,7 +303,6 @@
                         'https://vimeo.com/140646586',
                     ],
                     images: [
-                        '../../images/projects/08/1.jpg',
                         '../../images/projects/08/2.jpg',
                         '../../images/projects/08/3.jpg',
                         '../../images/projects/08/4.jpg',
@@ -391,12 +386,6 @@
                         'https://www.youtube.com/watch?v=ZBWScCsQ-4Y',
                         'https://www.youtube.com/watch?v=Qk5fSUZw7tE',
                     ],
-                    images: [
-                        '../../images/projects/12/1.jpg',
-                        '../../images/projects/12/2.jpg',
-                        '../../images/projects/12/3.jpg',
-                        '../../images/projects/12/4.jpg',
-                    ]
                 }, {
                     id: 13,
                     name: 'The Scene Artworks Project',
