@@ -191,24 +191,46 @@
           link: function(scope, elem, attr, ctrl) {
 
 
-              $timeout(function(){
+              // $timeout(function(){
 
-                  if ($state.is('app.network')) {
-                          $('img').duotone({
-                             gradientMap: '#271f37 15%, #fff9d9'
-                          });
-                  } else if ($state.is('app.team')) {
-                          $('img').duotone({
-                             gradientMap: '#000000, #c6f4c8'
-                          });
-                  }
+              //     if ($state.is('app.network')) {
+              //             $('img').duotone({
+              //                gradientMap: '#271f37 15%, #fff9d9'
+              //             });
+              //     } else if ($state.is('app.team')) {
+              //             $('img').duotone({
+              //                gradientMap: '#000000, #c6f4c8'
+              //             });
+              //     }
 
                    
+              // });
+  
+          }
+     };
+  })
+
+  .directive('magnificPopup', function ($timeout, $state) { 
+      return {
+          restrict: "AE",
+          link: function(scope, elem, attr, ctrl) {
+
+
+                // This will create a single gallery from all elements that have class "gallery-item"
+                $('.project-images').each(function() { // the containers for all your galleries
+                  $(this).magnificPopup({
+                      delegate: 'a', // the selector for gallery item
+                      type: 'image',
+                      gallery: {
+                        enabled:true
+                      }
+                  });
               });
   
           }
      };
   });
+
 
 })(); 
 

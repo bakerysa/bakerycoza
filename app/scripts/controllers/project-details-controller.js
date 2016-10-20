@@ -18,16 +18,6 @@
           	$scope.selectedProject = ProjectService.find($stateParams.id);
             $scope.projects = ProjectService.list();
 
-            // This will create a single gallery from all elements that have class "gallery-item"
-            $('.project-images').each(function() { // the containers for all your galleries
-			    $(this).magnificPopup({
-			        delegate: 'a', // the selector for gallery item
-			        type: 'image',
-			        gallery: {
-			          enabled:true
-			        }
-			    });
-			});
 
 
           	$scope.nameHTML = $scope.selectedProject.name;
@@ -41,6 +31,9 @@
 
           	$scope.collaboratorsHTML = $scope.selectedProject.collaborators;
           	$scope.projectCollaborators = $sce.trustAsHtml($scope.collaboratorsHTML);
+
+
+          	         
 
 
         }]);

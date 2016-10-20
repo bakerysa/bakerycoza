@@ -15,18 +15,18 @@
             $scope.projects = ProjectService.list();
 
 
-            $('.js-eff-work-img').duotone({
-               gradientMap: '#000000, #ecede0'
-            });
+            // $('.js-eff-work-img').duotone({
+            //    gradientMap: '#000000, #ecede0'
+            // });
 
-            $('.js-eff-wwd-img').duotone({
-               gradientMap: '#000000, #fff5de'
-            });
+            // $('.js-eff-wwd-img').duotone({
+            //    gradientMap: '#000000, #fff5de'
+            // });
 
 
-            $('#creative-partners img').duotone({
-               gradientMap: '#000000, #fde9eb'
-            });
+            // $('#creative-partners img').duotone({
+            //    gradientMap: '#000000, #fde9eb'
+            // });
 
 
             
