@@ -16,7 +16,8 @@
     "featherlight": "*",
     "magnific-popup": "*",
     "angular-ui-router-anim-in-out": "*",
-    "ng-videosharing-embed": "*"
+    "ng-videosharing-embed": "*",
+    "jquery-duotone": "*"
   },
   "appPath": "app",
   "moduleName": "bakeryApp",

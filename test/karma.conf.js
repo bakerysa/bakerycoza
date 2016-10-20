@@ -43,6 +43,7 @@ module.exports = function(config) {
       'bower_components/angular-ui-router/release/angular-ui-router.js',
       'bower_components/angular-ui-router-anim-in-out/anim-in-out.js',
       'bower_components/ng-videosharing-embed/build/ng-videosharing-embed.min.js',
+      'bower_components/jquery-duotone/jquery.duotone.js',
       // endbower
       "app/scripts/**/*.js",
       "test/mock/**/*.js",

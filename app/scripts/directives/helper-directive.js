@@ -63,7 +63,7 @@
           // Apply gradient to element 
           var multiple = new Multiple({
              selector: '.shared-bg',
-            background: 'linear-gradient(#fff9d9, #ffe9ec, #bbf6c1)'
+            background: 'linear-gradient(#fff9d9, #ffe9ec, #c5f4c7)'
            });
         });
 
@@ -135,22 +135,10 @@
 
                   $scope.gradientAux();
 
-
-
-
-
-
                   $document.bind('scroll', function () {
                       $scope.gradientAux();
                   });
                 
-
-
-
-
-
-
-
               }
           });
 
@@ -164,87 +152,6 @@
     };
   }])
 
-  
-
-  // ALL THINGS GRADIENTS
-  // .directive('gradientAux', function ($rootScope, $timeout, $state) { 
-  //     return {
-  //         restrict: "AE",
-  //         link: function(scope, elem, attr, ctrl) {
-  //           // check when elem is ready
-  //           elem.ready(function(){
-
-  //             // console.log($rootScope.bakeHeight);
-
-
-  //             $timeout(function(){
-  
-  //               // get height of scrollable area
-  //               var docHeight = $( ".js-scrollable-area" ).outerHeight();
-  //               var backgroundScrollAux = "auto " + docHeight + "px";
-  //               // add background-size to elem
-  //               elem.css({'background-size': backgroundScrollAux});
-
-
-  //               var scr = $(window).scrollTop();
-  //               var viewportHeight = $(window).height();
-  //               var calcHeight = scr + viewportHeight;
-  //               $('.header').css('background-position', '0px -' + scr + 'px');
-  //               $('.footer').css('background-position', '0px -' + calcHeight + 'px');
-
-  //               if ($state.is('app.team')) {
-  //                   var multiple = new Multiple({
-  //                     selector: '.shared-bg',
-  //                     background: 'linear-gradient(#fff9d9, #ffe9ec)'
-  //                   });
-  //               } else {
-  //                 var multiple = new Multiple({
-  //                   selector: '.shared-bg',
-  //                   background: 'linear-gradient(#fff9d9, #ffe9ec, #bbf6c1)'
-  //                 });
-  //               }
-
-                     
-  //             });
-
-
-
-  //             // when scrolling happens
-  //             $(document).scroll(function(e){
-
-  //                 // get height of scrollable area
-  //                 var docHeight = $( ".js-scrollable-area" ).outerHeight();
-  //                 var calcHeight = "auto " + docHeight + "px";
-  //                 // add background-size to elem
-  //                 elem.css({'background-size': calcHeight});
-
-
-  //                 var scr = $(window).scrollTop();
-  //                 var viewportHeight = $(window).height();
-
-  //                 // console.log('scrolling');
-  //                 // console.log('viewportHeight is ' + viewportHeight);
-
-  //                 var calcHeight = scr + viewportHeight;
-  //                 $('.header').css('background-position', '0px -' + scr + 'px');
-  //                 $('.footer').css('background-position', '0px -' + calcHeight + 'px');
-  //             });
-
-
-  //             $(window).on('resize', function(){
-  //                 // get height of scrollable area
-  //                 var docHeight = $( ".js-scrollable-area" ).outerHeight();
-  //                 var calcHeight = "auto " + docHeight + "px";
-  //                 // add background-size to elem
-  //                 elem.css({'background-size': calcHeight});
-  //             });
-
-  //            });  
- 
-  //         }
-  //    };
-  // })
-
   .directive('scrollTo', function ($rootScope, $timeout, $state) { 
       return {
           restrict: "AE",
@@ -253,22 +160,77 @@
 
               $timeout(function(){
 
-                if ($state.is('app.contact')) {
-                      $rootScope.goContact();
-                } else if ($state.is('app.work')) {
-                      $rootScope.goWork();
-                } else if ($state.is('app.howWeDoIt')) {
-                      $rootScope.goHowWeDoIt();
-                } else if ($state.is('app.whatWeDo')) {
-                      $rootScope.goWhatWeDo();
-                }
+                  if ($state.is('app.contact')) {
+                        $rootScope.goContact();
+                  } else if ($state.is('app.work')) {
+                        $rootScope.goWork();
+                  } else if ($state.is('app.howWeDoIt')) {
+                        $rootScope.goHowWeDoIt();
+                  } else if ($state.is('app.whatWeDo')) {
+                        $rootScope.goWhatWeDo();
+                  } else if ($state.is('app.design')) {
+                        $rootScope.alignWhatWeDo();
+                  } else if ($state.is('app.experiences')) {
+                        $rootScope.alignWhatWeDo();
+                  } else if ($state.is('app.connections')) {
+                        $rootScope.alignWhatWeDo();
+                  } else if ($state.is('app.spaces')) {
+                        $rootScope.alignWhatWeDo();
+                  }
                 
                    
               });
  
           }
      };
+  })
+
+  .directive('duoTone', function ($timeout, $state) { 
+      return {
+          restrict: "AE",
+          link: function(scope, elem, attr, ctrl) {
+
+
+              // $timeout(function(){
+
+              //     if ($state.is('app.network')) {
+              //             $('img').duotone({
+              //                gradientMap: '#271f37 15%, #fff9d9'
+              //             });
+              //     } else if ($state.is('app.team')) {
+              //             $('img').duotone({
+              //                gradientMap: '#000000, #c6f4c8'
+              //             });
+              //     }
+
+                   
+              // });
+  
+          }
+     };
+  })
+
+  .directive('magnificPopup', function ($timeout, $state) { 
+      return {
+          restrict: "AE",
+          link: function(scope, elem, attr, ctrl) {
+
+
+                // This will create a single gallery from all elements that have class "gallery-item"
+                $('.project-images').each(function() { // the containers for all your galleries
+                  $(this).magnificPopup({
+                      delegate: 'a', // the selector for gallery item
+                      type: 'image',
+                      gallery: {
+                        enabled:true
+                      }
+                  });
+              });
+  
+          }
+     };
   });
+
 
 })(); 
 

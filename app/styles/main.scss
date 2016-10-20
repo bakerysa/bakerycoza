@@ -17,8 +17,6 @@ body {
     color: #000;
     overflow-x: hidden;
     background: #fff9d9;
-    -webkit-transform-style: preserve-3d;
-    -webkit-backface-visibility: hidden;
 }
 
 [class^="col-"],
@@ -200,7 +198,8 @@ a {
 }
 
 .h-bg-3 {
-  background: #bbf6c1;
+  // background: #bbf6c1;
+  background: #c5f4c7;
 }
 
 .header {
@@ -282,7 +281,6 @@ a {
   // opacity: 1!important;
 }
 
-
 .project-images {
   a {
     outline: none;
@@ -292,12 +290,91 @@ a {
   }
 }
 
+.mfp-close {
+      font-size:0;
+      display: inline-block;
+      margin-top: 7px!important;
+      width: 25px!important;
+      height: 25px!important;
+      overflow: hidden!important;
+    &:before {
+      transform: rotate(45deg);
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      top: 50%;
+      left: 0;
+      margin-top: -1px;
+      background: #fff;
+  }
+  &:after {
+      transform: rotate(-45deg);
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      top: 50%;
+      left: 0;
+      margin-top: -1px;
+      background: #fff;
+  }
+}
+
+.mfp-arrow{
+  &:before {
+    margin-top: 0;
+    margin-left: 0;
+    border-style: solid;
+    border-width: 0.17em 0.17em 0 0;
+    content: '';
+    display: inline-block;
+    height: 2.45em;
+    left: 0.15em;
+    border-color: white;
+    color: white;
+    position: relative;
+    top: 0.15em;
+    vertical-align: top;
+    width: 2.45em;
+    
+  }
+  &:after {
+    border: none;
+  }
+}
+
+.mfp-arrow-left {
+    // margin-top: -35px;
+    transform: rotate(-135deg);
+  }
+.mfp-arrow-right {
+    transform: rotate(45deg);
+    // margin-top: -74px;
+  }
+
+.chevron.right {
+  &:before {
+    left: 0;
+    transform: rotate(45deg);
+  }
+}
+
+.chevron.left {
+  &:before {
+    left: 0.25em;
+    transform: rotate(-135deg);
+  }
+}
+
+
+
 
 .footer {
     position: fixed;
     background-repeat:no-repeat;
     background-position:top;
-    z-index: 1200;
+    z-index: 1000;
     left: 0;
     right: 0;
     bottom: 0;
@@ -551,11 +628,15 @@ a {
 
 
 .project-wrapper {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  right: 0;
   .project-inner {
     .featured-image {
       min-height: 500px;
       width: 100%;
-      margin-top: 80px;
+      margin-top: 0;
       background-size: cover;
       background-position: center bottom;
       background-repeat: no-repeat;
