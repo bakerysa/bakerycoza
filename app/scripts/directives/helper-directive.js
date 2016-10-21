@@ -63,7 +63,7 @@
           // Apply gradient to element 
           var multiple = new Multiple({
              selector: '.shared-bg',
-            background: 'linear-gradient(#fff9d9, #ffe9ec, #c5f4c7)'
+            background: 'linear-gradient(#ffd5c0, #ffebeb, #fff9d9, #e3ffe5)'
            });
         });
 
