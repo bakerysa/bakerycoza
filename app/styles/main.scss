@@ -337,7 +337,7 @@ a {
     top: 0.15em;
     vertical-align: top;
     width: 2.45em;
-    
+
   }
   &:after {
     border: none;
@@ -584,7 +584,7 @@ a {
     height: 490px;
   }
   .wwd-left-default {
-      height: 644px;
+      height: 649px;
   }
 }
 
@@ -1044,6 +1044,7 @@ background:#869791
       padding-right: 2em;
       padding-top: 4em;
       padding-bottom: 4em;
+      margin-bottom: 10px;
     }
     h3 {
       max-width: 400px;
@@ -1067,6 +1068,9 @@ background:#869791
 
   .wwd-right {
     width: 100%;
+  }
+  .footer {
+      display: none;
   }
 
   #mobile-menu {
@@ -1206,6 +1210,15 @@ background:#869791
       left: calc(50% - 5px);
       top: 29px;
     }
+    .col-md-35 {
+        width: 100%;
+    }
+
+    #contact {
+      .col-md-15 {
+        text-align: center;
+      }
+    }
 }
 
 
@@ -1216,5 +1229,15 @@ background:#869791
 
     .h-mobile-hidden {
         display: none!important;
+    }
+
+    .col-md-35 {
+        width: 100%;
+    }
+
+    #contact {
+      .col-md-15 {
+        text-align: center;
+      }
     }
 }
