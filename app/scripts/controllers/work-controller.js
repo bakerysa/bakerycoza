@@ -23,13 +23,10 @@
             //    gradientMap: '#000000, #fff5de'
             // });
 
-
-            // $('#creative-partners img').duotone({
-            //    gradientMap: '#000000, #fde9eb'
-            // });
+        
 
 
-            
+
 	  }]);
 
   })(); 

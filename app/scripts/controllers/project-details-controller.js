@@ -18,10 +18,8 @@
           	$scope.selectedProject = ProjectService.find($stateParams.id);
             $scope.projects = ProjectService.list();
 
-
-
           	$scope.nameHTML = $scope.selectedProject.name;
-						$scope.projectName = $sce.trustAsHtml($scope.nameHTML);
+			$scope.projectName = $sce.trustAsHtml($scope.nameHTML);
 
             $scope.descriptionHTML = $scope.selectedProject.description;
           	$scope.projectDescription = $sce.trustAsHtml($scope.descriptionHTML);
@@ -31,6 +29,10 @@
 
           	$scope.collaboratorsHTML = $scope.selectedProject.collaborators;
           	$scope.projectCollaborators = $sce.trustAsHtml($scope.collaboratorsHTML);
+
+
+          	$scope.clientHTML = $scope.selectedProject.client;
+          	$scope.projectClient = $sce.trustAsHtml($scope.clientHTML);
 
 
           	         

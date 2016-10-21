@@ -188,7 +188,7 @@
 
     }])
 
-    .run(function($rootScope, $location, AnalyticsService) {
+    .run(function($rootScope, $location, AnalyticsService, $timeout) {
         $rootScope.$on('$stateChangeSuccess', function() {
             AnalyticsService.recordPageview($location.url());
         });

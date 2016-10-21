@@ -10,7 +10,9 @@
                 <div ng-bind-html="projectDescription"></div>
             </div>
             <div class="col-md-15 col-sm-12">
+                <p ng-if="selectedProject.client"><strong>Client:</strong> <span ng-bind-html="projectClient"> </span></p>
                 <p ng-if="selectedProject.agency"><strong>Agency:</strong> <span ng-bind-html="projectAgency"> </span></p>
+                <p ng-if="selectedProject.collaborators"><strong>Collaborators:</strong> <span ng-bind-html="projectCollaborators"> </span></p>
             </div>
             <div class="clearfix"></div>
         </div>
