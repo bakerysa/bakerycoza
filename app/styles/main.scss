@@ -288,6 +288,20 @@ a {
     }
   }
 }
+.wwd-aux-1 {
+  display: block;
+}
+.wwd-aux-2 {
+  display: none;
+}
+
+
+.work-grid-1, .cp-grid-1 {
+  display: block;
+}
+.work-grid-2, .cp-grid-2 {
+  display: none;
+}
 
 
 .work-grid {
@@ -448,16 +462,16 @@ a {
 }
 
 .landscape {
-  @include aspect-ratio(16,9);  
+  @include aspect-ratio(16,9);
 }
 
 .landscape-fix {
-  @include aspect-ratio(16,8.8);  
+  @include aspect-ratio(16,8.8);
 }
 
 
 .portrait {
-  @include aspect-ratio(3,3.455);  
+  @include aspect-ratio(3,3.455);
 }
 
 
@@ -1144,6 +1158,14 @@ background:#869791
 
 @media (max-width: 991px) {
 
+  .work-grid-1, .cp-grid-1 {
+    display: none;
+  }
+  .work-grid-2, .cp-grid-2 {
+    display: block;
+  }
+
+
   .wwd-left {
     .wwd-left-default {
       height: 300px;
@@ -1198,7 +1220,7 @@ background:#869791
   #mobile-menu li {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0!important;
       :hover {
         text-decoration: none;
       }
@@ -1326,6 +1348,29 @@ background:#869791
         text-align: center;
       }
     }
+    .nav {
+        ul {
+            li {
+                a {
+                  &:after {
+                    content: "";
+                    position: absolute;
+                    left: 25%;
+                    bottom: 0;
+                    height: 2px;
+                    width: 50%;
+                  }
+                  opacity: 0.6;
+                    &:hover, &.active {
+                      opacity: 1;
+                        &:before {
+                          border-bottom: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 .h-mobile-visible {
@@ -1336,16 +1381,39 @@ background:#869791
   display: block;
 }
 
-@media screen and (max-width: 770px) {
+.h-tablet-visible {
+    display: none;
+}
+
+.h-tablet-hidden {
+    display: block;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+  .h-tablet-visible {
+      display: block;
+  }
+
+  .h-tablet-hidden {
+      display: none;
+  }
+
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+  .wwd-aux-1 {
+    display: none;
+  }
+  .wwd-aux-2 {
+    display: block;
+  }
+
     .bk-block p {
       font-size: 14px;
-    }
-    .h-mobile-visible {
-        display: block!important;
-    }
-
-    .h-mobile-hidden {
-        display: none!important;
     }
 
     .col-md-35 {
@@ -1358,7 +1426,7 @@ background:#869791
       }
     }
     .container {
-      margin:5px;
+      margin:5px auto;
     }
     .wwd-right {
       padding-left: 5px;
@@ -1372,9 +1440,18 @@ background:#869791
 }
 
 
+
+
 @media screen and (max-width: 490px) {
+    .h-mobile-visible {
+        display: block!important;
+    }
+
+    .h-mobile-hidden {
+        display: none!important;
+    }
     .portrait {
-      @include aspect-ratio(3,3.55);  
+      @include aspect-ratio(3,3.55);
     }
     .bk-block p {
       font-size: 10px;

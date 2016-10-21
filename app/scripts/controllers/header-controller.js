@@ -167,6 +167,11 @@
 								}
 						};
 
+						$scope.hideMenu = function() {
+  						document.getElementById('mobile-menu').style.display = 'none';
+							$('#nav-icon').toggleClass('open');
+						}
+
 
 
 					});
