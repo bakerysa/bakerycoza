@@ -59,13 +59,6 @@
       },
       link: function($scope, element, attrs) {
 
-        $timeout(function(){
-          // Apply gradient to element 
-          var multiple = new Multiple({
-             selector: '.shared-bg',
-            background: 'linear-gradient(#ffd5c0, #ffebeb, #fff9d9, #e3ffe5)'
-           });
-        });
 
           $root.ngSizeDimensions  = (angular.isArray($root.ngSizeDimensions)) ? $root.ngSizeDimensions : [];
           $root.ngSizeWatch       = (angular.isArray($root.ngSizeWatch)) ? $root.ngSizeWatch : [];

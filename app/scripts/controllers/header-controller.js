@@ -74,6 +74,15 @@
 						var tid = setInterval( function () {
 						    if ( document.readyState !== 'complete' ) return;
 						    clearInterval( tid );
+						    TweenMax.to(window, 0.7, {scrollTo:{y: $('#home').position().top+20},  autoKill : false, ease:Circ.easeInOut});
+						}, 100 );
+					};
+
+					$rootScope.goHomeQuick = function() {
+						$state.go('app');
+						var tid = setInterval( function () {
+						    if ( document.readyState !== 'complete' ) return;
+						    clearInterval( tid );
 						    TweenMax.to(window, 0, {scrollTo:{y: $('#home').position().top+20},  autoKill : false, ease:Circ.easeInOut});
 						}, 100 );
 					};
@@ -167,10 +176,14 @@
 								}
 						};
 
-						$scope.hideMenu = function() {
-  						document.getElementById('mobile-menu').style.display = 'none';
+						$('#mobile-menu ul li a').click(function(){	
+	  						document.getElementById('mobile-menu').style.display = 'none';
 							$('#nav-icon').toggleClass('open');
-						}
+						});
+
+						// $scope.hideMenu = function() {
+  						
+						// }
 
 
 
