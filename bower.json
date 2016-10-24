@@ -17,7 +17,8 @@
     "magnific-popup": "*",
     "angular-ui-router-anim-in-out": "*",
     "ng-videosharing-embed": "*",
-    "jquery-duotone": "*"
+    "jquery-duotone": "*",
+    "fastclick": "*"
   },
   "appPath": "app",
   "moduleName": "bakeryApp",

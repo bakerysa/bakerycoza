@@ -329,7 +329,7 @@ a {
     .work-item-2 {
       display: none;
       background: rgba(0, 0, 0, 0.05);
-    }  
+    }
     &:hover {
       .work-item-1 {
         display: none;
@@ -482,6 +482,10 @@ a {
   @include aspect-ratio(3,3.455);
 }
 
+.box {
+  @include aspect-ratio(1,1);
+}
+
 
 
 .square {
@@ -615,7 +619,8 @@ a {
   cursor: pointer;
   top: 0;
   height: 100%;
-  width: 130px;
+  // width: 130px;
+  width: 20%;
   z-index: 10;
   &:hover {
     icon {
@@ -624,20 +629,20 @@ a {
   }
   icon {
     position: absolute;
-    top: 48%;
+    top: calc(50% - 100px);
     z-index: 10;
     color: rgba(255,255,255,0.6);
   }
   &-left {
     left: 0;
     icon {
-      left: 47px;
+      left: 17px;
     }
   }
   &-right {
     right: 0;
     icon {
-      right: 47px;
+      right: 17px;
     }
   }
 }
@@ -651,13 +656,13 @@ a {
 // }
 
 .slick-dots {
-  bottom: 25px!important;
+  bottom: 10px!important;
   li {
     margin: 0!important;
     button {
       &:before {
         font-size: 13px!important;
-        color: white!important;
+        color: black!important;
       }
     }
   }
@@ -705,7 +710,7 @@ a {
 .mini-slider {
   width: 100%;
   div {
-    background-size: cover;
+    background-size: center;
     background-repeat: no-repeat;
     height: 490px;
   }
@@ -735,10 +740,9 @@ a {
 }
 
 .c-partner {
-  min-height: 400px;
   width: 100%;
   margin-top: 10px;
-  background-size: contain;
+  background-size: cover!important;
 }
 
 .project-wrapper {
@@ -1473,9 +1477,6 @@ background:#869791
     }
 }
 
-
-
-
 @media screen and (max-width: 490px) {
     .h-mobile-visible {
         display: block!important;
@@ -1490,4 +1491,31 @@ background:#869791
     .bk-block p {
       font-size: 10px;
     }
+}
+
+//iPad Queries
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+
+  .wwd-aux-1 {
+      display: block;
+  }
+  .wwd-aux-2 {
+      display: none;
+  }
+
+}
+
+.h-relative {
+  position: relative!important;
+}
+
+.slide-info {
+  min-height: 160px;
+  background: rgba(0, 0, 0, 0.05);
+  text-align: center;
+  padding: 20px 20px;
 }
