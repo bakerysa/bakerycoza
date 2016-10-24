@@ -654,7 +654,7 @@ a {
     button {
       &:before {
         font-size: 13px!important;
-        color: black!important;
+        color: white!important;
       }
     }
   }
@@ -1167,6 +1167,17 @@ background:#869791
 
 @media (max-width: 991px) {
 
+  #map {
+    margin-bottom: 50px!important;
+  }
+
+  .h-center {
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    left: 50%;
+  }
+
   .work-grid-1, .cp-grid-1 {
     display: none;
   }
@@ -1461,6 +1472,11 @@ background:#869791
     }
     .bk-block p {
       font-size: 10px;
+    }
+    #contact {
+      h5 {
+        font-size: 0.9em;
+      }
     }
 }
 
