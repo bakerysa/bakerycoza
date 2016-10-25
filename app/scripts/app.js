@@ -105,6 +105,18 @@
                 },
             })
 
+            .state('app.strategy', {
+               url: 'strategy',
+               views: {
+                   'wwd-right@app': {
+                       templateUrl: 'views/wwd-right-strategy.html'
+                   },
+                   'wwd-left@app': {
+                       templateUrl: 'views/wwd-left-strategy.html'
+                   }
+               },
+           })
+
         .state('app.whatWeDo', {
             url: 'what-we-do'
         })
@@ -192,6 +204,11 @@
         $rootScope.$on('$stateChangeSuccess', function() {
             AnalyticsService.recordPageview($location.url());
         });
+        if ('addEventListener' in document) {
+    document.addEventListener('DOMContentLoaded', function() {
+        FastClick.attach(document.body);
+    }, false);
+}
     })
 
     .animation('.js-animate-fade', function(){
