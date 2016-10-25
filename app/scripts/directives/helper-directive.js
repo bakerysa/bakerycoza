@@ -59,6 +59,9 @@
       },
       link: function($scope, element, attrs) {
 
+        $timeout(function(){
+          $( ".header" ).addClass( "shared-bg" );
+        });
 
           $root.ngSizeDimensions  = (angular.isArray($root.ngSizeDimensions)) ? $root.ngSizeDimensions : [];
           $root.ngSizeWatch       = (angular.isArray($root.ngSizeWatch)) ? $root.ngSizeWatch : [];
@@ -103,7 +106,6 @@
 
                   $scope.gradientAux = function(){
 
-
                     // checks how far scrollbar is from top of window
                     $scope.scr = $(window).scrollTop();
                     // calcuates the viewport area
@@ -111,19 +113,14 @@
 
                     $scope.calcHeight = $scope.scr + $scope.viewportHeight;
 
-
                     $scope.backgroundScrollAux = "auto " + $scope.size.height + "px";
                     $scope.backgroundPositionAuxHeader = '0px -' + $scope.scr + 'px';
                     $scope.backgroundPositionAuxFooter = '0px -' + $scope.calcHeight + 'px';
 
-                      
-
-                      $scope.$apply(function () {
-                          
-                          $('.header').css({'background-size': $scope.backgroundScrollAux, 'background-position': $scope.backgroundPositionAuxHeader});
-                          $('.footer').css({'background-size': $scope.backgroundScrollAux, 'background-position': $scope.backgroundPositionAuxFooter});
-
-                      });
+                    $scope.$apply(function () {
+                        $('.header').css({'background-size': $scope.backgroundScrollAux, 'background-position': $scope.backgroundPositionAuxHeader});
+                        $('.footer').css({'background-size': $scope.backgroundScrollAux, 'background-position': $scope.backgroundPositionAuxFooter});
+                    });
                   };
 
                   $scope.gradientAux();
