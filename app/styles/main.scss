@@ -145,6 +145,11 @@ a {
     padding-bottom: 5px;
 }
 
+.h-padding-h-5px {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
 .h-padding-v-10px {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -304,10 +309,10 @@ a {
 }
 
 
-.work-grid-1, .cp-grid-1 {
+.work-grid-1, .cp-grid-1, .team-grid-1 {
   display: block;
 }
-.work-grid-2, .cp-grid-2 {
+.work-grid-2, .cp-grid-2, .team-grid-2 {
   display: none;
 }
 
@@ -1188,17 +1193,17 @@ background:#869791
     left: 50%;
   }
 
-  .work-grid-1, .cp-grid-1 {
+  .work-grid-1, .cp-grid-1, .team-grid-1 {
     display: none;
   }
-  .work-grid-2, .cp-grid-2 {
+  .work-grid-2, .cp-grid-2, .team-grid-2 {
     display: block;
   }
 
 
   .wwd-left {
     .wwd-left-default {
-      height: 300px;
+      height: 250px;
       padding-left: 2em;
       padding-right: 2em;
       padding-top: 4em;
@@ -1534,4 +1539,11 @@ and (orientation : portrait) {
   background: rgba(0, 0, 0, 0.05);
   text-align: center;
   padding: 20px 20px;
+}
+
+.team-info {
+  min-height: 180px;
+  background: rgba(0, 0, 0, 0.05);
+  text-align: center;
+  padding: 10px 20px;
 }
