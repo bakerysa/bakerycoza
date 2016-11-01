@@ -19,7 +19,7 @@
                     thumb: '../../images/projects/01/thumb.jpg',
                     client: "<a href='http://www.tfg.co.za/'>The Foschini Group</a>",
                     agency: "<a href='http://www.thebread.co.za/'>The Bread</a>",
-                    collaborators: "<p><a href='http://danieltingchong.com/'>Daniel Ting Chong</a> (Graphic Designer)</p> <p> <a href='http://www.carl.co.za/'>Carl Ascroft</a> (Spatial Designer)</p> <p>Dean Westmore (Fabrication & Build)</p> <p>The Bread With Heron Preston (Launch Event)</p> <p>The Bread (PR & Social)</p> <p> <a href='http://www.thingking.co.za/'>ThingKing</a> (Access System)</p>",
+                    collaborators: "<p><strong>Graphic Designer: </strong><a href='http://danieltingchong.com/'>Daniel Ting Chong</a></p> <p><strong>Spatial Designer:</strong> <a href='http://www.carlascroft.co.za/'>Carl Ascroft</a> </p> <p><strong>Fabrication & Build: </strong> Dean Westmore </p> <p><strong>Launch Event: </strong>The Bread With Heron Preston</p> <p><strong>PR & Social: </strong>The Bread</p> <p><strong>Access System:</strong> <a href='http://www.thingking.co.za/'>ThingKing</a></p>",
                     cover: '../../images/projects/01/cover.png',
                     videos: [
                         'https://vimeo.com/136603900',
@@ -58,7 +58,7 @@
                     thumb: '../../images/projects/02/thumb.jpg',
                     client: "<a href='http://www.autonomy.paris/'>Autonomy Paris</a>",
                     agency: "<a href='http://www.thebread.co.za/'>The Bread</a>",
-                    collaborators: "<p> Nicholas Christowitz & Hannah Shone (Graphic Designer) </p> <p><a href='http://www.carl.co.za/'>Carl Ascroft</a> (Spatial Designer) </p> <p>Dean Westmore (Fabrication & Build)</p> <p>The Bread With Heron Preston (Launch Event)</p> <p>The Bread (PR & Social)</p> <p><a href='http://www.thingking.co.za/'>ThingKing</a> (Access System) </p>",
+                    collaborators: "<p><strong>Graphic Design: </strong> Nicholas Christowitz & Hannah Shone </p> <p><strong>Web Design: </strong>Nicholas Christowitz & Dylan Meadon </p> <p><strong>Web Development: </strong> Dylan Meadon </p> <p><strong>Illustration: </strong>Hannah Shone & Nicholas Christowitz</p>",
                     cover: '../../images/projects/02/cover.png',
                     images: [
                         '../../images/projects/02/1.jpg',
@@ -95,7 +95,7 @@
                     thumb: '../../images/projects/03/thumb.jpg',
                     client: "<a href='http://www.beautyfixskincare.com/'>Beauty Fix</a>",
                     agency: "<a href='http://www.thebread.co.za/'>The Bread</a>",
-                    collaborators: "<p> Nicholas Christowitz (Graphic Design) </p><p> Nicholas Christowitz (Web Design)</p><p> John Del (Illustration)</p> <p> Andrew Berry (Photography)</p>",
+                    collaborators: "<p> <strong>Graphic Design: </strong>Nicholas Christowitz </p><p><strong>Web Design: </strong> Nicholas Christowitz </p><p><strong>Illustration: </strong> John Del </p> <p><strong>Photography: </strong> Andrew Berry </p>",
                     cover: '../../images/projects/03/cover.png',
                     images: [
                         '../../images/projects/03/1.jpg',
@@ -207,7 +207,7 @@
                     thumb: '../../images/projects/05/thumb.jpg',
                     client: "<a href='http://propertuity.co.za/'>Casablanca Productons London</a>",
                     agency: "<a href='http://www.thebread.co.za/'>The Bread</a>",
-                    collaborators: "<p> Radio (Animation) </p> <p> Roger Young, Nicholas Christowitz & Howard Goldstein (Script & Copy)</p> <p> Thor Rixon (Soundtrack) </p> <p> The Bread (Web Design) </p>",
+                    collaborators: "<p><strong>Animation: </strong> Radio </p> <p> <strong>Script & Copy: </strong> Roger Young, Nicholas Christowitz & Howard Goldstein</p> <p><strong>Soundtrack: </strong> Thor Rixon </p> <p><strong>Web Design: </strong> The Bread </p>",
                     cover: '../../images/projects/05/cover.png',
                     videos: [
                         'https://vimeo.com/152672284',
@@ -231,7 +231,7 @@
                     thumb: '../../images/projects/06/thumb.jpg',
                     client: "<a href='http://www.levis.co.za/'>Levi’s®</a>",
                     agency: "<a href='http://www.matchboxology.com/'>Matchboxology</a> & <a href='http://www.thebread.co.za/'>The Bread</a>",
-                    collaborators: "<p> Ian Jepson, Nicholas Christowitz, TwoShoes Design & Carl Ascroft (Graphic Design) </p> <p> North (Spatial Design) </p> <p> Beanstalk (Event Production) </p> <p> We-Are-Awesome Film (Content Production) </p> <p> We-Are-Awesome, 10and5, GQ & Glamour (Media Partners) </p>",
+                    collaborators: "<p><strong>Graphic Design: </strong> Ian Jepson, Nicholas Christowitz, TwoShoes Design & Carl Ascroft </p> <p> <strong>Spatial Design: </strong> North </p> <p><strong>Event Production: </strong> Beanstalk </p> <p><strong>Content Production: </strong> We-Are-Awesome Film </p> <p><strong>Media Partners: </strong> We-Are-Awesome, 10and5, GQ & Glamour </p>",
                     cover: '../../images/projects/06/cover.png',
                     videos: [
                         'https://vimeo.com/109457142',
@@ -263,7 +263,7 @@
                     thumb: '../../images/projects/07/thumb.jpg',
                     client: "<a href='http://www.levis.co.za/'>Levi’s®</a>",
                     agency: "<a href='http://www.matchboxology.com/'>Matchboxology</a> & <a href='http://www.thebread.co.za/'>The Bread</a>",
-                    collaborators: "<p> Ian Jepson, Nicholas Christowitz & TwoShoes Design (Graphic Design) </p> <p> Beanstalk (Event Production) </p> <p> We-Are-Awesome Film (Content Production) </p> <p> We-Are-Awesome & 10and5 (Media Partners) </p>",
+                    collaborators: "<p> <strong>Graphic Design: </strong>Ian Jepson, Nicholas Christowitz & TwoShoes Design </p> <p><strong>Event Production: </strong> Beanstalk </p> <p><strong>Content Production: </strong> We-Are-Awesome Film </p> <p><strong>Media Partners: </strong> We-Are-Awesome & 10and5 </p>",
                     cover: '../../images/projects/07/cover.png',
                     videos: [
                         'https://vimeo.com/142351521',
@@ -296,7 +296,7 @@
                     thumb: '../../images/projects/08/thumb.jpg',
                     client: "<a href='http://www.redbullstudios.com/'>Red Bull Studio’s</a>",
                     agency: "<a href='http://www.thebread.co.za/'>The Bread</a>",
-                    collaborators: "<p> Little Dragon (Artist) </p> <p>Beanstalk, Battalion & The Bread(Event Production) </p> <p> We-Are-Awesome Film (Content Production) </p> <p> Klara Van Wyngfarden (Decor Fabrication) </p> <p> Sydelle Willow Smith (Photography)</p>",
+                    collaborators: "<p><strong>Artist: </strong> Little Dragon </p> <p><strong>Event Production: </strong> Beanstalk, Battalion & The Bread </p> <p><strong>Content Production: </strong> We-Are-Awesome Film </p> <p><strong>Decor Fabrication: </strong> Klara Van Wyngfarden </p> <p> <strong>Photography: </strong> Sydelle Willow Smith </p>",
                     cover: '../../images/projects/08/cover.png',
                     videos: [
                         'https://vimeo.com/140646586',
@@ -314,7 +314,7 @@
                     thumb: '../../images/projects/09/thumb.jpg',
                     client: "<a href='http://www.propellerfilms.co.za/'>Propeller Films</a>",
                     agency: "<a href='http://www.thebread.co.za/'>The Bread</a>",
-                    collaborators: "<p>Nicholas Christowitz (Graphic & Web Design)</p> <p> Johnny Kotze & Nicholas Christowitz (Illustration) </p>",
+                    collaborators: "<p><strong>Graphic & Web Design: </strong>Nicholas Christowitz </p> <p><strong>Illustration: </strong> Johnny Kotze & Nicholas Christowitz </p>",
                     cover: '../../images/projects/09/cover.png',
                     images: [
                         '../../images/projects/09/1.jpg',
@@ -337,7 +337,7 @@
                     thumb: '../../images/projects/10/thumb.jpg',
                     client: "<a href='http://www.protesthiv.org/'>ProTEST HIV</a>",
                     agency: "<a href='http://www.thebread.co.za/'>The Bread</a> & <a href='http://bam-berlin.com/'>BAM BERLIN</a>",
-                    collaborators: "<p>Andre, Futura, Dustin Yellin, Scott Campbell & Aerosyn-Lex (Artists)</p> <p> The Bread & Kalashnikovv Gallery (Event Production) </p> <p> Andrew Berry (Event Photography)</p> <p>Rachel Israela (Lookbook Photography)</p>",
+                    collaborators: "<p> <strong>Event Production: </strong>The Bread & Kalashnikovv Gallery </p> <p><strong>Event Photography: </strong> Andrew Berry </p> <p><strong>Lookbook Photography: </strong>Rachel Israela </p> <p><strong>Artists: </strong>Andre, Futura, Dustin Yellin, Scott Campbell & Aerosyn-Lex </p> ",
                     cover: '../../images/projects/10/cover.png',
                     images: [
                         '../../images/projects/10/1.jpg',
@@ -356,7 +356,7 @@
                     thumb: '../../images/projects/11/thumb.jpg',
                     client: "<a href='http://www.ray-ban.com/'>Ray-Ban</a>",
                     agency: "<a href='http://www.thebread.co.za/'>The Bread</a>",
-                    collaborators: "<p>Muptee, Riky Rick, Stilo Magolide, Nonku Phiri & PHFAT (Artists)</p> <p> Klara Van Wyngarden (Fabrication) </p> <p>The Bread (Event Production)</p> <p>We-Are-Awesome Film (Content Production)</p> <p>Chris Valentine (Live Painter) </p> <p>Ben Eagle & Matt Bouch (Tag Writers) </p> <p>We-Are-Awesome Film (Film Production)</p> <p> Adriaan Louw, Chris Saunders, Dave East & Lebogang Rasethaba (Directors) </p> <p>Didi, Nonku Phiri, Roxanne Robinson, Jake Lipman & Reason (Stars)</p>",
+                    collaborators: "<p><strong>Fabrication: </strong> Klara Van Wyngarden </p> <p><strong>Event Production: </strong>The Bread </p> <p><strong>Artists: </strong>Muptee, Riky Rick, Stilo Magolide, Nonku Phiri & PHFAT </p> <p><strong>Content Production: </strong>We-Are-Awesome Film </p> <p><strong>Live Painter: </strong>Chris Valentine </p> <p><strong>Tag Writers: </strong>Ben Eagle & Matt Bouch </p> <p><strong>Film Production: </strong> We-Are-Awesome Film </p> <p><strong>Directors: </strong> Adriaan Louw, Chris Saunders, Dave East & Lebogang Rasethaba </p> <p><strong>Stars: </strong>Didi, Nonku Phiri, Roxanne Robinson, Jake Lipman & Reason </p>",
                     cover: '../../images/projects/11/cover.png',
                     videos: [
                         'https://www.youtube.com/watch?v=06JLOlMVA8M',
@@ -377,7 +377,7 @@
                     thumb: '../../images/projects/12/thumb.jpg',
                     client: "<a href='http://www.ray-ban.com/'>Ray-Ban</a>",
                     agency: "<a href='http://www.thebread.co.za/'>The Bread</a>",
-                    collaborators: "<p>We-Are-Awesome Film (Content Production)</p> <p> Cassper Noyvest, DJ Doowap, aKing, and PH FAT. (Musicians) </p>",
+                    collaborators: "<p><strong>Content Production: </strong>We-Are-Awesome Film </p> <p><strong>Musicians: </strong> Cassper Noyvest, DJ Doowap, aKing, and PH FAT </p>",
                     cover: '../../images/projects/12/cover.png',
                     videos: [
                         'https://www.youtube.com/watch?v=i_XNKnT-YaA',
@@ -392,7 +392,7 @@
                     thumb: '../../images/projects/13/thumb.jpg',
                     client: "<a href='http://www.tfg.co.za/'>The Foschini Group</a>",
                     agency: "<a href='http://www.thebread.co.za/'>The Bread</a>",
-                    collaborators: "<p>Ben Johnson & Ben Eagles (Artists)</p>",
+                    collaborators: "<p><strong>Artists: </strong>Ben Johnson & Ben Eagles </p>",
                     cover: '../../images/projects/13/cover.png',
                     images: [
                         '../../images/projects/13/1.jpg',
@@ -420,7 +420,7 @@
                     client: "<a href='http://www.tfg.co.za/'>The Foschini Group</a>",
                     thumb: '../../images/projects/14/thumb.jpg',
                     agency: "<a href='http://www.thebread.co.za/'>The Bread</a>",
-                    collaborators: "<p><a href='http://www.carl.co.za/'>Carl Ashcroft</a> (Spatial Designer)</p>",
+                    collaborators: "<p><strong>Spatial Designer: </strong><a href='http://www.carlascroft.co.za/'>Carl Ascroft</a> </p>",
                     cover: '../../images/projects/14/cover.png',
                     images: [
                         '../../images/projects/14/1.jpg',
@@ -447,7 +447,7 @@
                     thumb: '../../images/projects/15/thumb.jpg',
                     client: "<a href='http://www.vans.com/'>Vans</a>",
                     agency: "<a href='http://www.thebread.co.za/'>The Bread</a>",
-                    collaborators: "<a href='http://www.carl.co.za/'>Carl Ashcroft</a> (Spatial Designer)",
+                    collaborators: "<a href='http://www.carlascroft.co.za/'>Carl Ascroft</a> (Spatial Designer)",
                     cover: '../../images/projects/15/cover.png',
                     videos: [
                         'https://www.youtube.com/watch?v=0ynnUOSMaCs',
