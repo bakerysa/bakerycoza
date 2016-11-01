@@ -215,7 +215,6 @@ a {
 .header {
     position: fixed;
     background-repeat:no-repeat;
-    background-position:top;
     z-index: 1000;
     top: 0;
     left: 0;
@@ -602,11 +601,11 @@ a {
 
 .bk-block {
     position: relative;
-    padding: 20px 20px 20px 50px;
+    padding: 18px 20px 20px 50px;
     h4 {
         text-transform: uppercase;
         position: absolute;
-        top: 13px;
+        top: 11px;
         right: calc(100% - 16px);
         white-space: nowrap;
         -webkit-transform: rotate(270deg);
@@ -680,6 +679,12 @@ a {
 }
 
 #creative-partners {
+  a {
+    text-decoration:none;
+    &:hover {
+      text-decoration:none;
+    }
+  }
   .bk-block {
     p {
       font-size: 11px;
@@ -714,6 +719,7 @@ a {
   }
   .wwd-left-default {
       height: 649px;
+      // height: 433px;
   }
 }
 .wwd-left-details {
@@ -847,12 +853,52 @@ a {
   }
   &-4 {
     color: #e3ffe5;
-    color: black;
+    background: black;
     &:hover, &:active, &:focus {
       color: black;
       background: rgba(0,0,0,0.1);
     }
   }
+  &-w-1 {
+    color: black;
+    background: #ffd5c0;
+    &:hover, &:active, &:focus {
+      color: #ffd5c0;
+      background: black;
+    }
+  }
+
+  &-w-2 {
+    color: black;
+    background: #ffebeb;
+    &:hover, &:active, &:focus {
+      color: #ffebeb;
+      background: black;
+    }
+  }
+
+  &-w-3 {
+    color: black;
+    background: #fff9d9;
+    &:hover, &:active, &:focus {
+      color: #fff9d9;
+      background: black;
+    }
+  }
+
+  &-w-4 {
+    color: black;
+    background: #e3ffe5;
+    &:hover, &:active, &:focus {
+      color: #e3ffe5;
+      background: black;
+    }
+  }
+}
+
+.disable-hover,
+.disable-hover * {
+  pointer-events: none !important;
 }
 
 
@@ -1199,6 +1245,17 @@ background:#869791
         width: 40%;
         float: left;
     }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+  .bk-block-aux {
+    h4 {
+      top: 4px;
+      font-size: 1.1em;
+    }
+  }
+
 }
 
 @media (max-width: 1200px) {
@@ -1646,6 +1703,11 @@ background:#869791
     }
     .portrait {
       @include aspect-ratio(3,3.55);
+    }
+    .bk-block-aux {
+      h4 {
+        font-size: 15px;
+      }
     }
     .bk-block p {
       font-size: 10px;

@@ -59,9 +59,7 @@
       },
       link: function($scope, element, attrs) {
 
-        $timeout(function(){
-          $( ".header" ).addClass( "shared-bg" );
-        });
+        
 
           $root.ngSizeDimensions  = (angular.isArray($root.ngSizeDimensions)) ? $root.ngSizeDimensions : [];
           $root.ngSizeWatch       = (angular.isArray($root.ngSizeWatch)) ? $root.ngSizeWatch : [];
@@ -106,31 +104,58 @@
 
                   $scope.gradientAux = function(){
 
-                    // checks how far scrollbar is from top of window
-                    $scope.scr = $(window).scrollTop();
-                    // calcuates the viewport area
-                    $scope.viewportHeight = $(window).height();
+                    $timeout(function(){
 
-                    $scope.calcHeight = $scope.scr + $scope.viewportHeight;
+                      // checks how far scrollbar is from top of window
+                      $scope.scr = $(window).scrollTop();
+                      // calcuates the viewport area
+                      $scope.viewportHeight = $(window).height();
 
-                    $scope.backgroundScrollAux = "auto " + $scope.size.height + "px";
-                    $scope.backgroundPositionAuxHeader = '0px -' + $scope.scr + 'px';
-                    $scope.backgroundPositionAuxFooter = '0px -' + $scope.calcHeight + 'px';
+                      $scope.calcHeight = $scope.scr + $scope.viewportHeight;
 
-                    $scope.$apply(function () {
-                        $('.header').css({'background-size': $scope.backgroundScrollAux, 'background-position': $scope.backgroundPositionAuxHeader});
-                        $('.footer').css({'background-size': $scope.backgroundScrollAux, 'background-position': $scope.backgroundPositionAuxFooter});
+                      $scope.backgroundScrollAux = "auto " + $scope.size.height + "px";
+                      $scope.backgroundPositionAuxHeader = '0px -' + $scope.scr + 'px';
+                      $scope.backgroundPositionAuxFooter = '0px -' + $scope.calcHeight + 'px';
+
+                      $scope.$apply(function () {
+                          $('.header').css({'background-size': $scope.backgroundScrollAux, 'background-position': $scope.backgroundPositionAuxHeader});
+                          $('.footer').css({'background-size': $scope.backgroundScrollAux, 'background-position': $scope.backgroundPositionAuxFooter});
+                      });
+
                     });
+
                   };
 
                   $scope.gradientAux();
 
                   $document.bind('scroll', function () {
                       $scope.gradientAux();
+
+
+
                   });
+
+                  var body = document.body,
+                      timer;
+
+                  window.addEventListener('scroll', function() {
+                    clearTimeout(timer);
+                    if(!body.classList.contains('disable-hover')) {
+                      body.classList.add('disable-hover')
+                    }
+                    
+                    timer = setTimeout(function(){
+                      body.classList.remove('disable-hover')
+                    },300);
+                  }, false);
+
                 
               }
           });
+
+          $timeout(function(){
+            $( ".header" ).addClass( "shared-bg" );
+          },400);
 
           // Refresh: 100ms
           if (!window.ngSizeHandler) window.ngSizeHandler = setInterval(handler, 100);

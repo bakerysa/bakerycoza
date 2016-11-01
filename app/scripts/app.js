@@ -82,7 +82,7 @@
             })
 
             .state('app.design', {
-                url: 'design',
+                url: 'design-and-content',
                 views: {
                     'wwd-right@app': {
                         templateUrl: 'views/wwd-right-design.html'
