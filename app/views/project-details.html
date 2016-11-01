@@ -1,4 +1,4 @@
-<div class="project-wrapper shared-bg js-scrollable-area">
+<div class="project-wrapper shared-bg js-scrollable-area" ng-size style="padding-bottom: 70px;">
     <div class="project-inner">
         <div class="featured-image" back-img=" {{selectedProject.cover}}  ">
         </div>
@@ -9,10 +9,10 @@
             <div class="col-md-25 col-sm-12">
                 <div ng-bind-html="projectDescription"></div>
             </div>
-            <div class="col-md-15 col-sm-12">
+            <div class="col-md-15 col-sm-12 collaborators">
                 <p ng-if="selectedProject.client"><strong>Client:</strong> <span ng-bind-html="projectClient"> </span></p>
                 <p ng-if="selectedProject.agency"><strong>Agency:</strong> <span ng-bind-html="projectAgency"> </span></p>
-                <p ng-if="selectedProject.collaborators"><strong>Collaborators:</strong> <span ng-bind-html="projectCollaborators"> </span></p>
+                <p ng-if="selectedProject.collaborators"><span ng-bind-html="projectCollaborators"> </span></p>
             </div>
             <div class="clearfix"></div>
         </div>

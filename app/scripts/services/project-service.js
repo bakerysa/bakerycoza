@@ -110,12 +110,12 @@
 
                 {
                     id: 4,
-                    name: 'House of Vans Cape Town',
+                    name: 'House of Vans<br/>Cape Town',
                     description: "<p>On the 16th of March 2016 VANS celebrated their 50th anniversary globally. To mark this massive achievement, VANS threw 'House Of Vans' events in cities all around the world. We were brought in to execute House Of Vans Cape Town.</p> <p> We had just under 2 weeks from start to finish. In this time we worked with various creative partners to conceptualise the space, produce all the elements, create workshops and ensure the live music offering was something to write home about. The entire Bread team went to Cape Town for a week - 3 Days to build the entire space (in what was nothing more than a glass box 5 stories high at the foot of Table Mountain), and 4 days of running the actual event</p> <p>From custom deck chairs, coffee mugs, and pop corn boxes, to checkered wooden floors, 3m high walls, and a custom-made arcade claw machine filled with VANS merch, we pushed ourselves and our brilliant suppliers to pull off one of our favourite events of the year for one of the best clients one could hope for!</p>",
                     thumb: '../../images/projects/04/thumb.jpg',
                     client: "<a href='http://www.vans.com/'>Vans</a>",
                     agency: "<a href='http://www.thebread.co.za/'>The Bread</a>",
-                    collaborators: "<p> Matt Hitchens, Black Koki & Danielle Clough (Artists) </p> <p> Stilo Magolide, Sean Kross, The Make-Overs, The Valley, Retro Dizzy, ANG, Mudblud, Bombardier, ST(E)AK & Roastin Records (Musicians)</p> <p> The Bread (Event Production)</p> <p> We-Are-Awesome Film (Content Production)</p> <p> Dean Westmore (Decor Fabrication)</p> <p> The Bread & Dean Westmore (Spatial Design) </p> <p> Sekh-Fei De Lacy & Grant Payne (Photography)</p>",
+                    collaborators: "<p><strong>Event Production:</strong> The Bread</p> <p><strong>Content Production:</strong> We-Are-Awesome Film</p> <p><strong>Decor Fabrication:</strong> Dean Westmore</p> <p><strong>Spatial Design:</strong> The Bread & Dean Westmore</p> <p><strong>Photography:</strong> Sekh-Fei De Lacy & Grant Payne</p><p><strong>Artists:</strong> Matt Hitchens, Black Koki & Danielle Clough</p> <p><strong>Musicians:</strong> Stilo Magolide, Sean Kross, The Make-Overs, The Valley, Retro Dizzy, ANG, Mudblud, Bombardier, ST(E)AK & Roastin Records</p>",
                     cover: '../../images/projects/04/cover.png',
                     videos: [
                         'https://www.youtube.com/watch?v=JS7ID3_Vjag',

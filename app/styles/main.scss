@@ -195,8 +195,9 @@ a {
 }
 
 
+
 .h-bg-1 {
-  background: #fff9d9;
+  background: #ffd5c0;
 }
 
 .h-bg-2 {
@@ -204,6 +205,10 @@ a {
 }
 
 .h-bg-3 {
+  background: #fff9d9;
+}
+
+.h-bg-4 {
   background: #e3ffe5;
 }
 
@@ -761,9 +766,10 @@ a {
 
 .project-wrapper {
   position: absolute;
-  top: 120px;
+  top: 0;
   left: 0;
   right: 0;
+  padding-top: 120px;
   .project-inner {
     .featured-image {
       min-height: 500px;
@@ -806,10 +812,47 @@ a {
   border-radius: 0px;
   font-weight: 700;
   letter-spacing: 1px;
-  outline: none;
   padding: 8px 20px;
+  font-size:0.9em;
   cursor: pointer;
   background: #ffebe9;
+  &:focus, &:active {
+    outline: none!important;
+  }
+  &-1 {
+    color: #ffd5c0;
+    background: black;
+    &:hover, &:active, &:focus {
+      color: black;
+      background: rgba(0,0,0,0.1);
+    }
+  }
+
+  &-2 {
+    color: #ffebeb;
+    background: black;
+    &:hover, &:active, &:focus {
+      color: black;
+      background: rgba(0,0,0,0.1);
+    }
+  }
+
+  &-3 {
+    color: #fff9d9;
+    background: black;
+    &:hover, &:active, &:focus {
+      color: black;
+      background: rgba(0,0,0,0.1);
+    }
+  }
+  &-4 {
+    color: #e3ffe5;
+    color: black;
+    &:hover, &:active, &:focus {
+      color: black;
+      background: rgba(0,0,0,0.1);
+    }
+  }
 }
 
 
@@ -870,6 +913,12 @@ a {
             }
         }
     }
+}
+
+.collaborators {
+  p {
+    margin-bottom: 2px;
+  }
 }
 
 span.tip {
@@ -1113,6 +1162,9 @@ background:#869791
   padding-left: 0;
 }
 
+.js-eff-wwd-img {
+  cursor: pointer;
+}
 
 .work-mobile-1 {
   display: block;
@@ -1202,7 +1254,7 @@ background:#869791
 
   .project-wrapper {
     .container {
-      
+
     }
   }
 

@@ -34,7 +34,7 @@
 					tl.to(".header", 0.3, {
 					    top: 0,
 					    css: {
-					    	'padding-top': '10px',
+					    	// 'padding-top': '10px',
 					    	'padding-bottom': '10px',
 					    },
 					    ease: Circ.easeInOut
