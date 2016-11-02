@@ -176,13 +176,13 @@
 								}
 						};
 
-						$('#mobile-menu ul li a').click(function(){	
+						$('#mobile-menu ul li a').click(function(){
 	  						document.getElementById('mobile-menu').style.display = 'none';
 							$('#nav-icon').toggleClass('open');
 						});
 
 						// $scope.hideMenu = function() {
-  						
+
 						// }
 
 
