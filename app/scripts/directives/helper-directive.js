@@ -146,7 +146,7 @@
                     
                     timer = setTimeout(function(){
                       body.classList.remove('disable-hover')
-                    },300);
+                    },150);
                   }, false);
 
                 
