@@ -10,13 +10,11 @@
 	 * Controller of the bakeryApp
 	 */
 	angular.module('bakeryApp')
-		.controller('PrimaryContentCtrl', ['$scope', '$state', '$document', 'ProjectService', function($scope, $state, $document, ProjectService){
+		.controller('PrimaryContentCtrl', ['$rootScope', '$scope', '$state', '$document', 'ProjectService', function($rootScope, $scope, $state, $document, ProjectService){
 
 			$scope.projects = ProjectService.list();
 
 			console.log('primary content called ');
-
-
 
 
 			// GOOGLE MAPS			

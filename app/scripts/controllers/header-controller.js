@@ -12,7 +12,7 @@
 	angular.module('bakeryApp')
 		.controller('HeaderCtrl', ['$scope', '$rootScope', '$state', '$document', '$location', '$timeout', function($scope, $rootScope, $state, $document, $location, $timeout){
 
-
+					
 					console.log('header called');
 
 					$rootScope.primaryColor = '#ffd5c0';
@@ -45,13 +45,13 @@
 					}, "=-0.3")
 
 					.to(".js-logo", 0.3, {
-					    height: 60,
+					    height: 55,
 					    ease: Circ.easeInOut
 					}, "=-0.3")
 
 					.to(".nav ul li", 0.3, {
 					    css: {
-					    	'padding-top': '1.4em'
+					    	'padding-top': '1.2em'
 					    },
 					    ease: Circ.easeInOut
 					}, "=-0.3");
@@ -129,7 +129,7 @@
 						var tid = setInterval( function () {
 						    if ( document.readyState !== 'complete' ) return;
 						    clearInterval( tid );
-						    TweenMax.to(window, 0.7, {scrollTo:{y: $('#work').position().top-80},  autoKill : false, ease:Circ.easeInOut});
+						    TweenMax.to(window, 0.7, {scrollTo:{y: $('#work').position().top-75},  autoKill : false, ease:Circ.easeInOut});
 						}, 100 );
 					};
 

@@ -209,11 +209,11 @@
     // .animation('.js-animate-fade', function(){
     //   return {
     //     enter: function(element, done) {
-    //       TweenMax.from(element, 0.5, {y:10, onComplete:done});
+    //       TweenMax.from(element, 0.2, {opacity: 1, onComplete:done});
+    //     },
+    //     leave: function(element, done) {
+    //       TweenMax.to(element, 0.2, {opacity:0, onComplete:done})
     //     }
-    //     // leave: function(element, done) {
-    //     //   TweenMax.to(element, 0.3, {opacity:0, y:10, onComplete:done})
-    //     // }
     //   };
     // });
 

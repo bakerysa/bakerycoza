@@ -59,7 +59,6 @@
       },
       link: function($scope, element, attrs) {
 
-        
 
           $root.ngSizeDimensions  = (angular.isArray($root.ngSizeDimensions)) ? $root.ngSizeDimensions : [];
           $root.ngSizeWatch       = (angular.isArray($root.ngSizeWatch)) ? $root.ngSizeWatch : [];
@@ -67,12 +66,14 @@
           var handler = function() {
               angular.forEach($root.ngSizeWatch, function(el, i) {
                   // Dimensions Not Equal?
-                  if ($root.ngSizeDimensions[i][0] != el.offsetWidth || $root.ngSizeDimensions[i][1] != el.offsetHeight) {
+
+                  // this if statement was the bugger that was causing all the nonsense
+                  // if ($root.ngSizeDimensions[i][0] != el.offsetWidth || $root.ngSizeDimensions[i][1] != el.offsetHeight) {
                       // Update Them
                       $root.ngSizeDimensions[i] = [el.offsetWidth, el.offsetHeight];
                       // Update Scope?
                       $root.$broadcast('size::changed', i);
-                  }
+                  // }
               });
           };
 
@@ -95,67 +96,32 @@
                       width: $root.ngSizeDimensions[i][0],
                       height: $root.ngSizeDimensions[i][1]
                   };
-
-                  console.log('window size is being determined');
-
-
                   
 
+                  $scope.gradientCalc = function(){
+                    $scope.viewportOffset = $scope.scrollTop() + $(window).height();
+                    $scope.backgroundPositionAuxHeader = '0px -' + $scope.scrollTop() + 'px';
+                    $scope.backgroundPositionAuxFooter = '0px -' + $scope.viewportOffset + 'px';
 
-                  $scope.gradientAux = function(){
-
-                    $timeout(function(){
-
-                      // checks how far scrollbar is from top of window
-                      $scope.scr = $(window).scrollTop();
-                      // calcuates the viewport area
-                      $scope.viewportHeight = $(window).height();
-
-                      $scope.calcHeight = $scope.scr + $scope.viewportHeight;
-
-                      $scope.backgroundScrollAux = "auto " + $scope.size.height + "px";
-                      $scope.backgroundPositionAuxHeader = '0px -' + $scope.scr + 'px';
-                      $scope.backgroundPositionAuxFooter = '0px -' + $scope.calcHeight + 'px';
-
-                      $scope.$apply(function () {
-                          $('.header').css({'background-size': $scope.backgroundScrollAux, 'background-position': $scope.backgroundPositionAuxHeader});
-                          $('.footer').css({'background-size': $scope.backgroundScrollAux, 'background-position': $scope.backgroundPositionAuxFooter});
-                      });
-
-                    });
-
-                  };
-
-                  $scope.gradientAux();
-
+                    $('.header').css({'background-size': $scope.backgroundScrollAux, 'background-position': $scope.backgroundPositionAuxHeader});
+                    $('.footer').css({'background-size': $scope.backgroundScrollAux, 'background-position': $scope.backgroundPositionAuxFooter});
+                  }
+                  // Run this whenever window height changes
+                  $( ".header" ).addClass( "shared-bg" );
+                  $( ".footer" ).addClass( "shared-bg" );
+                  $scope.backgroundScrollAux = "auto " + $scope.size.height + "px";
+                  $scope.scrollTop = function(){
+                    return $(window).scrollTop();
+                  }
+                  $scope.gradientCalc();
+                  // Run this whenever user scrolls
                   $document.bind('scroll', function () {
-                      $scope.gradientAux();
-
-
-
+                    $scope.gradientCalc();
                   });
-
-                  var body = document.body,
-                      timer;
-
-                  window.addEventListener('scroll', function() {
-                    clearTimeout(timer);
-                    if(!body.classList.contains('disable-hover')) {
-                      body.classList.add('disable-hover')
-                    }
-                    
-                    timer = setTimeout(function(){
-                      body.classList.remove('disable-hover')
-                    },150);
-                  }, false);
-
-                
               }
+              
           });
 
-          $timeout(function(){
-            $( ".header" ).addClass( "shared-bg" );
-          },400);
 
           // Refresh: 100ms
           if (!window.ngSizeHandler) window.ngSizeHandler = setInterval(handler, 100);
@@ -200,31 +166,7 @@
      };
   })
 
-  .directive('duoTone', function ($timeout, $state) { 
-      return {
-          restrict: "AE",
-          link: function(scope, elem, attr, ctrl) {
-
-
-              // $timeout(function(){
-
-              //     if ($state.is('app.network')) {
-              //             $('img').duotone({
-              //                gradientMap: '#271f37 15%, #fff9d9'
-              //             });
-              //     } else if ($state.is('app.team')) {
-              //             $('img').duotone({
-              //                gradientMap: '#000000, #c6f4c8'
-              //             });
-              //     }
-
-                   
-              // });
   
-          }
-     };
-  })
-
   .directive('magnificPopup', function ($timeout, $state) { 
       return {
           restrict: "AE",
@@ -248,6 +190,3 @@
 
 
 })(); 
-
-
-
