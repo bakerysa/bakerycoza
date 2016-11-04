@@ -1759,15 +1759,35 @@ and (orientation : portrait) {
 }
 
 
-
-.loader {
-  position: fixed; 
-  p {
-    font-size: 100px;
-    font-weight: 900;
+.preloader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  z-index: 99999;
+  .loader {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    h3 {
+      color: black;
+      font-size: 1.2em;
+      text-align:center;
+    }
+    img {
+      width: 100%;
+    }
   }
-
 }
+
+
 .topbar {
   position: absolute;
   top: 0;
