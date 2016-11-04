@@ -290,6 +290,7 @@
                     cover: '../../images/projects/08/cover.png',
                     videos: [
                         'https://vimeo.com/140646586',
+                        'https://vimeo.com/143727271',
                     ],
                     images: [
                         '../../images/projects/08/2.jpg',

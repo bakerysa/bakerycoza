@@ -196,7 +196,18 @@
                     templateUrl: 'views/footer-jobs.html'
                 }
             }
+        })
+
+        .state('app.jobs.detail', {
+            url: '/:id',
+            views: {
+                'primarycontent@': {
+                    templateUrl: 'views/jobs.html',
+                    controller: 'JobsDetailCtrl'
+                }
+            }
         });
+
 
     }])
 

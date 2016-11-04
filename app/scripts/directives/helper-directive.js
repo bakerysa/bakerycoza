@@ -1,5 +1,5 @@
-(function () { 
-  
+(function () {
+
   'use strict';
 
   /**
@@ -17,7 +17,7 @@
         attrs.$observe('backImg', function(value) {
             element.css({
                 'background-image': 'url(' + value +')',
-                'background-size' : 'cover' 
+                'background-size' : 'cover'
             });
         });
       };
@@ -59,6 +59,10 @@
       },
       link: function($scope, element, attrs) {
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 89edeb45d0c3990d432ea2218a0343a9906fb7d8
 
           $root.ngSizeDimensions  = (angular.isArray($root.ngSizeDimensions)) ? $root.ngSizeDimensions : [];
           $root.ngSizeWatch       = (angular.isArray($root.ngSizeWatch)) ? $root.ngSizeWatch : [];
@@ -101,6 +105,7 @@
                       height: $root.ngSizeDimensions[i][1]
                   };
 
+
                   console.log('inner window height: ' + $scope.size.height);
                   
                   $scope.gradientCalc = function(){
@@ -120,9 +125,13 @@
                   }
                   $scope.gradientCalc();
                   // Run this whenever user scrolls
+
+
+
                   $document.bind('scroll', function () {
                     $scope.gradientCalc();
                   });
+
               }
               
           });
@@ -138,7 +147,7 @@
     };
   }])
 
-  .directive('scrollTo', function ($rootScope, $timeout, $state) { 
+  .directive('scrollTo', function ($rootScope, $timeout, $state) {
       return {
           restrict: "AE",
           link: function(scope, elem, attr, ctrl) {
@@ -163,16 +172,45 @@
                   } else if ($state.is('app.spaces')) {
                         $rootScope.alignWhatWeDo();
                   }
-                
-                   
+
+
               });
- 
+
           }
      };
   })
 
+<<<<<<< HEAD
   
   .directive('magnificPopup', function ($timeout, $state) { 
+=======
+  .directive('duoTone', function ($timeout, $state) {
+      return {
+          restrict: "AE",
+          link: function(scope, elem, attr, ctrl) {
+
+
+              // $timeout(function(){
+
+              //     if ($state.is('app.network')) {
+              //             $('img').duotone({
+              //                gradientMap: '#271f37 15%, #fff9d9'
+              //             });
+              //     } else if ($state.is('app.team')) {
+              //             $('img').duotone({
+              //                gradientMap: '#000000, #c6f4c8'
+              //             });
+              //     }
+
+
+              // });
+
+          }
+     };
+  })
+
+  .directive('magnificPopup', function ($timeout, $state) {
+>>>>>>> 89edeb45d0c3990d432ea2218a0343a9906fb7d8
       return {
           restrict: "AE",
           link: function(scope, elem, attr, ctrl) {
@@ -188,10 +226,14 @@
                       }
                   });
               });
-  
+
           }
      };
   });
 
 
+<<<<<<< HEAD
 })(); 
+=======
+})();
+>>>>>>> 89edeb45d0c3990d432ea2218a0343a9906fb7d8
