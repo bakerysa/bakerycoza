@@ -23,7 +23,12 @@
                 // NOTE: "cache" attribute is to prevent images from caching in the
                 // browser (for the sake of the demo).
                 $scope.imageLocations = [
-                    ( "../../images/10.jpeg" )
+                    ( "https://i.ytimg.com/vi/c7oV1T2j5mc/maxresdefault.jpg?v=1&cache=" + ( new Date() ).getTime() ),
+                    ( "https://i.ytimg.com/vi/c7oV1T2j5mc/maxresdefault.jpg?v=2&cache=" + ( new Date() ).getTime() ),
+                    ( "https://i.ytimg.com/vi/c7oV1T2j5mc/maxresdefault.jpg?v=3&cache=" + ( new Date() ).getTime() ),
+                    ( "https://i.ytimg.com/vi/c7oV1T2j5mc/maxresdefault.jpg?v=4&cache=" + ( new Date() ).getTime() ),
+                    ( "https://i.ytimg.com/vi/c7oV1T2j5mc/maxresdefault.jpg?v=5&cache=" + ( new Date() ).getTime() ),
+                    ( "https://i.ytimg.com/vi/c7oV1T2j5mc/maxresdefault.jpg?v=6&cache=" + ( new Date() ).getTime() ),
                 ];
                 // Preload the images; then, update display when returned.
                 preloader.preloadImages( $scope.imageLocations ).then(
