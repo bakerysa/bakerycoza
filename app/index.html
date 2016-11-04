@@ -43,12 +43,13 @@
 
                   <!-- BEGIN: Loading View. -->
                   <div class="preloader" ng-switch-when="true">
-                      <div class="topbar">
+                      <!-- <div class="topbar">
                           <div class="topbar-loader" style="width: {{ percentLoaded }}%;">
                           </div>
-                      </div>
+                      </div> -->
                       <div class="loader">
-                        <p>{{ percentLoaded }}</p>
+                        <img src="images/bread.gif">
+                        <h3>Uno momemto...</h3>
                       </div>
                   </div>
                   <!-- END: Loading View.-->
@@ -66,7 +67,7 @@
 
                       <p ng-switch-when="false">
 
-                          <strong>Oops</strong>: One of your images failed to load :(
+                          <!-- <strong>Oops</strong>: One of your images failed to load :( -->
 
                       </p>
 
@@ -136,7 +137,6 @@
         <script src="scripts/controllers/work-controller.js"></script>
         <script src="scripts/controllers/projects-controller.js"></script>
         <script src="scripts/controllers/project-details-controller.js"></script>
-        <script src="scripts/controllers/job-details-controller.js"></script>
         <script src="scripts/services/project-service.js"></script>
         <script src="scripts/services/analytics-service.js"></script>
         <script src="scripts/directives/helper-directive.js"></script>
