@@ -66,14 +66,12 @@
           var handler = function() {
               angular.forEach($root.ngSizeWatch, function(el, i) {
                   // Dimensions Not Equal?
-
-                  // this if statement was the bugger that was causing all the nonsense
-                  // if ($root.ngSizeDimensions[i][0] != el.offsetWidth || $root.ngSizeDimensions[i][1] != el.offsetHeight) {
+                  if ($root.ngSizeDimensions[i][0] != el.offsetWidth || $root.ngSizeDimensions[i][1] != el.offsetHeight) {
                       // Update Them
                       $root.ngSizeDimensions[i] = [el.offsetWidth, el.offsetHeight];
                       // Update Scope?
                       $root.$broadcast('size::changed', i);
-                  // }
+                  }
               });
           };
 
@@ -90,14 +88,21 @@
 
           // Update Scope?
           $scope.$on('size::changed', function(event, i) {
+            
               // Relevant to the element attached to *this* directive
+              console.log('i is ' + i);
+              console.log('exists is ' + exists);
+
+
+
               if (i === exists) {
                   $scope.size = {
                       width: $root.ngSizeDimensions[i][0],
                       height: $root.ngSizeDimensions[i][1]
                   };
-                  
 
+                  console.log('inner window height: ' + $scope.size.height);
+                  
                   $scope.gradientCalc = function(){
                     $scope.viewportOffset = $scope.scrollTop() + $(window).height();
                     $scope.backgroundPositionAuxHeader = '0px -' + $scope.scrollTop() + 'px';
