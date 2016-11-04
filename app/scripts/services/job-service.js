@@ -20,7 +20,7 @@
                 },
                 {
                     id: 2,
-                    name: 'Developer',
+                    name: '<h1>Developer</h1>',
                     description: "<h4>We specialise in building the perfect team around each project that comes our way. Our core team heads up each department and works with a multitude of freelance creative partners to find solutions to each challenge.</h4>"
                 }
             ];

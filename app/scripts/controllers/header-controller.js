@@ -38,11 +38,7 @@
 					    	'padding-bottom': '10px',
 					    },
 					    ease: Circ.easeInOut
-					})
-					.to(".header", 0.3, {
-					    // backgroundColor : '#f3cbb7',
-					    ease: Circ.easeInOut
-					}, "=-0.3")
+					},"=-0.3")
 
 					.to(".js-logo", 0.3, {
 					    height: 60,

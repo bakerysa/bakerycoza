@@ -12,6 +12,9 @@
 	angular.module('bakeryApp')
 	  	.controller('JobsDetailCtrl', ['$scope', '$sce', '$stateParams', '$timeout', 'JobService', function($scope, $sce, $stateParams, $timeout, JobService){
 
+
+					console.log('JobsDetailCtrl fired');
+
 	  		   // Define selectedJob
           	$scope.selectedJob = JobService.find($stateParams.id);
             $scope.jobs = JobService.list();
