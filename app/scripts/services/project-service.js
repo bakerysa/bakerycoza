@@ -121,6 +121,7 @@
                         'https://www.youtube.com/watch?v=JS7ID3_Vjag',
                     ],
                     images: [
+                        '../../images/projects/04/1.jpg',
                         '../../images/projects/04/2.jpg',
                         '../../images/projects/04/3.jpg',
                         '../../images/projects/04/4.jpg',
@@ -149,6 +150,7 @@
                         '../../images/projects/04/27.jpg',
                         '../../images/projects/04/28.jpg',
                         '../../images/projects/04/29.jpg',
+                        '../../images/projects/04/30.jpg',
                         '../../images/projects/04/31.jpg',
                         '../../images/projects/04/32.jpg',
                         '../../images/projects/04/33.jpg',
@@ -185,18 +187,6 @@
                         '../../images/projects/04/64.jpg',
                         '../../images/projects/04/65.jpg',
                         '../../images/projects/04/66.jpg',
-                        '../../images/projects/04/67.jpg',
-                        '../../images/projects/04/68.jpg',
-                        '../../images/projects/04/69.jpg',
-                        '../../images/projects/04/70.jpg',
-                        '../../images/projects/04/71.jpg',
-                        '../../images/projects/04/72.jpg',
-                        '../../images/projects/04/73.jpg',
-                        '../../images/projects/04/74.jpg',
-                        '../../images/projects/04/75.jpg',
-                        '../../images/projects/04/76.jpg',
-                        '../../images/projects/04/77.jpg',
-                        '../../images/projects/04/78.jpg',
                     ]
                 },
 
@@ -359,9 +349,12 @@
                     collaborators: "<p><strong>Fabrication: </strong> Klara Van Wyngarden </p> <p><strong>Event Production: </strong>The Bread </p> <p><strong>Artists: </strong>Muptee, Riky Rick, Stilo Magolide, Nonku Phiri & PHFAT </p> <p><strong>Content Production: </strong>We-Are-Awesome Film </p> <p><strong>Live Painter: </strong>Chris Valentine </p> <p><strong>Tag Writers: </strong>Ben Eagle & Matt Bouch </p> <p><strong>Film Production: </strong> We-Are-Awesome Film </p> <p><strong>Directors: </strong> Adriaan Louw, Chris Saunders, Dave East & Lebogang Rasethaba </p> <p><strong>Stars: </strong>Didi, Nonku Phiri, Roxanne Robinson, Jake Lipman & Reason </p>",
                     cover: '../../images/projects/11/cover.png',
                     videos: [
+                        'https://vimeo.com/189931238',
                         'https://www.youtube.com/watch?v=06JLOlMVA8M',
                         'https://www.youtube.com/watch?v=iUqGNdwpgyI',
                         'https://www.youtube.com/watch?v=MQg3GVgKOqM',
+                        'https://www.youtube.com/watch?v=GdEIoy8-zb0',
+                        'https://www.youtube.com/watch?v=R8RnEC7-SRg',
                     ],
                     images: [
                         '../../images/projects/11/1.jpg',
@@ -443,11 +436,11 @@
                 {
                     id: 15,
                     name: 'House Of Vans Johannesburg',
-                    description: '<p>We were tasked with designing a new The Scene store in East Rand Mall, Johannesburg. We had to work with their graphic branding while developing a new style of interior. We focused heavily on reducing visual clutter, and bringing the colour palette of the store into a neutral range, allowing the massive variety of product to shine. </p><p>Because of the size and shape of the space we split the shop in two: The front space for clothing and accessories, and a "sneaker lounge" in the back. The spaces are divided by powder-coated mesh walls, and the dropped ceiling feature in the sneaker lounge draws intrigue from passersby. </p>',
+                    description: '<p>After completing the hugely successful House Of Vans Cape Town to celebrate Vans 50yr anniversary, we were tasked with bringing this incredible celebration to the heart of Johannesburg.</p><p>We handled absolutely every element of the production from venue scouting, to build, bookings, and management.</p><p>We found an abandoned school in Braamfontein that was set to be developed into something new. We transformed it into House Of Vans JHB for 3 days. A dilapidated building with a massive inner-city secret courtyard - never seen by revelers before and never to be used as a venue in the same way again.</p><p>Over 3 days we packed the venue with an incredible mix of artists, musicians, activities, workshops, skate comps, and plenty food and drink. Over 5000 people attended over 3 days in what was the ultimate celebration of Vans and the city of Johannesburg.</p>',
                     thumb: '../../images/projects/15/thumb.jpg',
                     client: "<a href='http://www.vans.com/'>Vans</a>",
                     agency: "<a href='http://www.thebread.co.za/'>The Bread</a>",
-                    collaborators: "<a href='http://www.carlascroft.co.za/'>Carl Ascroft</a> (Spatial Designer)",
+                    collaborators: "<p><strong>Event Production: </strong><a href='http://www.thebread.co.za/'>The Bread</a></p><p><strong>Content Production: </strong>We-Are-Awesome Film</p><p><strong>Decor Fabrication: </strong>Dean Westmore</p><p><strong>Spatial Design: </strong>The Bread & Dean Westmore</p><p><strong>Photography: </strong>Sekh-Fei De Lacy</p><p><strong>Artists: </strong>Matt Hitchens, Black Koki & Danielle Clough</p><p><strong>Musicians: </strong>Stilo Magolide, Kid X, Al Bairre, Youngsta, The Make-Overs, Maphorisa, Speedsta, Ms Cosmo, Bye Beneco, Sol Gems, The Tazers, Kid Fonque, Sean Kross, Themba Lunacy, Golden Yolk, TMO, Slice Frederico, Mvelo, Olwee, Masterzofrhythm &amp; Uncle Partytime</p>",
                     cover: '../../images/projects/15/cover.png',
                     videos: [
                         'https://www.youtube.com/watch?v=0ynnUOSMaCs',
