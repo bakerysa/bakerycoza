@@ -1,5 +1,5 @@
-(function () { 
-  
+(function () {
+
   'use strict';
 
   /**
@@ -17,7 +17,7 @@
         attrs.$observe('backImg', function(value) {
             element.css({
                 'background-image': 'url(' + value +')',
-                'background-size' : 'cover' 
+                'background-size' : 'cover'
             });
         });
       };
@@ -59,7 +59,7 @@
       },
       link: function($scope, element, attrs) {
 
-        
+
 
           $root.ngSizeDimensions  = (angular.isArray($root.ngSizeDimensions)) ? $root.ngSizeDimensions : [];
           $root.ngSizeWatch       = (angular.isArray($root.ngSizeWatch)) ? $root.ngSizeWatch : [];
@@ -97,10 +97,6 @@
                   };
 
                   console.log('window size is being determined');
-
-
-                  
-
 
                   $scope.gradientAux = function(){
 
@@ -143,13 +139,13 @@
                     if(!body.classList.contains('disable-hover')) {
                       body.classList.add('disable-hover')
                     }
-                    
+
                     timer = setTimeout(function(){
                       body.classList.remove('disable-hover')
                     },150);
                   }, false);
 
-                
+
               }
           });
 
@@ -167,7 +163,7 @@
     };
   }])
 
-  .directive('scrollTo', function ($rootScope, $timeout, $state) { 
+  .directive('scrollTo', function ($rootScope, $timeout, $state) {
       return {
           restrict: "AE",
           link: function(scope, elem, attr, ctrl) {
@@ -192,15 +188,15 @@
                   } else if ($state.is('app.spaces')) {
                         $rootScope.alignWhatWeDo();
                   }
-                
-                   
+
+
               });
- 
+
           }
      };
   })
 
-  .directive('duoTone', function ($timeout, $state) { 
+  .directive('duoTone', function ($timeout, $state) {
       return {
           restrict: "AE",
           link: function(scope, elem, attr, ctrl) {
@@ -218,14 +214,14 @@
               //             });
               //     }
 
-                   
+
               // });
-  
+
           }
      };
   })
 
-  .directive('magnificPopup', function ($timeout, $state) { 
+  .directive('magnificPopup', function ($timeout, $state) {
       return {
           restrict: "AE",
           link: function(scope, elem, attr, ctrl) {
@@ -241,13 +237,10 @@
                       }
                   });
               });
-  
+
           }
      };
   });
 
 
-})(); 
-
-
-
+})();

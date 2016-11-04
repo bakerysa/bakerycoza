@@ -132,12 +132,23 @@
         <script src="scripts/controllers/work-controller.js"></script>
         <script src="scripts/controllers/projects-controller.js"></script>
         <script src="scripts/controllers/project-details-controller.js"></script>
+        <script src="scripts/controllers/job-details-controller.js"></script>
         <script src="scripts/services/project-service.js"></script>
         <script src="scripts/services/analytics-service.js"></script>
         <script src="scripts/directives/helper-directive.js"></script>
         <script src="scripts/controllers/preload-images-controller.js"></script>
         <script src="scripts/services/preload-image-factory.js"></script>
         <!-- endbuild -->
+        
+        <script type="text/javascript">
+        $(document).ready(function() {
+          $('a').on('click touchend', function(e) {
+            var el = $(this);
+            var link = el.attr('href');
+            window.location = link;
+          });
+        });
+        </script>
 
         <script type="text/javascript">
           $(function(){
