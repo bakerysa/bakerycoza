@@ -44,8 +44,11 @@
                   <!-- BEGIN: Loading View. -->
                   <div class="preloader" ng-switch-when="true">
                       <div class="topbar">
-                           <h1>{{ percentLoaded }}
-                          </h1>
+                          <div class="topbar-loader" style="width: {{ percentLoaded }}%;">
+                          </div>
+                      </div>
+                      <div class="loader">
+                        <p>{{ percentLoaded }}</p>
                       </div>
                   </div>
                   <!-- END: Loading View.-->

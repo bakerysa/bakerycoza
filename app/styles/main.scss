@@ -1771,3 +1771,32 @@ and (orientation : portrait) {
   text-align: center;
   padding: 10px 20px;
 }
+
+
+
+.loader {
+  position: fixed; 
+  p {
+    font-size: 100px;
+    font-weight: 900;
+  }
+
+}
+.topbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 10px;
+  .topbar-loader{
+    background: black;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition:width 0.25s;
+    -webkit-transition:width .25s;
+    -moz-transition: width 0.25s;
+    display: block;
+  }
+}
