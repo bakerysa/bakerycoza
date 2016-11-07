@@ -51,6 +51,9 @@
                         controller: 'WorkCtrl',
                         controllerAs: 'work'
                     },
+                    'network-view@app': {
+                      templateUrl: 'views/network.html'
+                    },
                     'footer': {
                         templateUrl: 'views/footer.html'
                     }
@@ -190,7 +193,9 @@
                     controllerAs: 'header'
                 },
                 'primarycontent@': {
-                    templateUrl: 'views/jobs.html'
+                    templateUrl: 'views/jobs.html',
+                    controller: 'JobsCtrl',
+                    controllerAs: 'jobs'
                 },
                 'footer@': {
                     templateUrl: 'views/footer-jobs.html'
@@ -198,11 +203,11 @@
             }
         })
 
-        .state('app.jobs.detail', {
+        .state('app.careers.detail', {
             url: '/:id',
             views: {
                 'primarycontent@': {
-                    templateUrl: 'views/jobs.html',
+                    templateUrl: 'views/job-details.html',
                     controller: 'JobsDetailCtrl'
                 }
             }

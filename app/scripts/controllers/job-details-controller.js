@@ -18,12 +18,12 @@
 	  		   // Define selectedJob
           	$scope.selectedJob = JobService.find($stateParams.id);
             $scope.jobs = JobService.list();
-
-          	$scope.nameHTML = $scope.selectedJob.name;
-			      $scope.jobName = $sce.trustAsHtml($scope.nameHTML);
-
-            $scope.descriptionHTML = $scope.selectedJob.description;
-          	$scope.jobDescription = $sce.trustAsHtml($scope.descriptionHTML);
+						console.log($scope.selectedJob);
+          	// $scope.nameHTML = $scope.selectedJob.name;
+			      // $scope.jobName = $sce.trustAsHtml($scope.nameHTML);
+						//
+            // $scope.descriptionHTML = $scope.selectedJob.description;
+          	// $scope.jobDescription = $sce.trustAsHtml($scope.descriptionHTML);
 
         }]);
 

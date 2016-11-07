@@ -19,7 +19,7 @@
             $scope.projects = ProjectService.list();
 
           	$scope.nameHTML = $scope.selectedProject.name;
-			$scope.projectName = $sce.trustAsHtml($scope.nameHTML);
+			      $scope.projectName = $sce.trustAsHtml($scope.nameHTML);
 
             $scope.descriptionHTML = $scope.selectedProject.description;
           	$scope.projectDescription = $sce.trustAsHtml($scope.descriptionHTML);
@@ -35,7 +35,7 @@
           	$scope.projectClient = $sce.trustAsHtml($scope.clientHTML);
 
 
-          	         
+
 
 
         }]);
