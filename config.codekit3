@@ -1049,6 +1049,14 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/app\/images\/breads.gif": {
+		"ft": 4194304,
+		"iS": 202383,
+		"oA": 0,
+		"oAP": "\/app\/images\/breads.gif",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/app\/images\/clients\/ANATOMY.png": {
 		"ft": 32768,
 		"iS": 94998,
@@ -4390,6 +4398,15 @@
 		"oA": 2,
 		"oAP": "\/app\/robots.txt",
 		"oF": 0
+		},
+	"\/app\/scripts\/app-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/app\/scripts\/app-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
 		},
 	"\/app\/scripts\/app.js": {
 		"ft": 64,

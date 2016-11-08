@@ -194,8 +194,7 @@
                 },
                 'primarycontent@': {
                     templateUrl: 'views/jobs.html',
-                    controller: 'JobsCtrl',
-                    controllerAs: 'jobs'
+                    controller: 'JobsCtrl'
                 },
                 'footer@': {
                     templateUrl: 'views/footer-jobs.html'
