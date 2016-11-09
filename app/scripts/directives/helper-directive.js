@@ -59,6 +59,7 @@
       },
       link: function($scope, element, attrs) {
 
+        console.log('ngsize directive fired');
 
           $root.ngSizeDimensions  = (angular.isArray($root.ngSizeDimensions)) ? $root.ngSizeDimensions : [];
           $root.ngSizeWatch       = (angular.isArray($root.ngSizeWatch)) ? $root.ngSizeWatch : [];
@@ -90,15 +91,19 @@
           $scope.$on('size::changed', function(event, i) {
             
               // Relevant to the element attached to *this* directive
-              console.log('i is ' + i);
+              
+              console.log('i is' + i);
               console.log('exists is ' + exists);
+
               if (i === exists) {
+
                   $scope.size = {
                       width: $root.ngSizeDimensions[i][0],
                       height: $root.ngSizeDimensions[i][1]
                   };
 
                   console.log('inner window height ' + $scope.size.height);
+
                   $scope.gradientCalc = function(){
                     $scope.viewportOffset = $scope.scrollTop() + $(window).height();
                     $scope.backgroundPositionAuxHeader = '0px -' + $scope.scrollTop() + 'px';
@@ -139,7 +144,6 @@
           restrict: "AE",
           link: function(scope, elem, attr, ctrl) {
 
-
               $timeout(function(){
 
                   if ($state.is('app.contact')) {
@@ -160,7 +164,6 @@
                         $rootScope.alignWhatWeDo();
                   }
                 
-                   
               });
  
           }
@@ -184,6 +187,55 @@
                       }
                   });
               });
+  
+          }
+     };
+  })
+
+  .directive('colorChange', function ($rootScope, $timeout, $state) { 
+      return {
+          restrict: "AE",
+          link: function(scope, elem, attr, ctrl) {
+
+                $( ".js-network" ).mouseover(function() {
+                  $( ".header" ).addClass( "h-bg-1" );
+                  $( ".footer" ).addClass( "h-bg-1" );
+                  $( ".primarycontent" ).addClass( "h-bg-1" );
+                });
+
+                $( ".js-network" ).mouseout(function() {
+                  $( ".header" ).removeClass( "h-bg-1" );
+                  $( ".footer" ).removeClass( "h-bg-1" );
+                  $( ".primarycontent" ).removeClass( "h-bg-1" );
+                });
+
+                $( ".js-careers" ).mouseover(function() {
+                  $( ".header" ).addClass( "h-bg-2" );
+                  $( ".footer" ).addClass( "h-bg-2" );
+                  $( ".primarycontent" ).addClass( "h-bg-2" );
+                  $rootScope.loadGoogleMap2();
+                });
+
+                $( ".js-careers" ).mouseout(function() {
+                  $( ".header" ).removeClass( "h-bg-2" );
+                  $( ".footer" ).removeClass( "h-bg-2" );
+                  $( ".primarycontent" ).removeClass( "h-bg-2" );
+                  $rootScope.loadGoogleMap1();
+                });
+
+                $( ".js-team" ).mouseover(function() {
+                  $( ".header" ).addClass( "h-bg-3" );
+                  $( ".footer" ).addClass( "h-bg-3" );
+                  $( ".primarycontent" ).addClass( "h-bg-3" );
+                  $rootScope.loadGoogleMap3();
+                });
+
+                $( ".js-team" ).mouseout(function() {
+                  $( ".header" ).removeClass( "h-bg-3" );
+                  $( ".footer" ).removeClass( "h-bg-3" );
+                  $( ".primarycontent" ).removeClass( "h-bg-3" );
+                  $rootScope.loadGoogleMap1();
+                });
   
           }
      };

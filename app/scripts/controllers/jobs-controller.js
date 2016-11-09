@@ -13,6 +13,8 @@
         .controller('JobsCtrl', ['$scope', '$timeout', 'JobService', function($scope, $timeout, JobService){
 
             $scope.jobs = JobService.list();
+            console.log('JobsCtrl fired');
+            console.log($scope.jobs);
 
 	  }]);
 

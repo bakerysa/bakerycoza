@@ -190,7 +190,8 @@
                     controllerAs: 'header'
                 },
                 'primarycontent@': {
-                    templateUrl: 'views/jobs.html'
+                    templateUrl: 'views/jobs.html',
+                    controller: 'JobsCtrl'
                 },
                 'footer@': {
                     templateUrl: 'views/footer-jobs.html'
@@ -198,11 +199,11 @@
             }
         })
 
-        .state('app.jobs.detail', {
+        .state('app.careers.detail', {
             url: '/:id',
             views: {
                 'primarycontent@': {
-                    templateUrl: 'views/jobs.html',
+                    templateUrl: 'views/job-details.html',
                     controller: 'JobsDetailCtrl'
                 }
             }
