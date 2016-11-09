@@ -1,4 +1,4 @@
-(function () { 
+(function () {
 
 	'use strict';
 
@@ -11,10 +11,10 @@
 	 */
 	angular.module('bakeryApp')
         .controller('WorkCtrl', ['$scope', 'ProjectService', function($scope, ProjectService){
-        
-            
+
+
             $scope.projects = ProjectService.list();
 
 	  }]);
 
-  })(); 
+  })();

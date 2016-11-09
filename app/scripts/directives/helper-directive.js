@@ -1,5 +1,5 @@
-(function () { 
-  
+(function () {
+
   'use strict';
 
   /**
@@ -17,7 +17,7 @@
         attrs.$observe('backImg', function(value) {
             element.css({
                 'background-image': 'url(' + value +')',
-                'background-size' : 'cover' 
+                'background-size' : 'cover'
             });
         });
       };
@@ -62,7 +62,7 @@
         console.log('ngsize directive fired');
 
           $root.ngSizeDimensions  = (angular.isArray($root.ngSizeDimensions)) ? $root.ngSizeDimensions : [];
-          $root.ngSizeWatch       = (angular.isArray($root.ngSizeWatch)) ? $root.ngSizeWatch : [];
+          $root.ngSizeWatch = (angular.isArray($root.ngSizeWatch)) ? $root.ngSizeWatch : [];
 
           var handler = function() {
               angular.forEach($root.ngSizeWatch, function(el, i) {
@@ -89,7 +89,7 @@
 
           // Update Scope?
           $scope.$on('size::changed', function(event, i) {
-            
+
               // Relevant to the element attached to *this* directive
               
               console.log('i is' + i);
@@ -125,7 +125,7 @@
                     $scope.gradientCalc();
                   });
               }
-              
+
           });
 
 
@@ -139,7 +139,7 @@
     };
   }])
 
-  .directive('scrollTo', function ($rootScope, $timeout, $state) { 
+  .directive('scrollTo', function ($rootScope, $timeout, $state) {
       return {
           restrict: "AE",
           link: function(scope, elem, attr, ctrl) {
@@ -163,15 +163,14 @@
                   } else if ($state.is('app.spaces')) {
                         $rootScope.alignWhatWeDo();
                   }
-                
               });
- 
+
           }
      };
   })
 
-  
-  .directive('magnificPopup', function ($timeout, $state) { 
+
+  .directive('magnificPopup', function ($timeout, $state) {
       return {
           restrict: "AE",
           link: function(scope, elem, attr, ctrl) {
@@ -187,7 +186,7 @@
                       }
                   });
               });
-  
+
           }
      };
   })
@@ -242,4 +241,4 @@
   });
 
 
-})(); 
+})();

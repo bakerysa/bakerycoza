@@ -51,6 +51,9 @@
                         controller: 'WorkCtrl',
                         controllerAs: 'work'
                     },
+                    'network-view@app': {
+                      templateUrl: 'views/network.html'
+                    },
                     'footer': {
                         templateUrl: 'views/footer.html'
                     }
