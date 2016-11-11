@@ -14,6 +14,8 @@
 
 						console.log('JobsCtrl fired');
             $scope.jobs = JobService.list();
+            console.log('JobsCtrl fired');
+            console.log($scope.jobs);
 
 						console.log($scope.jobs);
 

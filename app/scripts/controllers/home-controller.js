@@ -9,8 +9,6 @@
 	angular.module('bakeryApp')
 		.controller('HomeCtrl', ['$scope', function($scope){
 
-			console.log('something else');
-
 	    		    	
 	  }]);
 

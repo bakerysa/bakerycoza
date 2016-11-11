@@ -15,8 +15,8 @@
 					
 					console.log('header called');
 
-					$rootScope.primaryColor = '#ffd5c0';
-					$rootScope.secondaryColor = '#e53320';
+					$rootScope.primaryColor = 'black';
+					$rootScope.secondaryColor = 'white';
 
 
 					$scope.theme1 = function (){
@@ -158,7 +158,7 @@
 						}, 0.5);
 					};
 
-					$(document).ready(function(){
+					
 						$('#nav-icon').click(function(){
 							$(this).toggleClass('open');
 						});
@@ -181,9 +181,6 @@
 
 						// }
 
-
-
-					});
 
 	  }]);
 
