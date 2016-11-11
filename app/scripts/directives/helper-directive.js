@@ -61,7 +61,7 @@
 
 
           $root.ngSizeDimensions  = (angular.isArray($root.ngSizeDimensions)) ? $root.ngSizeDimensions : [];
-          $root.ngSizeWatch = (angular.isArray($root.ngSizeWatch)) ? $root.ngSizeWatch : [];
+          $root.ngSizeWatch = [];
 
           var handler = function() {
               angular.forEach($root.ngSizeWatch, function(el, i) {

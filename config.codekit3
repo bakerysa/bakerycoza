@@ -881,22 +881,6 @@
 		"oAP": "\/.sass-cache\/ef76908420efe5b7b1332e87bb77d8e30d01a212\/_vendor-prefixes.scssc",
 		"oF": 0
 		},
-	"\/.tmp\/styles\/main.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 2,
-		"oAP": "\/.tmp\/styles\/main-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/.tmp\/styles\/main.css.map": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/.tmp\/styles\/main.css.map",
-		"oF": 0
-		},
 	"\/app\/.buildignore": {
 		"ft": 8192,
 		"oA": 2,
@@ -1041,6 +1025,22 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/app\/images\/autonomy.png": {
+		"ft": 32768,
+		"iS": 64382,
+		"oA": 0,
+		"oAP": "\/app\/images\/autonomy.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/app\/images\/bakery.gif": {
+		"ft": 4194304,
+		"iS": 107600,
+		"oA": 0,
+		"oAP": "\/app\/images\/bakery.gif",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/app\/images\/bread.gif": {
 		"ft": 4194304,
 		"iS": 42441,
@@ -1054,6 +1054,14 @@
 		"iS": 202383,
 		"oA": 0,
 		"oAP": "\/app\/images\/breads.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/app\/images\/clearwater.png": {
+		"ft": 32768,
+		"iS": 583932,
+		"oA": 0,
+		"oAP": "\/app\/images\/clearwater.png",
 		"oF": 0,
 		"opt": 0
 		},
@@ -1169,11 +1177,43 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/app\/images\/fav.png": {
+		"ft": 32768,
+		"iS": 1156,
+		"oA": 0,
+		"oAP": "\/app\/images\/fav.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/app\/images\/favicon.png": {
+		"ft": 32768,
+		"iS": 1883,
+		"oA": 0,
+		"oAP": "\/app\/images\/favicon.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/app\/images\/feature.png": {
 		"ft": 32768,
 		"iS": 2387160,
 		"oA": 0,
 		"oAP": "\/app\/images\/feature.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/app\/images\/glh.png": {
+		"ft": 32768,
+		"iS": 452373,
+		"oA": 0,
+		"oAP": "\/app\/images\/glh.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/app\/images\/glo (1).png": {
+		"ft": 32768,
+		"iS": 894805,
+		"oA": 0,
+		"oAP": "\/app\/images\/glo (1).png",
 		"oF": 0,
 		"opt": 0
 		},
@@ -1198,6 +1238,22 @@
 		"iS": 1019897,
 		"oA": 0,
 		"oAP": "\/app\/images\/hov2.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/app\/images\/joepaine.jpg": {
+		"ft": 16384,
+		"iS": 433623,
+		"oA": 0,
+		"oAP": "\/app\/images\/joepaine.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/app\/images\/kinetic.png": {
+		"ft": 32768,
+		"iS": 1717522,
+		"oA": 0,
+		"oAP": "\/app\/images\/kinetic.png",
 		"oF": 0,
 		"opt": 0
 		},
@@ -1373,77 +1429,85 @@
 		"oF": 0,
 		"opt": 0
 		},
-	"\/app\/images\/pic1.jpg": {
-		"ft": 16384,
-		"iS": 30785,
-		"oA": 0,
-		"oAP": "\/app\/images\/pic1.jpg",
+	"\/app\/images\/pic1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/app\/images\/pic1.svg",
 		"oF": 0,
-		"opt": 0
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
-	"\/app\/images\/pic2.jpg": {
-		"ft": 16384,
-		"iS": 40119,
-		"oA": 0,
-		"oAP": "\/app\/images\/pic2.jpg",
+	"\/app\/images\/pic2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/app\/images\/pic2.svg",
 		"oF": 0,
-		"opt": 0
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
-	"\/app\/images\/pic3.jpg": {
-		"ft": 16384,
-		"iS": 20959,
-		"oA": 0,
-		"oAP": "\/app\/images\/pic3.jpg",
+	"\/app\/images\/pic3.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/app\/images\/pic3.svg",
 		"oF": 0,
-		"opt": 0
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
-	"\/app\/images\/pic4.jpg": {
-		"ft": 16384,
-		"iS": 74819,
-		"oA": 0,
-		"oAP": "\/app\/images\/pic4.jpg",
+	"\/app\/images\/pic4.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/app\/images\/pic4.svg",
 		"oF": 0,
-		"opt": 0
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
-	"\/app\/images\/pic5.jpg": {
-		"ft": 16384,
-		"iS": 52048,
-		"oA": 0,
-		"oAP": "\/app\/images\/pic5.jpg",
+	"\/app\/images\/pic5.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/app\/images\/pic5.svg",
 		"oF": 0,
-		"opt": 0
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
-	"\/app\/images\/pic5.png": {
-		"ft": 32768,
-		"iS": 21621,
-		"oA": 0,
-		"oAP": "\/app\/images\/pic5.png",
+	"\/app\/images\/pic6.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/app\/images\/pic6.svg",
 		"oF": 0,
-		"opt": 0
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
-	"\/app\/images\/pic6.png": {
-		"ft": 32768,
-		"iS": 7074,
-		"oA": 0,
-		"oAP": "\/app\/images\/pic6.png",
+	"\/app\/images\/pic7.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/app\/images\/pic7.svg",
 		"oF": 0,
-		"opt": 0
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
-	"\/app\/images\/pic7.png": {
-		"ft": 32768,
-		"iS": 44556,
-		"oA": 0,
-		"oAP": "\/app\/images\/pic7.png",
+	"\/app\/images\/pic8.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/app\/images\/pic8.svg",
 		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/pic8.png": {
-		"ft": 32768,
-		"iS": 21833,
-		"oA": 0,
-		"oAP": "\/app\/images\/pic8.png",
-		"oF": 0,
-		"opt": 0
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/app\/images\/potrait.jpg": {
 		"ft": 16384,
