@@ -1001,6 +1001,12 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/app\/images\/angels trashcat.mp3": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/images\/angels trashcat.mp3",
+		"oF": 0
+		},
 	"\/app\/images\/angle-left.png": {
 		"ft": 32768,
 		"iS": 2378,
@@ -1209,11 +1215,11 @@
 		"oF": 0,
 		"opt": 0
 		},
-	"\/app\/images\/glo (1).png": {
+	"\/app\/images\/glo.png": {
 		"ft": 32768,
 		"iS": 894805,
 		"oA": 0,
-		"oAP": "\/app\/images\/glo (1).png",
+		"oAP": "\/app\/images\/glo.png",
 		"oF": 0,
 		"opt": 0
 		},

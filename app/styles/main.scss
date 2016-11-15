@@ -1336,7 +1336,10 @@ background:#869791
 
 @media (max-width: 991px) {
 
-<<<<<<< HEAD
+  .col-md-35 {
+      width: 100%;
+  }
+
   .header {
     padding-bottom: 10px!important;
   }
@@ -1348,7 +1351,6 @@ background:#869791
   .nav ul li {
     padding-top: 1.4em!important;
   }
-=======
 
   #breadVSbakery {
     .col-md-6 {
@@ -1378,16 +1380,15 @@ background:#869791
     .header {
      padding-bottom: 10px!important;
    }
-   
+
    .js-logo {
      height: 60px!important;
    }
-   
+
    .nav ul li {
      padding-top: 1.4em!important;
    }
 
->>>>>>> 83808551a0c63414ea70b2c517886e1f3a396a7b
 
   #bakery {
     display: none;
@@ -1601,7 +1602,7 @@ background:#869791
 
 @media screen and (max-width: 768px) {
 
- 
+
 
 
   // .work-grid-2 {
