@@ -340,7 +340,7 @@ a {
     }
     .work-item-2 {
       display: none;
-      background: rgba(0, 0, 0, 0.05);
+      background: rgba(0, 0, 0, 0.05)
     }
     &:hover {
       .work-item-1 {
@@ -450,11 +450,7 @@ a {
     right: 0;
     bottom: 0;
     padding-top:10px;
-    // &.shadow {
-    //   -webkit-box-shadow: 0px -2px 5px 0px rgba(0,0,0,0.05);
-    //   -moz-box-shadow: 0px -2px 5px 0px rgba(0,0,0,0.05);
-    //   box-shadow: 0px -2px 5px 0px rgba(0,0,0,0.05);
-    // }
+
     .nav {
         ul {
           margin-bottom: 7px;
@@ -507,15 +503,83 @@ a {
 }
 
 
-
 .square {
+    position: relative;
     width: 100%!important;
     cursor:pointer;
     &:hover {
         &.h-no-bg {
           background: none!important;
         }
-        background: white;
+        .wwd-icon {
+          display: none;
+        }
+        .wwd-text {
+          display: block;
+        }
+    }
+    .wwd-icon {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-repeat: no-repeat;
+      display: block;
+      &.product-strategy {
+        background: url(../images/pic1.svg) no-repeat;
+      }
+      &.user-research {
+        background: url(../images/pic2.svg) no-repeat;
+      }
+      &.user-experience{
+        background: url(../images/pic3.svg) no-repeat;
+      }
+      &.interaction-design {
+        background: url(../images/pic4.svg) no-repeat;
+      }
+      &.prototyping {
+        background: url(../images/pic5.svg) no-repeat;
+      }
+      &.brand-identity {
+        background: url(../images/pic6.svg) no-repeat;
+      }
+      &.mobile-app {
+        background: url(../images/pic7.svg) no-repeat;
+      }
+      &.web-dev {
+        background: url(../images/pic8.svg) no-repeat;
+      }
+    }
+
+    .wwd-text {
+      display: none;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      &:hover {
+        display: block;
+        background: rgba(255,255,255,0.1);
+      }
+    }
+    &.inverse {
+      .wwd-icon {
+        display: none;
+      }
+      .wwd-text {
+        display: block;
+      }
+      &:hover {
+        .wwd-icon {
+          display: block;
+          background-color: rgba(255,255,255,0.1);
+        }
+        .wwd-text {
+          display: none;
+        }
+      }
     }
 }
 
@@ -1228,7 +1292,13 @@ background:#869791
 .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; padding-left: 10px; padding-right: 10px; }
 
 .wwd-right {
-  padding-left: 0;
+  padding-left: 5px;
+  [class^="col-"],
+  [class*=" col-"] {
+      padding-right: 0px;
+      padding-left: 0px;
+  }
+
 }
 
 .js-eff-wwd-img {
