@@ -12,8 +12,7 @@
 	angular.module('bakeryApp')
 		.controller('HeaderCtrl', ['$scope', '$rootScope', '$state', '$document', '$location', '$timeout', function($scope, $rootScope, $state, $document, $location, $timeout){
 
-					
-					console.log('header called');
+
 
 					$rootScope.primaryColor = 'black';
 					$rootScope.secondaryColor = 'white';
@@ -114,7 +113,7 @@
 						var tid = setInterval( function () {
 						    if ( document.readyState !== 'complete' ) return;
 						    clearInterval( tid );
-						    TweenMax.to(window, 0.7, {scrollTo:{y: $('#how-we-do-it').position().top-80},  autoKill : false, ease:Circ.easeInOut});
+						    TweenMax.to(window, 0.7, {scrollTo:{y: $('#how-we-do-it').position().top-75},  autoKill : false, ease:Circ.easeInOut});
 						}, 100 );
 					};
 
@@ -154,32 +153,34 @@
 					$rootScope.goTop = function() {
 						$timeout(function(){
 							TweenMax.to(window, 0, {scrollTo:{y: 0},  autoKill : false, ease:Circ.easeInOut});
-							console.log('goTop() called');
 						}, 0.5);
 					};
 
-					
-						$('#nav-icon').click(function(){
-							$(this).toggleClass('open');
-						});
 
-						$scope.toggleMenu = function() {
-								var menuBox = document.getElementById('mobile-menu');
-								if (menuBox.style.display == "block") {
-										menuBox.style.display = "none";
-								} else {
-										menuBox.style.display = "block";
-								}
-						};
+					$('#nav-icon').click(function(){
+						$(this).toggleClass('open');
+					});
 
-						$('#mobile-menu ul li a').click(function(){
-	  						document.getElementById('mobile-menu').style.display = 'none';
-							$('#nav-icon').toggleClass('open');
-						});
+					$scope.toggleMenu = function() {
+							var menuBox = document.getElementById('mobile-menu');
+							if (menuBox.style.display == "block") {
+									menuBox.style.display = "none";
+							} else {
+									menuBox.style.display = "block";
+							}
+					};
 
-						// $scope.hideMenu = function() {
+					$('#mobile-menu ul li a').click(function(){
+  						document.getElementById('mobile-menu').style.display = 'none';
+						$('#nav-icon').toggleClass('open');
+					});
 
-						// }
+					// $scope.hideMenu = function() {
+
+					// }
+
+
+
 
 
 	  }]);

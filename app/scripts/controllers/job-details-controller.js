@@ -20,6 +20,12 @@
           	$scope.detailsHTML = $scope.selectedJob.details;
           	$scope.jobDetails = $sce.trustAsHtml($scope.detailsHTML);
 
+
+          	$scope.specsHTML = $scope.selectedJob.specs;
+          	$scope.jobSpecs = $sce.trustAsHtml($scope.specsHTML);
+
+
+
         }]);
 
 })();

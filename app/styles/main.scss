@@ -58,7 +58,8 @@ h1 {
     font-weight: 800;
     margin: 1.3em 0;
     &.tagline {
-      margin: 0 0 1.3em 0;
+      max-width: 600px;
+      margin: 0 auto;
     }
 }
 
@@ -93,7 +94,7 @@ a {
 }
 
 .primarycontent {
-    padding-top: 130px;
+    padding-top: 110px;
 }
 
 .logo {
@@ -299,6 +300,21 @@ a {
   background: #ffd5c0;
 }
 
+.h-bg-1-aux {
+  background: #e3ffe5;
+}
+
+.h-bg-2-aux {
+  background: #ffebeb;
+}
+
+.h-bg-3-aux {
+  background: #fff9d9;
+}
+
+.h-bg-4-aux {
+  background: #ffd5c0;
+}
 
 .project-images {
   a {
@@ -506,7 +522,6 @@ a {
 .square {
     position: relative;
     width: 100%!important;
-    cursor:pointer;
     &:hover {
         &.h-no-bg {
           background: none!important;
@@ -527,28 +542,31 @@ a {
       background-repeat: no-repeat;
       display: block;
       &.product-strategy {
-        background: url(../images/pic1.svg) no-repeat;
+        background: url(../images/what-we-do/pic1.svg) no-repeat;
       }
       &.user-research {
-        background: url(../images/pic2.svg) no-repeat;
+        background: url(../images/what-we-do/pic2.svg) no-repeat;
       }
       &.user-experience{
-        background: url(../images/pic3.svg) no-repeat;
+        background: url(../images/what-we-do/pic3.svg) no-repeat;
       }
       &.interaction-design {
-        background: url(../images/pic4.svg) no-repeat;
+        background: url(../images/what-we-do/pic4.svg) no-repeat;
       }
       &.prototyping {
-        background: url(../images/pic5.svg) no-repeat;
+        background: url(../images/what-we-do/pic5.svg) no-repeat;
       }
       &.brand-identity {
-        background: url(../images/pic6.svg) no-repeat;
+        background: url(../images/what-we-do/pic6.svg) no-repeat;
       }
       &.mobile-app {
-        background: url(../images/pic7.svg) no-repeat;
+        background: url(../images/what-we-do/pic7.svg) no-repeat;
       }
       &.web-dev {
-        background: url(../images/pic8.svg) no-repeat;
+        background: url(../images/what-we-do/pic8.svg) no-repeat;
+      }
+      &.ecommerce {
+        background: url(../images/what-we-do/pic9.svg) no-repeat;
       }
     }
 
@@ -801,8 +819,7 @@ a {
     list-style: none;
   }
   .wwd-left-default {
-      height: 649px;
-      // height: 433px;
+      height: 674px;
   }
 }
 .wwd-left-details {
@@ -904,6 +921,7 @@ a {
   padding: 8px 20px;
   font-size:0.9em;
   cursor: pointer;
+  margin-top: 25px;
   background: #ffebe9;
   &:focus, &:active {
     outline: none!important;
@@ -999,10 +1017,10 @@ a {
   margin-bottom: 2.2em;
   h2 {
     margin-top: 2em;
-    margin-bottom: 0;
+    margin-bottom: 1em;
   }
   img {
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
   }
 }
@@ -1049,6 +1067,9 @@ a {
 .collaborators {
   p {
     margin-bottom: 2px;
+    list-style-type: none;
+     margin: 0;
+     padding: 0!important;
   }
 }
 
@@ -1079,7 +1100,7 @@ span.tip {
       display: block;
     }
     &:hover {
-      cursor: pointer;
+
       .square {
         display: block;
       }
@@ -1442,8 +1463,8 @@ background:#869791
     .team-grid {
       [class^="col-"],
       [class*=" col-"] {
-          padding-right: 2px!important;
-          padding-left: 2px!important;
+          padding-right: 5px!important;
+          padding-left: 5px!important;
       }
     }
 
@@ -1459,10 +1480,6 @@ background:#869791
      padding-top: 1.4em!important;
    }
 
-
-  #bakery {
-    display: none;
-  }
 
   .collaborators {
     p {
@@ -1579,8 +1596,40 @@ background:#869791
     list-style-type: none;
     margin: 0;
     padding: 0!important;
-      :hover {
+    position: relative;
+      &:hover {
         text-decoration: none;
+      }
+      a {
+        position: relative;
+        &:hover, &.active {
+            position: relative;
+            &:before {
+                      content: "";
+                      position: absolute;
+                      width: 5px;
+                      height: 5px;
+                      background: black;
+                      border-radius: 50%;
+                      left: -3px;
+                      top: 13px;
+                    }
+        }
+
+      }
+      &.mobile-social-links {
+        padding-top: 2em!important;
+        a {
+          &:before {
+            content: "";
+            width: 0px!important;
+            height: 0px!important;
+          }
+          display: inline-block!important;
+          .fa {
+            font-size: 1.7em;
+          }
+        }
       }
   }
 
@@ -1594,22 +1643,29 @@ background:#869791
   #mobile-menu {
     display: none;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 80px;
     padding-bottom: 50px;
   }
 
   #nav-icon {
     display:block;
-    position: fixed;
-    top: 10px;
-    right: 10px;
     cursor: pointer;
+    top: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    div {
+      width: 30px;
+      img {
+         width: 100%;
+       }
+     }
     font-size: 16px;
     padding: 5px 10px;
     font-weight: bold;
     text-transform: uppercase;
-    border: 1px solid black;
-    cursor: pointer;
     .is-closed {
       display: block;
     }
@@ -1763,6 +1819,9 @@ background:#869791
 }
 
 @media screen and (max-width: 490px) {
+.segment {
+  margin-bottom: 80px;
+}
     .h-mobile-visible {
         display: block!important;
     }
@@ -1778,9 +1837,14 @@ background:#869791
         font-size: 15px;
       }
     }
-    .bk-block p {
+    .bk-block {
+    p {
       font-size: 10px;
     }
+    h4 {
+      font-size: 14px;
+    }
+  }
     #contact {
       h5 {
         font-size: 0.9em;
@@ -1802,6 +1866,41 @@ and (orientation : portrait) {
       display: none;
   }
 
+}
+
+@media screen and (min-width: 1600px) {
+  p {
+    font-size: 14px;
+  }
+  .container {
+    width: 1500px;
+  }
+  .wwd-left {
+    h5 {
+      font-size: 1.2em;
+    }
+    .wwd-left-default {
+      padding-top: 300px;
+      height: 847px;
+    }
+  }
+  .bk-block p {
+      font-size: 15px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  #creative-partners .bk-block p {
+      font-size: 15px;
+  }
+  #how-we-do-it {
+    .wwd-left {
+      .wwd-left-default {
+        min-height: 649px;
+        padding-top: 14em;
+      }
+    }
+  }
 }
 
 .h-relative {
@@ -1917,14 +2016,20 @@ and (orientation : portrait) {
   position: absolute;
   top: 50%;
   width: 46%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-25%);
+  transform: translateY(-25%);
 }
 .inner .content span {
   font-weight: 700;
 }
 .segment {
   height: 500px;
+  p {
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 34px;
+  }
 }
 .segment .hero {
   position: absolute;
@@ -1942,14 +2047,18 @@ and (orientation : portrait) {
   width: 100%;
   background: url(../images/glo.png) left center no-repeat;
   background-size: contain;
-  -webkit-transform: translateY(-50%) translateX(56%);
-  transform: translateY(-50%) translateX(56%);
+  -webkit-transform: translateY(-50%) translateX(50%);
+  transform: translateY(-50%) translateX(50%);
 }
 .segment.joepaine .hero img {
-  position: absolute;
-  top: 138px;
-  right: -470px;
-  box-shadow: 0 14px 57px rgba(0, 0, 0, 0.08);
+  top: 50%;
+  bottom: auto;
+  height: 75%;
+  width: 100%;
+  background: url(../images/joepaine.jpg) left center no-repeat;
+  background-size: contain;
+  -webkit-transform: translateY(30%) translateX(6%);
+  transform: translateY(30%) translateX(6%);
 }
 .segment.kinetic .hero img {
   position: absolute;
@@ -1977,7 +2086,7 @@ and (orientation : portrait) {
   background: url(../images/autonomy.png) left center no-repeat;
   background-size: contain;
   -webkit-transform: translateY(-50%) translateX(55%);
-  transform: translateY(-50%) translateX(55%);
+  transform: translateY(-45%) translateX(50%);
 }
 
 /* ----- OTHER ------ */
@@ -1993,33 +2102,9 @@ and (orientation : portrait) {
   background: #ffb7b7;
 }
 /* ------- MEDIA QUERIES -------*/
-@media (min-width: 1680px) {
-  p {
-    font-size: 1.5em;
-  }
-  .inner {
-    padding: 0 150px;
-  }
-  .segment.joepaine .hero img {
-    right: -200px;
-  }
-  .segment.kinetic .hero img {
-    right: -200px;
-  }
-  .segment.glh .hero img {
-    right: -200px;
-  }
-  .segment.clearwater .hero img {
-    right: -200px;
-  }
-}
+
 @media (min-width: 1380px) and (max-width: 1650px) {
-  p {
-    font-size: 1.2em;
-  }
-  .inner {
-    padding: 0 120px;
-  }
+
   .segment.joepaine .hero img {
     right: -330px;
   }
@@ -2048,6 +2133,11 @@ and (orientation : portrait) {
   }
 }
 @media (max-width: 767px) {
+
+  .segment {
+    margin-bottom: 80px;
+  }
+
   .intro {
     padding: 8em 2em 4em!important;
   }
@@ -2062,9 +2152,6 @@ and (orientation : portrait) {
     font-size: 2em;
     line-height: 1.2em;
   }
-  p {
-    font-size: 1.1em;
-  }
 
   .segment .inner {
     padding: 0 20px;
@@ -2076,6 +2163,7 @@ and (orientation : portrait) {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
   }
+
   .segment .content {
     position: static;
     margin: 0 0 5rem;
@@ -2120,6 +2208,7 @@ and (orientation : portrait) {
     max-height: 300px;
     overflow: hidden;
     margin-bottom: 30px;
+    margin-top: 80px;
   }
   .segment.kinetic .hero img {
     display: block;
@@ -2165,12 +2254,13 @@ and (orientation : portrait) {
     -webkit-transform: none;
     transform: none;
     max-width: 300px;
+    margin-top: 50px;
   }
 }
 
 @media (min-width: 767px) and (max-width: 991px) {
   .segment.autonomy .hero {
-    -webkit-transform: translateY(-50%) translateX(40%);
-    transform: translateY(-50%) translateX(40%);
+    -webkit-transform: translateY(-35%) translateX(40%);
+    transform: translateY(-35%) translateX(40%);
   }
 }

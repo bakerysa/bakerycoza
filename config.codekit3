@@ -881,6 +881,22 @@
 		"oAP": "\/.sass-cache\/ef76908420efe5b7b1332e87bb77d8e30d01a212\/_vendor-prefixes.scssc",
 		"oF": 0
 		},
+	"\/.tmp\/styles\/main.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/.tmp\/styles\/main-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/.tmp\/styles\/main.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.tmp\/styles\/main.css.map",
+		"oF": 0
+		},
 	"\/app\/.buildignore": {
 		"ft": 8192,
 		"oA": 2,
@@ -903,108 +919,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/app\/favicon.ico",
-		"oF": 0
-		},
-	"\/app\/images\/10.jpeg": {
-		"ft": 16384,
-		"iS": 1029212,
-		"oA": 0,
-		"oAP": "\/app\/images\/10.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/11.jpeg": {
-		"ft": 16384,
-		"iS": 1102966,
-		"oA": 0,
-		"oAP": "\/app\/images\/11.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/12.jpeg": {
-		"ft": 16384,
-		"iS": 1285864,
-		"oA": 0,
-		"oAP": "\/app\/images\/12.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/13.jpg": {
-		"ft": 16384,
-		"iS": 559690,
-		"oA": 0,
-		"oAP": "\/app\/images\/13.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/2.jpeg": {
-		"ft": 16384,
-		"iS": 578021,
-		"oA": 0,
-		"oAP": "\/app\/images\/2.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/3.jpeg": {
-		"ft": 16384,
-		"iS": 885693,
-		"oA": 0,
-		"oAP": "\/app\/images\/3.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/4.jpeg": {
-		"ft": 16384,
-		"iS": 1229774,
-		"oA": 0,
-		"oAP": "\/app\/images\/4.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/5.jpeg": {
-		"ft": 16384,
-		"iS": 684486,
-		"oA": 0,
-		"oAP": "\/app\/images\/5.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/6.jpeg": {
-		"ft": 16384,
-		"iS": 994487,
-		"oA": 0,
-		"oAP": "\/app\/images\/6.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/7.jpeg": {
-		"ft": 16384,
-		"iS": 911961,
-		"oA": 0,
-		"oAP": "\/app\/images\/7.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/8.jpeg": {
-		"ft": 16384,
-		"iS": 612504,
-		"oA": 0,
-		"oAP": "\/app\/images\/8.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/9.jpeg": {
-		"ft": 16384,
-		"iS": 1262358,
-		"oA": 0,
-		"oAP": "\/app\/images\/9.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/angels trashcat.mp3": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/app\/images\/angels trashcat.mp3",
 		"oF": 0
 		},
 	"\/app\/images\/angle-left.png": {
@@ -1047,14 +961,6 @@
 		"oF": 0,
 		"opt": 0
 		},
-	"\/app\/images\/bread.gif": {
-		"ft": 4194304,
-		"iS": 42441,
-		"oA": 0,
-		"oAP": "\/app\/images\/bread.gif",
-		"oF": 0,
-		"opt": 0
-		},
 	"\/app\/images\/breads.gif": {
 		"ft": 4194304,
 		"iS": 202383,
@@ -1071,11 +977,11 @@
 		"oF": 0,
 		"opt": 0
 		},
-	"\/app\/images\/clients\/ANATOMY.png": {
+	"\/app\/images\/clients\/ANGLO.png": {
 		"ft": 32768,
-		"iS": 94998,
+		"iS": 60257,
 		"oA": 0,
-		"oAP": "\/app\/images\/clients\/ANATOMY.png",
+		"oAP": "\/app\/images\/clients\/ANGLO.png",
 		"oF": 0,
 		"opt": 0
 		},
@@ -1087,83 +993,35 @@
 		"oF": 0,
 		"opt": 0
 		},
-	"\/app\/images\/clients\/BELAIRE.png": {
+	"\/app\/images\/clients\/BONITAS.png": {
 		"ft": 32768,
-		"iS": 273008,
+		"iS": 37852,
 		"oA": 0,
-		"oAP": "\/app\/images\/clients\/BELAIRE.png",
+		"oAP": "\/app\/images\/clients\/BONITAS.png",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/app\/images\/clients\/LEVIS.png": {
+	"\/app\/images\/clients\/GLO.png": {
 		"ft": 32768,
-		"iS": 188049,
+		"iS": 23327,
 		"oA": 0,
-		"oAP": "\/app\/images\/clients\/LEVIS.png",
+		"oAP": "\/app\/images\/clients\/GLO.png",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/app\/images\/clients\/PROTESTHIV.png": {
+	"\/app\/images\/clients\/KINETIC.png": {
 		"ft": 32768,
-		"iS": 188047,
+		"iS": 21541,
 		"oA": 0,
-		"oAP": "\/app\/images\/clients\/PROTESTHIV.png",
+		"oAP": "\/app\/images\/clients\/KINETIC.png",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/app\/images\/clients\/RAY-BAN.png": {
+	"\/app\/images\/clients\/PRAEKELT.png": {
 		"ft": 32768,
-		"iS": 172801,
+		"iS": 9307,
 		"oA": 0,
-		"oAP": "\/app\/images\/clients\/RAY-BAN.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/clients\/REDBULL.png": {
-		"ft": 32768,
-		"iS": 202481,
-		"oA": 0,
-		"oAP": "\/app\/images\/clients\/REDBULL.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/clients\/SMIRNOFF.png": {
-		"ft": 32768,
-		"iS": 274838,
-		"oA": 0,
-		"oAP": "\/app\/images\/clients\/SMIRNOFF.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/clients\/SOUTHPOINT.png": {
-		"ft": 32768,
-		"iS": 175986,
-		"oA": 0,
-		"oAP": "\/app\/images\/clients\/SOUTHPOINT.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/clients\/SPORTSCENE.png": {
-		"ft": 32768,
-		"iS": 113861,
-		"oA": 0,
-		"oAP": "\/app\/images\/clients\/SPORTSCENE.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/clients\/VANS.png": {
-		"ft": 32768,
-		"iS": 218775,
-		"oA": 0,
-		"oAP": "\/app\/images\/clients\/VANS.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/clients\/VICE.png": {
-		"ft": 32768,
-		"iS": 177072,
-		"oA": 0,
-		"oAP": "\/app\/images\/clients\/VICE.png",
+		"oAP": "\/app\/images\/clients\/PRAEKELT.png",
 		"oF": 0,
 		"opt": 0
 		},
@@ -1172,14 +1030,6 @@
 		"iS": 2025,
 		"oA": 0,
 		"oAP": "\/app\/images\/close.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/creative-partners.png": {
-		"ft": 32768,
-		"iS": 748793,
-		"oA": 0,
-		"oAP": "\/app\/images\/creative-partners.png",
 		"oF": 0,
 		"opt": 0
 		},
@@ -1196,14 +1046,6 @@
 		"iS": 1883,
 		"oA": 0,
 		"oAP": "\/app\/images\/favicon.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/feature.png": {
-		"ft": 32768,
-		"iS": 2387160,
-		"oA": 0,
-		"oAP": "\/app\/images\/feature.png",
 		"oF": 0,
 		"opt": 0
 		},
@@ -1231,22 +1073,6 @@
 		"oF": 0,
 		"opt": 0
 		},
-	"\/app\/images\/hov.png": {
-		"ft": 32768,
-		"iS": 3466920,
-		"oA": 0,
-		"oAP": "\/app\/images\/hov.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/hov2.png": {
-		"ft": 32768,
-		"iS": 1019897,
-		"oA": 0,
-		"oAP": "\/app\/images\/hov2.png",
-		"oF": 0,
-		"opt": 0
-		},
 	"\/app\/images\/joepaine.jpg": {
 		"ft": 16384,
 		"iS": 433623,
@@ -1260,14 +1086,6 @@
 		"iS": 1717522,
 		"oA": 0,
 		"oAP": "\/app\/images\/kinetic.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/landscape.jpg": {
-		"ft": 16384,
-		"iS": 114711,
-		"oA": 0,
-		"oAP": "\/app\/images\/landscape.jpg",
 		"oF": 0,
 		"opt": 0
 		},
@@ -1290,6 +1108,46 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/app\/images\/partners\/adriaanlouw.jpg": {
+		"ft": 16384,
+		"iS": 199964,
+		"oA": 0,
+		"oAP": "\/app\/images\/partners\/adriaanlouw.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/app\/images\/partners\/alimaumela.jpg": {
+		"ft": 16384,
+		"iS": 348799,
+		"oA": 0,
+		"oAP": "\/app\/images\/partners\/alimaumela.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/app\/images\/partners\/andilekhawphuna.jpg": {
+		"ft": 16384,
+		"iS": 302674,
+		"oA": 0,
+		"oAP": "\/app\/images\/partners\/andilekhawphuna.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/app\/images\/partners\/andypetersen.jpg": {
+		"ft": 16384,
+		"iS": 316137,
+		"oA": 0,
+		"oAP": "\/app\/images\/partners\/andypetersen.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/app\/images\/partners\/battalion.jpg": {
+		"ft": 16384,
+		"iS": 28319,
+		"oA": 0,
+		"oAP": "\/app\/images\/partners\/battalion.jpg",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/app\/images\/partners\/Beanstalk.jpg": {
 		"ft": 16384,
@@ -1355,6 +1213,22 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/app\/images\/partners\/jakebester.jpg": {
+		"ft": 16384,
+		"iS": 465757,
+		"oA": 0,
+		"oAP": "\/app\/images\/partners\/jakebester.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/app\/images\/partners\/jakelipman.jpg": {
+		"ft": 16384,
+		"iS": 361500,
+		"oA": 0,
+		"oAP": "\/app\/images\/partners\/jakelipman.jpg",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/app\/images\/partners\/JohnnyKotze.jpg": {
 		"ft": 16384,
 		"iS": 115085,
@@ -1387,6 +1261,30 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/app\/images\/partners\/mkayfrash.jpg": {
+		"ft": 16384,
+		"iS": 676680,
+		"oA": 0,
+		"oAP": "\/app\/images\/partners\/mkayfrash.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/app\/images\/partners\/mustardpostproduction.jpg": {
+		"ft": 16384,
+		"iS": 41729,
+		"oA": 0,
+		"oAP": "\/app\/images\/partners\/mustardpostproduction.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/app\/images\/partners\/mvelokhumalo.jpg": {
+		"ft": 16384,
+		"iS": 252958,
+		"oA": 0,
+		"oAP": "\/app\/images\/partners\/mvelokhumalo.jpg",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/app\/images\/partners\/NinjaBreadBoy.jpg": {
 		"ft": 16384,
 		"iS": 68379,
@@ -1411,6 +1309,22 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/app\/images\/partners\/rossmaxwell.jpg": {
+		"ft": 16384,
+		"iS": 218619,
+		"oA": 0,
+		"oAP": "\/app\/images\/partners\/rossmaxwell.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/app\/images\/partners\/siyamkaya.jpg": {
+		"ft": 16384,
+		"iS": 432630,
+		"oA": 0,
+		"oAP": "\/app\/images\/partners\/siyamkaya.jpg",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/app\/images\/partners\/SuccessMaake.jpg": {
 		"ft": 16384,
 		"iS": 114389,
@@ -1427,6 +1341,14 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/app\/images\/partners\/tusamamba.jpg": {
+		"ft": 16384,
+		"iS": 288456,
+		"oA": 0,
+		"oAP": "\/app\/images\/partners\/tusamamba.jpg",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/app\/images\/partners\/we-are-awesome-film.jpg": {
 		"ft": 16384,
 		"iS": 68442,
@@ -1435,123 +1357,11 @@
 		"oF": 0,
 		"opt": 0
 		},
-	"\/app\/images\/pic1.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/app\/images\/pic1.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/app\/images\/pic2.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/app\/images\/pic2.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/app\/images\/pic3.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/app\/images\/pic3.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/app\/images\/pic4.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/app\/images\/pic4.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/app\/images\/pic5.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/app\/images\/pic5.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/app\/images\/pic6.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/app\/images\/pic6.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/app\/images\/pic7.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/app\/images\/pic7.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/app\/images\/pic8.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/app\/images\/pic8.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
 	"\/app\/images\/potrait.jpg": {
 		"ft": 16384,
 		"iS": 164518,
 		"oA": 0,
 		"oAP": "\/app\/images\/potrait.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/project-img.jpg": {
-		"ft": 16384,
-		"iS": 1267770,
-		"oA": 0,
-		"oAP": "\/app\/images\/project-img.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/project-img2.jpg": {
-		"ft": 16384,
-		"iS": 301373,
-		"oA": 0,
-		"oAP": "\/app\/images\/project-img2.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/project-thumb.jpg": {
-		"ft": 16384,
-		"iS": 336818,
-		"oA": 0,
-		"oAP": "\/app\/images\/project-thumb.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/project-thumb2.png": {
-		"ft": 32768,
-		"iS": 890042,
-		"oA": 0,
-		"oAP": "\/app\/images\/project-thumb2.png",
 		"oF": 0,
 		"opt": 0
 		},
@@ -4081,381 +3891,95 @@
 		"oF": 0,
 		"opt": 0
 		},
-	"\/app\/images\/what-we-do\/connections\/connections1.jpg": {
-		"ft": 16384,
-		"iS": 126017,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/connections\/connections1.jpg",
+	"\/app\/images\/what-we-do\/pic1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/app\/images\/what-we-do\/pic1.svg",
 		"oF": 0,
-		"opt": 0
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
-	"\/app\/images\/what-we-do\/connections\/connections10.jpg": {
-		"ft": 16384,
-		"iS": 155966,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/connections\/connections10.jpg",
+	"\/app\/images\/what-we-do\/pic2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/app\/images\/what-we-do\/pic2.svg",
 		"oF": 0,
-		"opt": 0
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
-	"\/app\/images\/what-we-do\/connections\/connections11.jpg": {
-		"ft": 16384,
-		"iS": 87327,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/connections\/connections11.jpg",
+	"\/app\/images\/what-we-do\/pic3.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/app\/images\/what-we-do\/pic3.svg",
 		"oF": 0,
-		"opt": 0
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
-	"\/app\/images\/what-we-do\/connections\/connections12.jpg": {
-		"ft": 16384,
-		"iS": 156111,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/connections\/connections12.jpg",
+	"\/app\/images\/what-we-do\/pic4.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/app\/images\/what-we-do\/pic4.svg",
 		"oF": 0,
-		"opt": 0
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
-	"\/app\/images\/what-we-do\/connections\/connections2.jpg": {
-		"ft": 16384,
-		"iS": 195005,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/connections\/connections2.jpg",
+	"\/app\/images\/what-we-do\/pic5.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/app\/images\/what-we-do\/pic5.svg",
 		"oF": 0,
-		"opt": 0
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
-	"\/app\/images\/what-we-do\/connections\/connections3.jpg": {
-		"ft": 16384,
-		"iS": 104524,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/connections\/connections3.jpg",
+	"\/app\/images\/what-we-do\/pic6.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/app\/images\/what-we-do\/pic6.svg",
 		"oF": 0,
-		"opt": 0
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
-	"\/app\/images\/what-we-do\/connections\/connections4.jpg": {
-		"ft": 16384,
-		"iS": 122416,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/connections\/connections4.jpg",
+	"\/app\/images\/what-we-do\/pic7.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/app\/images\/what-we-do\/pic7.svg",
 		"oF": 0,
-		"opt": 0
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
-	"\/app\/images\/what-we-do\/connections\/connections5.jpg": {
-		"ft": 16384,
-		"iS": 105949,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/connections\/connections5.jpg",
+	"\/app\/images\/what-we-do\/pic8.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/app\/images\/what-we-do\/pic8.svg",
 		"oF": 0,
-		"opt": 0
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
-	"\/app\/images\/what-we-do\/connections\/connections6.jpg": {
-		"ft": 16384,
-		"iS": 154669,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/connections\/connections6.jpg",
+	"\/app\/images\/what-we-do\/pic9.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/app\/images\/what-we-do\/pic9.svg",
 		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/what-we-do\/connections\/connections7.jpg": {
-		"ft": 16384,
-		"iS": 214722,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/connections\/connections7.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/what-we-do\/connections\/connections8.jpg": {
-		"ft": 16384,
-		"iS": 155395,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/connections\/connections8.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/what-we-do\/connections\/connections9.jpg": {
-		"ft": 16384,
-		"iS": 113797,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/connections\/connections9.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/what-we-do\/design\/design1.jpg": {
-		"ft": 16384,
-		"iS": 57480,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/design\/design1.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/what-we-do\/design\/design2.jpg": {
-		"ft": 16384,
-		"iS": 18096,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/design\/design2.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/what-we-do\/design\/design3.jpg": {
-		"ft": 16384,
-		"iS": 78167,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/design\/design3.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/what-we-do\/design\/design4.jpg": {
-		"ft": 16384,
-		"iS": 120361,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/design\/design4.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/what-we-do\/design\/design5.jpg": {
-		"ft": 16384,
-		"iS": 67161,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/design\/design5.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/what-we-do\/design\/design6.jpg": {
-		"ft": 16384,
-		"iS": 101105,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/design\/design6.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/what-we-do\/design\/design7.jpg": {
-		"ft": 16384,
-		"iS": 135671,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/design\/design7.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/what-we-do\/design\/design8.jpg": {
-		"ft": 16384,
-		"iS": 119620,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/design\/design8.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/what-we-do\/experiences\/experiences1.jpg": {
-		"ft": 16384,
-		"iS": 118593,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/experiences\/experiences1.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/what-we-do\/experiences\/experiences10.jpg": {
-		"ft": 16384,
-		"iS": 92786,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/experiences\/experiences10.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/what-we-do\/experiences\/experiences11.jpg": {
-		"ft": 16384,
-		"iS": 100373,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/experiences\/experiences11.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/what-we-do\/experiences\/experiences12.jpg": {
-		"ft": 16384,
-		"iS": 104256,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/experiences\/experiences12.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/what-we-do\/experiences\/experiences2.jpg": {
-		"ft": 16384,
-		"iS": 141352,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/experiences\/experiences2.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/what-we-do\/experiences\/experiences3.jpg": {
-		"ft": 16384,
-		"iS": 150220,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/experiences\/experiences3.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/what-we-do\/experiences\/experiences4.jpg": {
-		"ft": 16384,
-		"iS": 82647,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/experiences\/experiences4.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/what-we-do\/experiences\/experiences5.jpg": {
-		"ft": 16384,
-		"iS": 147746,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/experiences\/experiences5.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/what-we-do\/experiences\/experiences6.jpg": {
-		"ft": 16384,
-		"iS": 120161,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/experiences\/experiences6.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/what-we-do\/experiences\/experiences7.jpg": {
-		"ft": 16384,
-		"iS": 260674,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/experiences\/experiences7.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/what-we-do\/experiences\/experiences8.jpg": {
-		"ft": 16384,
-		"iS": 90923,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/experiences\/experiences8.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/what-we-do\/experiences\/experiences9.jpg": {
-		"ft": 16384,
-		"iS": 267788,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/experiences\/experiences9.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/what-we-do\/spaces\/spaces1.jpg": {
-		"ft": 16384,
-		"iS": 138898,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/spaces\/spaces1.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/what-we-do\/spaces\/spaces10.jpg": {
-		"ft": 16384,
-		"iS": 134441,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/spaces\/spaces10.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/what-we-do\/spaces\/spaces11.jpg": {
-		"ft": 16384,
-		"iS": 160680,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/spaces\/spaces11.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/what-we-do\/spaces\/spaces2.jpg": {
-		"ft": 16384,
-		"iS": 183021,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/spaces\/spaces2.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/what-we-do\/spaces\/spaces3.jpg": {
-		"ft": 16384,
-		"iS": 120172,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/spaces\/spaces3.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/what-we-do\/spaces\/spaces4.jpg": {
-		"ft": 16384,
-		"iS": 140224,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/spaces\/spaces4.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/what-we-do\/spaces\/spaces5.jpg": {
-		"ft": 16384,
-		"iS": 136605,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/spaces\/spaces5.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/what-we-do\/spaces\/spaces6.jpg": {
-		"ft": 16384,
-		"iS": 171403,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/spaces\/spaces6.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/what-we-do\/spaces\/spaces7.jpg": {
-		"ft": 16384,
-		"iS": 194711,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/spaces\/spaces7.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/what-we-do\/spaces\/spaces8.jpg": {
-		"ft": 16384,
-		"iS": 136801,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/spaces\/spaces8.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/what-we-do\/spaces\/spaces9.jpg": {
-		"ft": 16384,
-		"iS": 167657,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/spaces\/spaces9.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/what-we-do\/strategy\/strategy1.jpg": {
-		"ft": 16384,
-		"iS": 311372,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/strategy\/strategy1.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/what-we-do\/strategy\/strategy2.jpg": {
-		"ft": 16384,
-		"iS": 303535,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/strategy\/strategy2.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/what-we-do\/strategy\/strategy3.jpg": {
-		"ft": 16384,
-		"iS": 86300,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/strategy\/strategy3.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/app\/images\/what-we-do\/strategy\/strategy4.jpg": {
-		"ft": 16384,
-		"iS": 465833,
-		"oA": 0,
-		"oAP": "\/app\/images\/what-we-do\/strategy\/strategy4.jpg",
-		"oF": 0,
-		"opt": 0
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/app\/index.html": {
 		"ft": 8192,
@@ -4922,76 +4446,16 @@
 		"oAP": "\/app\/views\/work.html",
 		"oF": 0
 		},
-	"\/app\/views\/wwd-left-connections.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/app\/views\/wwd-left-connections.html",
-		"oF": 0
-		},
 	"\/app\/views\/wwd-left-default.html": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/app\/views\/wwd-left-default.html",
 		"oF": 0
 		},
-	"\/app\/views\/wwd-left-design.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/app\/views\/wwd-left-design.html",
-		"oF": 0
-		},
-	"\/app\/views\/wwd-left-experiences.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/app\/views\/wwd-left-experiences.html",
-		"oF": 0
-		},
-	"\/app\/views\/wwd-left-spaces.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/app\/views\/wwd-left-spaces.html",
-		"oF": 0
-		},
-	"\/app\/views\/wwd-left-strategy.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/app\/views\/wwd-left-strategy.html",
-		"oF": 0
-		},
-	"\/app\/views\/wwd-right-connections.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/app\/views\/wwd-right-connections.html",
-		"oF": 0
-		},
 	"\/app\/views\/wwd-right-default.html": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/app\/views\/wwd-right-default.html",
-		"oF": 0
-		},
-	"\/app\/views\/wwd-right-design.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/app\/views\/wwd-right-design.html",
-		"oF": 0
-		},
-	"\/app\/views\/wwd-right-experiences.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/app\/views\/wwd-right-experiences.html",
-		"oF": 0
-		},
-	"\/app\/views\/wwd-right-spaces.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/app\/views\/wwd-right-spaces.html",
-		"oF": 0
-		},
-	"\/app\/views\/wwd-right-strategy.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/app\/views\/wwd-right-strategy.html",
 		"oF": 0
 		},
 	"\/bower.json": {
@@ -13039,6 +12503,26 @@
 		"rC": 0,
 		"sIE": 0,
 		"tEC": 0
+		},
+	"\/dist\/images\/logo_bakery.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/dist\/images\/logo_bakery.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/dist\/images\/logo_the_bread.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/dist\/images\/logo_the_bread.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/Gruntfile.js": {
 		"ft": 64,
