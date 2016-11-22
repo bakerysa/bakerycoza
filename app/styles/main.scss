@@ -60,6 +60,7 @@ h1 {
     &.tagline {
       max-width: 600px;
       margin: 0 auto;
+      padding-bottom: 1.5em;
     }
 }
 
@@ -466,7 +467,6 @@ a {
     right: 0;
     bottom: 0;
     padding-top:10px;
-
     .nav {
         ul {
           margin-bottom: 7px;
@@ -478,7 +478,9 @@ a {
             }
             padding: 0;
             li {
-                padding: 0.1em 1em;
+                cursor: pointer;
+                padding: 0.1em 1.2em;
+                margin: 0 -6px;
             }
         }
     }
@@ -1900,6 +1902,9 @@ and (orientation : portrait) {
         padding-top: 14em;
       }
     }
+  }
+  .segment p {
+    font-size: 16px!important;
   }
 }
 
