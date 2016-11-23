@@ -546,10 +546,10 @@ a {
       &.product-strategy {
         background: url(../images/what-we-do/pic1.svg) no-repeat;
       }
-      &.user-research {
+      &.user-experience {
         background: url(../images/what-we-do/pic2.svg) no-repeat;
       }
-      &.user-experience{
+      &.user-research{
         background: url(../images/what-we-do/pic3.svg) no-repeat;
       }
       &.interaction-design {
@@ -923,7 +923,6 @@ a {
   padding: 8px 20px;
   font-size:0.9em;
   cursor: pointer;
-  margin-top: 25px;
   background: #ffebe9;
   &:focus, &:active {
     outline: none!important;
@@ -1018,7 +1017,7 @@ a {
 #brands {
   margin-bottom: 2.2em;
   h2 {
-    margin-top: 2em;
+    margin-top: 3em;
     margin-bottom: 1em;
   }
   img {
@@ -1376,6 +1375,12 @@ background:#869791
     }
   }
 
+  .bk-block {
+    h4 {
+      font-size: 1em;
+    }
+  }
+
 }
 
 @media (max-width: 1200px) {
@@ -1605,6 +1610,7 @@ background:#869791
       a {
         position: relative;
         &:hover, &.active {
+            list-style-type: none;
             position: relative;
             &:before {
                       content: "";
@@ -1820,9 +1826,13 @@ background:#869791
     }
 }
 
+
 @media screen and (max-width: 490px) {
 .segment {
   margin-bottom: 80px;
+}
+.segment.kinetic {
+  margin-bottom: 60px!important;
 }
     .h-mobile-visible {
         display: block!important;
@@ -1955,6 +1965,25 @@ and (orientation : portrait) {
   }
 }
 
+.topbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  .topbar-loader{
+    background: rgba(0, 0, 0, 0.05);
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition:width 0.25s;
+    -webkit-transition:width .25s;
+    -moz-transition: width 0.25s;
+    display: block;
+  }
+}
+
 
 .topbar {
   position: absolute;
@@ -2001,9 +2030,7 @@ and (orientation : portrait) {
 .intro p a {
   text-decoration: underline;
 }
-.text-white {
-  color: white;
-}
+
 .nw {
   display: block;
   white-space: nowrap;
@@ -2034,6 +2061,10 @@ and (orientation : portrait) {
   }
   h2 {
     font-size: 34px;
+    font-weight: 800;
+  }
+  .btn {
+      margin-top: 25px;
   }
 }
 .segment .hero {
@@ -2048,41 +2079,25 @@ and (orientation : portrait) {
 .segment.glo .hero {
   top: 50%;
   bottom: auto;
-  height: 75%;
+  height: 70%;
   width: 100%;
   background: url(../images/glo.png) left center no-repeat;
   background-size: contain;
   -webkit-transform: translateY(-50%) translateX(50%);
   transform: translateY(-50%) translateX(50%);
 }
-.segment.joepaine .hero img {
+
+.segment.kinetic .hero {
   top: 50%;
   bottom: auto;
   height: 75%;
   width: 100%;
-  background: url(../images/joepaine.jpg) left center no-repeat;
+  background: url(../images/kinetic.png) left center no-repeat;
   background-size: contain;
-  -webkit-transform: translateY(30%) translateX(6%);
-  transform: translateY(30%) translateX(6%);
+  -webkit-transform: translateY(-40%) translateX(50%);
+  transform: translateY(-40%) translateX(50%);
 }
-.segment.kinetic .hero img {
-  position: absolute;
-  top: 100px;
-  right: -395px;
-  box-shadow: 0 14px 57px rgba(0, 0, 0, 0.08);
-}
-.segment.glh .hero img {
-  position: absolute;
-  top: 138px;
-  right: -470px;
-  box-shadow: 0 14px 57px rgba(0, 0, 0, 0.08);
-}
-.segment.clearwater .hero img {
-  position: absolute;
-  top: 138px;
-  right: -470px;
-  box-shadow: 0 14px 57px rgba(0, 0, 0, 0.08);
-}
+
 .segment.autonomy .hero {
   top: 50%;
   bottom: auto;
@@ -2090,57 +2105,26 @@ and (orientation : portrait) {
   width: 100%;
   background: url(../images/autonomy.png) left center no-repeat;
   background-size: contain;
-  -webkit-transform: translateY(-50%) translateX(55%);
-  transform: translateY(-45%) translateX(50%);
+  -webkit-transform: translateY(-38%) translateX(55%);
+  transform: translateY(-38%) translateX(55%);
 }
 
-/* ----- OTHER ------ */
-.clearfix {
-  clear: both;
-  margin: 0;
-  padding: 0;
+@media screen and (max-width: 768px) {
+    .team-info {
+      min-height: 380px!important;
+    }
+    .segment.kinetic .hero {
+      margin-top: 180px!important;
+    }
+    .segment.autonomy .hero {
+      margin-top: 140px!important;
+    }
 }
-::selection {
-  background: #ffb7b7;
-}
-::-moz-selection {
-  background: #ffb7b7;
-}
-/* ------- MEDIA QUERIES -------*/
 
-@media (min-width: 1380px) and (max-width: 1650px) {
-
-  .segment.joepaine .hero img {
-    right: -330px;
-  }
-  .segment.kinetic .hero img {
-    right: -330px;
-  }
-  .segment.glh .hero img {
-    right: -330px;
-  }
-  .segment.clearwater .hero img {
-    right: -330px;
-  }
-}
-@media (min-width: 767px) and (max-width: 1080px) {
-  .segment.joepaine .hero img {
-    right: -660px;
-  }
-  .segment.kinetic .hero img {
-    right: -450px;
-  }
-  .segment.glh .hero img {
-    right: -660px;
-  }
-  .segment.clearwater .hero img {
-    right: -660px;
-  }
-}
 @media (max-width: 767px) {
 
   .segment {
-    margin-bottom: 80px;
+    margin-bottom: 10px;
   }
 
   .intro {
@@ -2162,12 +2146,7 @@ and (orientation : portrait) {
     padding: 0 20px;
     height: auto;
   }
-  .segment:not(#first) {
-    box-sizing: content-box;
-    min-height: 100vmin;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-  }
+
 
   .segment .content {
     position: static;
@@ -2193,63 +2172,18 @@ and (orientation : portrait) {
     transform: none;
     max-width: 300px;
   }
-  .segment.joepaine .hero {
-    width: 100%;
-    position: relative;
-    max-height: 300px;
-    overflow: hidden;
-    margin-bottom: 30px;
-  }
-  .segment.joepaine .hero img {
-    display: block;
-    margin: 0 auto 30px;
-    position: static;
-    width: 70%;
-    max-width: 300px;
-  }
+
   .segment.kinetic .hero {
-    width: 100%;
-    position: relative;
-    max-height: 300px;
-    overflow: hidden;
-    margin-bottom: 30px;
-    margin-top: 80px;
-  }
-  .segment.kinetic .hero img {
-    display: block;
-    margin: 0 auto 30px;
     position: static;
-    width: 70%;
+    margin: 0 auto;
+    width: auto;
+    height: 200px;
+    background-position: center;
+    -webkit-transform: none;
+    transform: none;
     max-width: 300px;
   }
-  .segment.glh .hero {
-    width: 100%;
-    position: relative;
-    max-height: 300px;
-    overflow: hidden;
-    margin-bottom: 30px;
-  }
-  .segment.glh .hero img {
-    display: block;
-    margin: 0 auto 30px;
-    position: static;
-    width: 70%;
-    max-width: 300px;
-  }
-  .segment.clearwater .hero {
-    width: 100%;
-    position: relative;
-    max-height: 300px;
-    overflow: hidden;
-    margin-bottom: 30px;
-  }
-  .segment.clearwater .hero img {
-    display: block;
-    margin: 0 auto 30px;
-    position: static;
-    width: 70%;
-    max-width: 300px;
-  }
+
   .segment.autonomy .hero {
     position: static;
     margin: 0 auto;
@@ -2259,13 +2193,5 @@ and (orientation : portrait) {
     -webkit-transform: none;
     transform: none;
     max-width: 300px;
-    margin-top: 50px;
-  }
-}
-
-@media (min-width: 767px) and (max-width: 991px) {
-  .segment.autonomy .hero {
-    -webkit-transform: translateY(-35%) translateX(40%);
-    transform: translateY(-35%) translateX(40%);
   }
 }

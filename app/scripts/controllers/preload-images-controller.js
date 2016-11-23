@@ -1,4 +1,4 @@
-(function () { 
+(function () {
 
     'use strict';
 
@@ -23,16 +23,25 @@
                 // NOTE: "cache" attribute is to prevent images from caching in the
                 // browser (for the sake of the demo).
 
-                // $scope.imageLocations = [
-                //     ( "https://i.ytimg.com/vi/c7oV1T2j5mc/maxresdefault.jpg?v=1&cache=" + ( new Date() ).getTime() ),
-                //     ( "https://i.ytimg.com/vi/c7oV1T2j5mc/maxresdefault.jpg?v=2&cache=" + ( new Date() ).getTime() ),
-                //     ( "https://i.ytimg.com/vi/c7oV1T2j5mc/maxresdefault.jpg?v=3&cache=" + ( new Date() ).getTime() ),
-                //     ( "https://i.ytimg.com/vi/c7oV1T2j5mc/maxresdefault.jpg?v=4&cache=" + ( new Date() ).getTime() ),
-                //     ( "https://i.ytimg.com/vi/c7oV1T2j5mc/maxresdefault.jpg?v=5&cache=" + ( new Date() ).getTime() ),
-                //     ( "https://i.ytimg.com/vi/c7oV1T2j5mc/maxresdefault.jpg?v=6&cache=" + ( new Date() ).getTime() ),
-                // ];
                 $scope.imageLocations = [
-                    ( "https://i.ytimg.com/vi/c7oV1T2j5mc/maxresdefault.jpg?v=1&cache=" )
+                    ( "../../images/what-we-do/pic1.svg" ),
+                    ( "../../images/what-we-do/pic2.svg" ),
+                    ( "../../images/what-we-do/pic3.svg" ),
+                    ( "../../images/what-we-do/pic4.svg" ),
+                    ( "../../images/what-we-do/pic5.svg" ),
+                    ( "../../images/what-we-do/pic6.svg" ),
+                    ( "../../images/what-we-do/pic7.svg" ),
+                    ( "../../images/what-we-do/pic8.svg" ),
+                    ( "../../images/what-we-do/pic9.svg" ),
+                    ( "../../images/autonomy.png" ),
+                    ( "../../images/kinetic.png" ),
+                    ( "../../images/glo.png" ),
+                    // ( "../../images/clients/glo.png" ),
+                    // ( "../../images/clients/anglo.png" ),
+                    // ( "../../images/clients/autonomy.png" ),
+                    // ( "../../images/clients/bonitas.png" ),
+                    // ( "../../images/clients/kinetic.png" ),
+                    // ( "../../images/clients/praekelt.png" )
                 ];
                 // Preload the images; then, update display when returned.
                 preloader.preloadImages( $scope.imageLocations ).then(
@@ -58,5 +67,4 @@
         );
 
 
-})(); 
-
+})();
