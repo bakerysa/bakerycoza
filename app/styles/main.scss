@@ -96,6 +96,7 @@ a {
 
 .primarycontent {
     padding-top: 110px;
+    overflow-x: hidden;
 }
 
 .logo {
@@ -924,6 +925,7 @@ a {
   font-size:0.9em;
   cursor: pointer;
   background: #ffebe9;
+  z-index: 1000;
   &:focus, &:active {
     outline: none!important;
   }
@@ -2036,13 +2038,13 @@ and (orientation : portrait) {
   white-space: nowrap;
 }
 .fullpage-wrapper {
-  overflow: hidden;
+
 }
 .inner {
   padding: 0 0px;
   margin: 0 auto;
   position: relative;
-  height: 400px;
+  height: 300px;
 }
 .inner .content {
   position: absolute;
@@ -2050,12 +2052,13 @@ and (orientation : portrait) {
   width: 46%;
   -webkit-transform: translateY(-25%);
   transform: translateY(-25%);
+  z-index: 5;
 }
 .inner .content span {
   font-weight: 700;
 }
 .segment {
-  height: 500px;
+  height: 600px;
   p {
     font-size: 14px;
   }
@@ -2072,9 +2075,8 @@ and (orientation : portrait) {
   z-index: 999;
   bottom: 0;
   right: 0;
-  height: 105%;
+  height: 100%;
   width: 50%;
-  overflow: hidden;
 }
 .segment.glo .hero {
   top: 50%;
@@ -2083,48 +2085,46 @@ and (orientation : portrait) {
   width: 100%;
   background: url(../images/glo.png) left center no-repeat;
   background-size: contain;
-  -webkit-transform: translateY(-50%) translateX(50%);
-  transform: translateY(-50%) translateX(50%);
+  -webkit-transform: translateY(-65%) translateX(50%);
+  transform: translateY(-65%) translateX(50%);
 }
 
 .segment.kinetic .hero {
   top: 50%;
   bottom: auto;
-  height: 75%;
+  height: 70%;
   width: 100%;
   background: url(../images/kinetic.png) left center no-repeat;
   background-size: contain;
-  -webkit-transform: translateY(-40%) translateX(50%);
-  transform: translateY(-40%) translateX(50%);
+  -webkit-transform: translateY(-65%) translateX(50%);
+  transform: translateY(-65%) translateX(50%);
 }
 
 .segment.autonomy .hero {
   top: 50%;
   bottom: auto;
-  height: 75%;
+  height: 70%;
   width: 100%;
   background: url(../images/autonomy.png) left center no-repeat;
   background-size: contain;
-  -webkit-transform: translateY(-38%) translateX(55%);
-  transform: translateY(-38%) translateX(55%);
-}
-
-@media screen and (max-width: 768px) {
-    .team-info {
-      min-height: 380px!important;
-    }
-    .segment.kinetic .hero {
-      margin-top: 180px!important;
-    }
-    .segment.autonomy .hero {
-      margin-top: 140px!important;
-    }
+  -webkit-transform: translateY(-65%) translateX(50%);
+  transform: translateY(-65%) translateX(50%);
 }
 
 @media (max-width: 767px) {
 
   .segment {
-    margin-bottom: 10px;
+    height: 630px;
+  }
+
+  .team-info {
+    min-height: 380px!important;
+  }
+  .segment.kinetic .hero {
+    margin-top: 20px!important;
+  }
+  .segment.autonomy .hero {
+    margin-top: 20px!important;
   }
 
   .intro {
@@ -2144,7 +2144,6 @@ and (orientation : portrait) {
 
   .segment .inner {
     padding: 0 20px;
-    height: auto;
   }
 
 
@@ -2158,7 +2157,6 @@ and (orientation : portrait) {
   .valign {
     position: relative;
     top: 50%;
-    height: auto;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
   }
@@ -2166,7 +2164,7 @@ and (orientation : portrait) {
     position: static;
     margin: 0 auto;
     width: auto;
-    height: 300px;
+    height: 250px;
     background-position: center;
     -webkit-transform: none;
     transform: none;
@@ -2188,7 +2186,7 @@ and (orientation : portrait) {
     position: static;
     margin: 0 auto;
     width: auto;
-    height: 300px;
+    height: 200px;
     background-position: center;
     -webkit-transform: none;
     transform: none;
