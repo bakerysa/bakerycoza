@@ -14,8 +14,6 @@
 
 			$scope.projects = ProjectService.list();
 
-			console.log('primary content called ');
-
 
 
 
