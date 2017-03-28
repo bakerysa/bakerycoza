@@ -2131,6 +2131,10 @@ and (orientation : portrait) {
 
 @media (max-width: 767px) {
 
+  .nowrap {
+    white-space: nowrap;
+  }
+
   .segment {
     height: 630px;
   }
