@@ -21,8 +21,12 @@
             'anim-in-out',
             'videosharing-embed'
         ])
-        .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+        .config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {
             $urlRouterProvider.otherwise('/');
+            $locationProvider.html5Mode({
+              enabled: true,
+              requireBase: false
+            });
 
 
             $stateProvider
