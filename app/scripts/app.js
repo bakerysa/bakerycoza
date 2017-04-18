@@ -22,11 +22,9 @@
             'videosharing-embed'
         ])
         .config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {
+
+            $locationProvider.html5Mode(true);
             $urlRouterProvider.otherwise('/');
-            $locationProvider.html5Mode({
-              enabled: true,
-              requireBase: false
-            });
 
 
             $stateProvider
