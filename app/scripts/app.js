@@ -23,7 +23,7 @@
         ])
         .config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {
 
-            $locationProvider.html5Mode(true);
+            // $locationProvider.html5Mode(true);
             $urlRouterProvider.otherwise('/');
 
 
@@ -210,6 +210,40 @@
                 'primarycontent@': {
                     templateUrl: 'views/job-details.html',
                     controller: 'JobsDetailCtrl'
+                }
+            }
+        })
+
+        .state('app.invest', {
+            url: 'ux-invest',
+            views: {
+                'header@': {
+                    templateUrl: 'views/header-jobs.html',
+                    controller: 'HeaderCtrl',
+                    controllerAs: 'header'
+                },
+                'primarycontent@': {
+                    templateUrl: 'views/ux-invest.html'
+                },
+                'footer@': {
+                    templateUrl: 'views/footer-jobs.html'
+                }
+            }
+        })
+
+        .state('app.whatis-ux', {
+            url: 'whatis-ux',
+            views: {
+                'header@': {
+                    templateUrl: 'views/header-jobs.html',
+                    controller: 'HeaderCtrl',
+                    controllerAs: 'header'
+                },
+                'primarycontent@': {
+                    templateUrl: 'views/what-is-ux.html'
+                },
+                'footer@': {
+                    templateUrl: 'views/footer-jobs.html'
                 }
             }
         });

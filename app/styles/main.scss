@@ -73,9 +73,20 @@ h2 {
     font-weight: 700;
     margin: 1em 0;
 }
-
+//
 h4 {
     font-weight: 700;
+    display: block;
+    mark {
+      line-height: 3.6rem;
+      background-color: black;
+      color: #ffebeb;
+      padding: 0px 4px;
+      display: inline-block;
+      text-decoration: none;
+      transform: skew(-15deg);
+      margin-bottom: 1px;
+    }
 }
 
 h5 {
@@ -84,7 +95,7 @@ h5 {
 }
 
 p {
-    font-size: 12px;
+    font-size: 15px;
 }
 
 a {
@@ -109,6 +120,10 @@ a {
 
 .h-bg-darker {
     background: rgba(0, 0, 0, 0.05);
+}
+
+.h-border-offset {
+  border: 2px solid rgba(0, 0, 0, 0.2);
 }
 
 .h-margin-v-sm {
@@ -188,17 +203,25 @@ a {
     text-transform: lowercase!important;
 }
 
-.h-max-width {
+
+.h-max-width-xs {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.h-max-width-s {
     max-width: 600px;
+    margin: 0 auto;
+}
+
+.h-max-width-m {
+    max-width: 800px;
     margin: 0 auto;
 }
 
 .h-margin-bottom-m {
   margin-bottom:100px;
 }
-
-
-
 
 .header {
     position: fixed;
@@ -665,12 +688,28 @@ a {
 
 .section-header {
   text-align: center;
+  h2 {
+    font-size: 3.2rem;
+  }
   h3 {
     padding-top: 1.2em;
     padding-bottom: 1.2em;
     background: rgba(0, 0, 0, 0.05);
     margin: 0;
   }
+  p {
+    font-weight: bold;
+    margin-top: -1rem;
+  }
+}
+
+.text-page {
+
+    padding-bottom: 4rem;
+    p {
+      padding-top: 2rem;
+      line-height: 3rem;
+    }
 }
 
 .featherlight-content {
@@ -860,6 +899,106 @@ a {
     background-repeat: no-repeat;
     height: 649px;
   }
+}
+
+.box-offset {
+  margin-top: 4rem;
+  background: rgba(0,0,0,0.05);
+  padding-bottom: 5rem;
+  &:after {
+    content: '';
+    background: transparent;
+    border: 2px solid rgba(0,0,0,0.1);
+    top: -8px;
+    right: 8px;
+    bottom: 8px;
+    left: -8px;
+    position: absolute;
+    z-index: -1
+  }
+  h4 {
+  line-height: 3rem;
+  }
+}
+
+.intro-quote {
+  position: relative;
+  max-width: 650px;
+  margin: 0 auto;
+  &-aux {
+    display: block;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  h3 {
+    position: relative;
+    display: inline;
+    &:before {
+      font-family: "Georgia",serif;
+      content: "”";
+      position: absolute;
+      right: -60px;
+      bottom: -80px;
+      font-size: 10rem;
+      opacity: 0.1;
+    }
+  }
+  .quote-image {
+    left: 560px;
+    bottom: 70px;
+    max-width: 40px;
+    position: relative;
+  }
+}
+
+.quote {
+  margin-top: 20px;
+  p {
+    font-size: 12px;
+    em {
+      font-weight: bold;
+      display: inline-block;
+      span {
+        background-color: black;
+        color: #ffebeb;
+        padding: 0px 4px;
+        display: inline-block;
+        text-decoration:none;
+        transform: skew(-10deg);
+        background:#000;
+      }
+    }
+  }
+}
+
+.blocklist-item {
+  .text {
+    padding: 5rem;
+  }
+  .image {
+    padding: 1rem;
+    img {
+      margin: 0 auto;
+      display: block;
+    }
+  }
+  &-alt {
+    .text {
+      padding: 5rem;
+    }
+    .image {
+      padding: 1rem;
+      float: right;
+      img {
+        margin: 0 auto;
+        display: block;
+      }
+    }
+  }
+}
+
+.clearfix {
+  clear: both;
 }
 
 .featured-project {
@@ -1454,6 +1593,22 @@ background:#869791
 
 @media (max-width: 991px) {
 
+  .intro-quote {
+    padding: 0;
+  }
+
+  .blocklist-item {
+    &-alt {
+      .image {
+        float: none;
+      }
+    }
+  }
+
+  .quote {
+    text-align: center;
+  }
+
   .col-md-35 {
       width: 100%;
   }
@@ -1713,6 +1868,10 @@ background:#869791
 
 }
 
+.h-italics {
+  font-style: italic;
+}
+
 .h-padding-left-aux {
   padding-left:5px;
 }
@@ -1726,6 +1885,14 @@ background:#869791
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
+
+  .blocklist-item {
+    text-align: center;
+  }
+
+  .blocklist-item-alt {
+    text-align: center;
+  }
 
   .h-tablet-visible {
       display: block;
@@ -1756,20 +1923,49 @@ background:#869791
 
 @media screen and (max-width: 768px) {
 
+  .intro-quote {
+    h3 {
+      &:before {
+        right: -38px;
+        bottom: -38px;
+        font-size: 6rem;
+      }
+    }
+  }
 
+  .blocklist-item {
+    text-align: center;
+  }
 
+  .blocklist-item-alt {
+    text-align: center;
+  }
 
-  // .work-grid-2 {
-  //   .h-padding-v-5px {
-  //       padding-top: 2px;
-  //       padding-bottom: 2px;
-  //   }
-  //   [class^="col-"], [class*=" col-"] {
-  //       padding-right: 2px;
-  //       padding-left: 2px;
-  //   }
-  // }
+  .intro-quote {
+    text-align: center;
+    .quote-image {
+      position: relative;
+      bottom: auto;
+      left: auto;
+    }
+  }
 
+  .quote {
+    p {
+      padding-left: 0;
+    }
+  }
+
+  .blocklist-item {
+    .text {
+      padding: 1rem;
+    }
+    &-alt {
+      .text {
+        padding: 1rem;
+      }
+    }
+  }
 
   .h-padding-left-aux {
     padding-left:0px;
