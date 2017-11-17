@@ -23,7 +23,7 @@
         ])
         .config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {
 
-            // $locationProvider.html5Mode(true);
+            $locationProvider.html5Mode(true);
             $urlRouterProvider.otherwise('/');
 
 
@@ -215,7 +215,7 @@
         })
 
         .state('app.invest', {
-            url: 'ux-invest',
+            url: '5-reasons-to-invest-in-ux-design',
             views: {
                 'header@': {
                     templateUrl: 'views/header-jobs.html',
@@ -231,8 +231,8 @@
             }
         })
 
-        .state('app.whatis-ux', {
-            url: 'whatis-ux',
+        .state('app.whatisux', {
+            url: 'what-is-ux-design',
             views: {
                 'header@': {
                     templateUrl: 'views/header-jobs.html',

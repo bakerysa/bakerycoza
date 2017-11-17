@@ -95,7 +95,7 @@ h5 {
 }
 
 p {
-    font-size: 15px;
+    font-size: 12px;
 }
 
 a {
@@ -704,9 +704,9 @@ a {
 }
 
 .text-page {
-
     padding-bottom: 4rem;
     p {
+      font-size: 15px;
       padding-top: 2rem;
       line-height: 3rem;
     }
@@ -969,11 +969,33 @@ a {
       }
     }
   }
+  &-alt {
+    margin-top: 0;
+    p {
+      font-size: 12px;
+      em {
+        font-weight: bold;
+        display: inline-block;
+        span {
+          background-color: black;
+          color: #ffebeb;
+          padding: 0px 4px;
+          display: inline-block;
+          text-decoration:none;
+          transform: skew(-10deg);
+          background:#000;
+        }
+      }
+    }
+  }
 }
 
 .blocklist-item {
   .text {
     padding: 5rem;
+    p {
+      font-size: 15px;
+    }
   }
   .image {
     padding: 1rem;
@@ -985,6 +1007,9 @@ a {
   &-alt {
     .text {
       padding: 5rem;
+      p {
+        font-size: 15px;
+      }
     }
     .image {
       padding: 1rem;
@@ -1595,6 +1620,11 @@ background:#869791
 
   .intro-quote {
     padding: 0;
+    &-aux {
+      display: block;
+      padding-top: 0;
+      padding-bottom: 2rem;
+    }
   }
 
   .blocklist-item {
