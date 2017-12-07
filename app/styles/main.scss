@@ -1618,6 +1618,10 @@ background:#869791
 
 @media (max-width: 991px) {
 
+  .speaking-in-code {
+    margin-bottom: 0 !important;
+  }
+
   .intro-quote {
     padding: 0;
     &-aux {
@@ -2302,7 +2306,7 @@ and (orientation : portrait) {
   font-weight: 700;
 }
 .segment {
-  height: 600px;
+  height: 500px;
   p {
     font-size: 14px;
   }
@@ -2440,4 +2444,11 @@ and (orientation : portrait) {
     transform: none;
     max-width: 300px;
   }
+}
+
+.speaking-in-code {
+  position: relative;
+  margin-top: 15px;
+  z-index: 10;
+  margin-bottom: 6rem;
 }
