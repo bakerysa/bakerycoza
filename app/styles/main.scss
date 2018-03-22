@@ -992,7 +992,7 @@ a {
 
 .blocklist-item {
   .text {
-    padding: 5rem;
+    padding: 2rem;
     p {
       font-size: 15px;
     }
@@ -2296,7 +2296,7 @@ and (orientation : portrait) {
 }
 .inner .content {
   position: absolute;
-  top: 50%;
+  top: 30%;
   width: 46%;
   -webkit-transform: translateY(-25%);
   transform: translateY(-25%);
@@ -2306,7 +2306,7 @@ and (orientation : portrait) {
   font-weight: 700;
 }
 .segment {
-  height: 500px;
+  height: 430px;
   p {
     font-size: 14px;
   }
@@ -2327,7 +2327,7 @@ and (orientation : portrait) {
   width: 50%;
 }
 .segment.glo .hero {
-  top: 50%;
+  top: 60%;
   bottom: auto;
   height: 70%;
   width: 100%;
@@ -2408,7 +2408,7 @@ and (orientation : portrait) {
   }
   .valign {
     position: relative;
-    top: 50%;
+    top: 30%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
   }
@@ -2416,7 +2416,7 @@ and (orientation : portrait) {
     position: static;
     margin: 0 auto;
     width: auto;
-    height: 250px;
+    height: 350px;
     background-position: center;
     -webkit-transform: none;
     transform: none;
